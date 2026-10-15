@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extrasound Cube · Fabrizio Berlati</title>
+<meta name="description" content="Extrasound Cube: contenitore modulare in legno per vinili, in Pioppo o Doussiè. Si compone con altri moduli e cresce con la collezione.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cube.css">
+</head>
+<body>
+<header class="solid"><div class="wrap">
+  <a class="logo" href="index.html">Fabrizio Berlati</a>
+  <nav><a href="index.html">Home</a><a href="index.html#contatti">Contatti</a></nav>
+</div></header>
+
+<main>
+<section class="cube-page"><div class="wrap">
+  <div class="assembly" id="montaggio">
+    <div class="scene" id="scene" role="img" aria-label="Animazione: i cinque pannelli del Cube si alzano e si incastrano">
+      <div class="world" id="world"><div class="p base" id="pbase" style="left:-100px;top:-100px"></div><div class="p" id="pf" style="left:-100px;top:100px;transform-origin:50% 0"><i class="tab" style="left:-16px;top:40px;width:16px;height:30px"></i><i class="tab" style="left:200px;top:40px;width:16px;height:30px"></i><i class="tab" style="left:-16px;top:130px;width:16px;height:30px"></i><i class="tab" style="left:200px;top:130px;width:16px;height:30px"></i><i class="hdl" style="left:65px;top:132px;width:70px;height:18px"></i></div><div class="p" id="pb" style="left:-100px;top:-300px;transform-origin:50% 100%"><i class="tab" style="left:-16px;top:40px;width:16px;height:30px"></i><i class="tab" style="left:200px;top:40px;width:16px;height:30px"></i><i class="tab" style="left:-16px;top:130px;width:16px;height:30px"></i><i class="tab" style="left:200px;top:130px;width:16px;height:30px"></i><i class="hdl" style="left:65px;top:50px;width:70px;height:18px"></i></div><div class="p" id="pr" style="left:100px;top:-100px;transform-origin:0 50%"><i class="slot" style="left:40px;top:4px;width:30px;height:12px"></i><i class="slot" style="left:40px;top:184px;width:30px;height:12px"></i><i class="slot" style="left:130px;top:4px;width:30px;height:12px"></i><i class="slot" style="left:130px;top:184px;width:30px;height:12px"></i><i class="hdl" style="left:132px;top:65px;width:18px;height:70px"></i></div><div class="p" id="pl" style="left:-300px;top:-100px;transform-origin:100% 50%"><i class="slot" style="left:40px;top:4px;width:30px;height:12px"></i><i class="slot" style="left:40px;top:184px;width:30px;height:12px"></i><i class="slot" style="left:130px;top:4px;width:30px;height:12px"></i><i class="slot" style="left:130px;top:184px;width:30px;height:12px"></i><i class="hdl" style="left:50px;top:65px;width:18px;height:70px"></i></div></div>
+    </div>
+    <div class="acap">
+      <h1>Extrasound Cube</h1>
+      <p class="lead2" style="display:block">Il contenitore modulare in legno che cresce con la tua collezione di vinili.</p>
+      <p class="phase" id="phase" aria-live="polite"></p>
+      <div class="ctrl"><button class="chip" id="play" type="button">Riavvia</button><input id="scrub" type="range" min="0" max="1000" value="0" aria-label="Avanzamento del montaggio"></div>
+    </div>
+  </div>
+
+  <div class="story" id="cube"><div class="sticky">
+    <div class="stage" role="img" aria-label="Extrasound Cube: dai pannelli smontati alla composizione finita">
+      <img class="layer l-b" src="images/cube-finiture.jpg" alt="">
+      <img class="layer l-a" src="images/cube-pezzi.jpg" alt="">
+      <img class="layer l-c" src="images/cube-vinili.jpg" alt="">
+      <img class="layer l-d" src="images/cube-composizione.jpg" alt="">
+      <div class="bar"></div>
+    </div>
+    <div class="steps-cap">
+      <h3>Il Cube dal vero</h3>
+      <p class="lead2">Dal pacco smontato alla composizione finita, nelle nostre foto.</p>
+      <div class="step on"><h4>Si compone</h4><p>In Pioppo chiaro o in Doussiè caldo, con le maniglie ricavate nei pannelli.</p></div>
+      <div class="step"><h4>Arriva smontato</h4><p>Cinque pannelli in multistrato da 18 mm, con gli incastri già pronti.</p></div>
+      <div class="step"><h4>Accoglie i dischi</h4><p>Interno di 35 x 32 x 32 cm, con le copertine sempre in vista.</p></div>
+      <div class="step"><h4>Cresce con te</h4><p>Affianca e sovrappone altri moduli quando la collezione si allarga, anche in essenze diverse.</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec">
+    <h3>Componi il tuo Cube</h3>
+    <p class="sub">Ogni modulo si unisce agli altri con gli incassi predisposti, in verticale o in orizzontale. Tocca una cella per aggiungerlo in Pioppo o in Doussiè.</p>
+    <div class="composer">
+      <div class="grid" id="grid"></div>
+      <div>
+        <div class="presets" id="presets">
+          <button class="chip" data-p="single">Singolo</button>
+          <button class="chip" data-p="low">Libreria bassa</button>
+          <button class="chip" data-p="col">Colonna</button>
+          <button class="chip" data-p="wall">Parete</button>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+        <a class="btn" id="req" href="#contatti">Richiedi questa composizione</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec ess">
+    <div class="zoomwrap"><img id="zoom" src="images/cube-frontale.jpg" alt="Moduli Cube in Pioppo e in Doussiè affiancati e sovrapposti"></div>
+    <div>
+      <h3>Due essenze, due caratteri</h3>
+      <div class="presets" id="tabs" role="group" aria-label="Scegli l'essenza">
+        <button class="chip" data-e="all" aria-pressed="true">Insieme</button>
+        <button class="chip" data-e="pioppo" aria-pressed="false">Pioppo</button>
+        <button class="chip" data-e="doussie" aria-pressed="false">Doussiè</button>
+      </div>
+      <p id="ess-p" aria-live="polite" style="color:var(--muted);max-width:42ch">Puoi combinare le due essenze nella stessa composizione, come nella foto. Il legno resta protagonista, con struttura e spessori a vista.</p>
+    </div>
+  </div>
+
+  <div class="cube-info">
+    <div>
+      <div class="hot" id="hot">
+        <img src="images/cube-alto.jpg" alt="Extrasound Cube visto dall'alto">
+        <button class="dot" style="left:50%;top:52%" aria-pressed="false" aria-label="Marchio inciso" data-t="Il marchio Extrasound è inciso sul fondo del modulo."></button>
+        <button class="dot" style="left:19%;top:50%" aria-pressed="false" aria-label="Maniglia" data-t="Le maniglie sono ricavate nei pannelli, su tutti i lati: il modulo diventa una cassetta da trasportare."></button>
+        <button class="dot" style="left:13.5%;top:62%" aria-pressed="false" aria-label="Pannello" data-t="Pannello in multistrato da 18 mm, con gli strati del legno a vista."></button>
+      </div>
+      <p class="hot-cap" id="hot-cap" aria-live="polite">Tocca i punti per scoprire i dettagli.</p>
+    </div>
+    <div>
+      <h3>Misurato sul vinile</h3>
+      <p style="color:var(--muted);margin:.4rem 0 1.4rem;max-width:44ch">Le proporzioni nascono da dischi e copertine. La struttura aperta lascia vedere le copertine e raggiungere i dischi mentre ascolti. Ospita anche libri, riviste e accessori audio.</p>
+      <div class="specs">
+        <div><span>Materiali</span><span>Multistrato di Pioppo o Doussiè</span></div>
+        <div><span>Spessore pannello</span><span>18 mm</span></div>
+        <div><span>Dimensioni esterne</span><span>40 x 38 x 36 cm</span></div>
+        <div><span>Dimensioni interne</span><span>35 x 32 x 32 cm</span></div>
+        <div><span>Orientamento</span><span>Verticale o orizzontale</span></div>
+        <div><span>Unione</span><span>Incassi predisposti</span></div>
+        <div><span>Fornitura</span><span>Smontato</span></div>
+        <div><span>Finitura</span><span>Su richiesta</span></div>
+      </div>
+      <a class="btn cta" href="mailto:info@fabrizioberlati.com?subject=Informazioni%20su%20Extrasound%20Cube">Chiedi informazioni</a>
+    </div>
+  </div>
+  <a class="back" href="index.html#prodotti">Tutti i prodotti</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span class="yr"></span> Fabrizio Berlati</div></footer>
+
+<script src="site.js"></script>
+<script src="cube.js"></script>
+</body>
+</html>
