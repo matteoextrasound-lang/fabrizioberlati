@@ -6,7 +6,7 @@
   if(!stage)return;
   const cv=document.createElement('canvas');stage.appendChild(cv);
   const ctx=cv.getContext('2d');
-  const W=960,H=270,VH=330,TOP=30,COLS=72,CW=W/COLS,SEC=COLS/3,MID=H*.52,F=2000;
+  const W=960,H=270,VX=-64,VY=-80,VW=1036,VH=372,COLS=72,CW=W/COLS,SEC=COLS/3,MID=H*.52,F=2000;
 
   let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
   const woods=['#c99a63','#b07a4a','#d9b688','#8f5a36','#e4c79e','#a8683f','#c48a55','#7a4b2c','#dcb98c','#9c6b43','#e9d3b0'];
@@ -28,15 +28,15 @@
   const cl=x=>Math.min(1,Math.max(0,x));
   let k=1,dpr=1;
   function fit(){
-    dpr=Math.min(2,devicePixelRatio||1);k=stage.clientWidth/W;
-    cv.width=Math.round(stage.clientWidth*dpr);cv.height=Math.round(stage.clientWidth*VH/W*dpr);
+    dpr=Math.min(2,devicePixelRatio||1);k=stage.clientWidth/VW;
+    cv.width=Math.round(stage.clientWidth*dpr);cv.height=Math.round(stage.clientWidth*VH/VW*dpr);
     draw(t);
   }
 
   let t=0;
   function draw(t){
     const r=1-ease(cl(t)),sp=1-ease(cl(t/.86));
-    const a=-36*r*Math.PI/180,b=8*r*Math.PI/180,ca=Math.cos(a),sa=Math.sin(a),cb=Math.cos(b),sb=Math.sin(b);
+    const a=-36*r*Math.PI/180,b=3*r*Math.PI/180,ca=Math.cos(a),sa=Math.sin(a),cb=Math.cos(b),sb=Math.sin(b);
     const tx=-40*r,ty=-10*r,tz=-260*r;
     // punto del pannello -> schermo (stessa prospettiva del CSS 3D)
     const pr=(x,y,z)=>{
@@ -45,7 +45,7 @@
       const Y2=Y*cb-Z1*sb,Z2=Y*sb+Z1*cb;
       X=X1+tx;Y=Y2+ty;Z=Z2+tz;
       const s=F/(F-Z);
-      return [(480+X*s)*k*dpr,(TOP+135+Y*s)*k*dpr,Z];
+      return [(480+X*s-VX)*k*dpr,(135+Y*s-VY)*k*dpr,Z];
     };
     const quad=(p,col)=>{ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(p[0][0],p[0][1]);for(let i=1;i<4;i++)ctx.lineTo(p[i][0],p[i][1]);ctx.closePath();ctx.fill()};
     ctx.clearRect(0,0,cv.width,cv.height);

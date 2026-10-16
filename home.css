@@ -1,5 +1,5 @@
 /* hero */
-.hero{min-height:100svh;display:grid;align-items:center;padding:7rem 0 4rem;position:relative;overflow:hidden;
+.hero{min-height:min(100svh,760px);display:grid;align-items:center;padding:7.5rem 0 2.5rem;position:relative;overflow:hidden;
   background:radial-gradient(60% 50% at 72% 55%,rgba(255,176,74,.16),transparent 70%),var(--walnut)}
 .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center}
 h1{font:300 clamp(2.4rem,5.4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.02em;margin-bottom:1.4rem}
@@ -11,7 +11,7 @@ h1{font:300 clamp(2.4rem,5.4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.02em;m
 .hero .wrap{grid-template-columns:.85fr 1.15fr;gap:3rem;width:100%}
 .hero h1{font-size:clamp(2.1rem,3.9vw,3.3rem)}
 .hero .lead{font-size:1rem}
-.panel3d{position:relative;width:100%;aspect-ratio:960/330;cursor:pointer}
+.panel3d{position:relative;width:100%;aspect-ratio:1036/372;cursor:pointer}
 .panel3d canvas{display:block;width:100%;height:100%}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:2.5rem}}
 /* oak band */
@@ -23,7 +23,7 @@ h1{font:300 clamp(2.4rem,5.4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.02em;m
 
 
 /* prodotti in home */
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
 .card{display:block;text-decoration:none}
 .card .pic{aspect-ratio:4/3;background:transparent}
 .card h3{margin:1.2rem 0 .5rem}
@@ -33,3 +33,22 @@ h1{font:300 clamp(2.4rem,5.4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.02em;m
 .soon .more{border:0;color:var(--muted)}
 @media (max-width:820px){.hero .wrap,.cards,.steps{grid-template-columns:1fr}}
 @media (max-width:600px){.hero{padding-top:10rem}}
+
+/* sezione prodotti: fasce a tinta unita solo dietro ai testi */
+:root{--pioppo:#f3ebd8;--pioppo-2:#e8d9bc}
+.woodband{padding:3.5rem 0 1rem;margin-bottom:3rem}
+.woodband .phead{background:var(--pioppo);box-shadow:0 0 0 100vmax var(--pioppo);clip-path:inset(0 -100vmax);padding:2.6rem 0 2.4rem;margin-bottom:2.8rem}
+.woodband .phead .intro{margin-bottom:0;color:#6a5845}
+.cards{grid-template-rows:auto auto;row-gap:0}
+.card{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0}
+.card .txt{background:var(--pioppo-2);margin:0 calc(-1rem - 1px);padding:1.4rem calc(1rem + 1px) 1.8rem}
+.card:first-child .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 0 0 -100vmax)}
+.card:last-child .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax 0 0)}
+.card h3{font-size:1.45rem;margin:0 0 .5rem}
+.card .txt p{color:#5f4e3d}
+.woodband .card .pic{background:#fff}
+@media (max-width:980px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:980px){.card:nth-child(2) .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax 0 0)}.card:last-child .txt{clip-path:inset(0 0 0 -100vmax)}.cards{row-gap:2rem}}
+@media (max-width:620px){.cards{grid-template-columns:1fr}.card .txt,.card:first-child .txt,.card:last-child .txt,.card:nth-child(2) .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax)}}
+.wavepic img{object-fit:cover;padding:0;transform:scale(1.15)}
+.wavepic:hover img{transform:scale(1.2)}
