@@ -28,6 +28,7 @@ document.querySelectorAll('.gallery').forEach(g=>{
     document.querySelectorAll('.wd').forEach(p=>p.style.fill=e.c[+p.dataset.t||0]);
     document.querySelectorAll('[data-v]').forEach(s=>{const v=s.dataset.v;s.textContent=v==='h0'?e.h[0]:v==='h1'?e.h[1]:e[v]});
     document.querySelectorAll('[data-e]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.e===k));
+    const hi=document.querySelector('#vhero img');if(hi)hi.src='images/vinyl-'+k+'-pro.jpg';
   };
   document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>set(b.dataset.e));
   set('faggio');

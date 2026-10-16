@@ -52,3 +52,4 @@ h1{font:300 clamp(2.4rem,5.4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.02em;m
 @media (max-width:620px){.cards{grid-template-columns:1fr}.card .txt,.card:first-child .txt,.card:last-child .txt,.card:nth-child(2) .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax)}}
 .wavepic img{object-fit:cover;padding:0;transform:scale(1.15)}
 .wavepic:hover img{transform:scale(1.2)}
+.coverpic img{object-fit:cover;padding:0}
