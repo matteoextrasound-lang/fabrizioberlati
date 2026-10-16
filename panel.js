@@ -1,69 +1,87 @@
-// Pannello in listarelle: parte di tre quarti, diviso in tre moduli con le listarelle staccate,
-// e si ricompone ruotando fino alla vista frontale.
+// Pannello in listarelle disegnato su un'unica tela (canvas): leggero, si muove solo durante
+// l'animazione e poi resta un'immagine ferma. Parte di tre quarti, con i tre moduli separati e
+// le listarelle staccate, e si ricompone ruotando fino alla vista frontale.
 (function(){
   const stage=document.querySelector('.panel3d');
   if(!stage)return;
-  const world=stage.querySelector('.pw');
-  const W=960,H=270,COLS=96,CW=W/COLS,SEC=COLS/3,MID=H*.52;
+  const cv=document.createElement('canvas');stage.appendChild(cv);
+  const ctx=cv.getContext('2d');
+  const W=960,H=270,VH=330,TOP=30,COLS=72,CW=W/COLS,SEC=COLS/3,MID=H*.52,F=2000;
 
-  // generatore pseudo-casuale fisso: il pannello è sempre lo stesso
   let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
-  const woods=['#c99a63','#b07a4a','#d9b688','#8f5a36','#e4c79e','#a8683f','#c48a55','#7a4b2c','#dcb98c','#b98b5e','#9c6b43','#e9d3b0'];
-  const blacks=['#1f1c1a','#2a2624','#24211f'];
+  const woods=['#c99a63','#b07a4a','#d9b688','#8f5a36','#e4c79e','#a8683f','#c48a55','#7a4b2c','#dcb98c','#9c6b43','#e9d3b0'];
+  const peaks=[[7,.75,2.4],[13,.5,2],[20,.62,2],[29,1,2.4],[37,.45,2.2],[44,.8,2],[51,.4,1.8],[57,.32,1.3],[61,.2,1]];
+  const amp=i=>{if(i<5||i>63)return 0;let a=.07;for(const[c,h,w]of peaks)a=Math.max(a,h*Math.exp(-((i-c)**2)/(2*w*w)));return a*(.62+.38*Math.abs(Math.sin(i*2.3)))};
 
-  // onda sonora: inviluppo fatto di picchi, come nel pannello vero
-  const peaks=[[10,.75,3],[18,.5,2.5],[27,.62,2.5],[39,1,3.2],[50,.45,3],[59,.8,2.6],[69,.4,2.4],[76,.32,1.6],[81,.2,1.2]];
-  const amp=i=>{if(i<7||i>84)return 0;let a=.07;for(const[c,h,w]of peaks)a=Math.max(a,h*Math.exp(-((i-c)**2)/(2*w*w)));return a*(.62+.38*Math.abs(Math.sin(i*2.3)))};
-
-  const sections=[0,1,2].map(s=>{const g=document.createElement('div');g.className='psec';world.appendChild(g);return g});
-  const pieces=[];
-  function add(sec,x,y,w,h,z,color,black){
-    const d=document.createElement('i');
-    d.className=black?'sl blk':'sl';
-    d.style.cssText=`left:${x}px;top:${y}px;width:${w}px;height:${h}px;background-color:${color};--d:${black?9:5}px`;
-    sections[sec].appendChild(d);
-    pieces.push({el:d,z,
-      dz:50+rnd()*150, dy:(rnd()-.5)*26, dx:(rnd()-.5)*6, rz:(rnd()-.5)*3,
-      delay:rnd()*.22});
-  }
+  const P=[];
+  const add=(s,x,y,w,h,z,col,blk)=>P.push({s,x,y,w,h,z,col,blk,dz:50+rnd()*150,dy:(rnd()-.5)*26,dx:(rnd()-.5)*6,d:rnd()*.14});
   for(let i=0;i<COLS;i++){
     const s=Math.floor(i/SEC),x=i*CW;
-    // ogni colonna è fatta di 2-3 listarelle di lunghezza diversa
-    let y=0;const n=2+(rnd()<.45?1:0);
-    for(let k=0;k<n;k++){
-      const h=k===n-1?H-y:Math.round(H*(.22+rnd()*.42));
-      if(h<=0)break;
-      add(s,x,y,CW-.6,Math.min(h,H-y),rnd()*4,woods[Math.floor(rnd()*woods.length)],false);
-      y+=h;if(y>=H)break;
-    }
+    let y=0;const n=2+(rnd()<.35?1:0);
+    for(let k=0;k<n&&y<H;k++){const h=k===n-1?H-y:Math.round(H*(.25+rnd()*.4));add(s,x,y,CW-.5,Math.min(h,H-y),rnd()*4,woods[Math.floor(rnd()*woods.length)],0);y+=h}
     const a=amp(i);
-    if(a>0){
-      const h=Math.round(14+a*200),top=Math.round(MID-h/2+(rnd()-.5)*6);
-      add(s,x,top,CW-.6,h,8+a*10,blacks[i%3],true);
-    }
+    if(a>0){const h=Math.round(14+a*200);add(s,x,Math.round(MID-h/2+(rnd()-.5)*6),CW-.5,h,8+a*10,'#221f1d',1)}
   }
 
   const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+  const out=x=>1-Math.pow(1-x,4);
   const cl=x=>Math.min(1,Math.max(0,x));
-  const END=.86; // listarelle e moduli si chiudono insieme
+  let k=1,dpr=1;
+  function fit(){
+    dpr=Math.min(2,devicePixelRatio||1);k=stage.clientWidth/W;
+    cv.width=Math.round(stage.clientWidth*dpr);cv.height=Math.round(stage.clientWidth*VH/W*dpr);
+    draw(t);
+  }
 
-  function render(t){
-    const k=stage.clientWidth/W;
-    const r=ease(cl(t));
-    world.style.transform=`scale3d(${k},${k},${k}) translate3d(${-40*(1-r)}px,${-10*(1-r)}px,${-260*(1-r)}px) translate(480px,135px) rotateX(${8*(1-r)}deg) rotateY(${-36*(1-r)}deg) translate(-480px,-135px)`;
-    const sp=1-ease(cl(t/END));
-    sections.forEach((g,s)=>{const o=s-1;g.style.transform=`translate3d(${o*120*sp}px,0,${(s===1?30:-10*o)*sp}px)`});
-    for(const p of pieces){
-      const q=1-ease(cl((t-p.delay)/(END-p.delay)));
-      p.el.style.transform=`translate3d(${p.dx*q}px,${p.dy*q}px,${p.z+p.dz*q}px) rotateZ(${p.rz*q}deg)`;
-      
+  let t=0;
+  function draw(t){
+    const r=1-ease(cl(t)),sp=1-ease(cl(t/.86));
+    const a=-36*r*Math.PI/180,b=8*r*Math.PI/180,ca=Math.cos(a),sa=Math.sin(a),cb=Math.cos(b),sb=Math.sin(b);
+    const tx=-40*r,ty=-10*r,tz=-260*r;
+    // punto del pannello -> schermo (stessa prospettiva del CSS 3D)
+    const pr=(x,y,z)=>{
+      let X=x-480,Y=y-135,Z=z;
+      const X1=X*ca+Z*sa,Z1=-X*sa+Z*ca;
+      const Y2=Y*cb-Z1*sb,Z2=Y*sb+Z1*cb;
+      X=X1+tx;Y=Y2+ty;Z=Z2+tz;
+      const s=F/(F-Z);
+      return [(480+X*s)*k*dpr,(TOP+135+Y*s)*k*dpr,Z];
+    };
+    const quad=(p,col)=>{ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(p[0][0],p[0][1]);for(let i=1;i<4;i++)ctx.lineTo(p[i][0],p[i][1]);ctx.closePath();ctx.fill()};
+    ctx.clearRect(0,0,cv.width,cv.height);
+    const secOff=s=>[(s-1)*120*sp,(s===1?30:-10*(s-1))*sp];
+
+    // i tre telai di supporto
+    for(let s=0;s<3;s++){
+      const[ox,oz]=secOff(s),x0=s*320+ox,z=oz-6;
+      quad([pr(x0,0,z),pr(x0+320,0,z),pr(x0+320,H,z),pr(x0,H,z)],'#ddcfb8');
+      const f=10;ctx.globalAlpha=.9;
+      quad([pr(x0,0,z),pr(x0+320,0,z),pr(x0+320,f,z),pr(x0,f,z)],'#c7ac88');
+      quad([pr(x0,H-f,z),pr(x0+320,H-f,z),pr(x0+320,H,z),pr(x0,H,z)],'#c7ac88');
+      quad([pr(x0,0,z),pr(x0+f,0,z),pr(x0+f,H,z),pr(x0,H,z)],'#c7ac88');
+      quad([pr(x0+320-f,0,z),pr(x0+320,0,z),pr(x0+320,H,z),pr(x0+320-f,H,z)],'#c7ac88');
+      ctx.globalAlpha=1;
+    }
+    // listarelle: le più lontane per prime
+    const L=P.map(p=>{
+      const q=1-out(cl((t-p.d)/(.86-p.d))),[ox,oz]=secOff(p.s);
+      return {p,x:p.x+ox+p.dx*q,y:p.y+p.dy*q,z:p.z+oz+p.dz*q};
+    }).sort((u,v)=>u.z-v.z);
+    for(const o of L){
+      const{p,x,y,z}=o;
+      if(p.blk){ // fianco visibile delle listarelle nere in rilievo
+        quad([pr(x+p.w,y,z),pr(x+p.w,y,z-9),pr(x+p.w,y+p.h,z-9),pr(x+p.w,y+p.h,z)],'#100f0e');
+        quad([pr(x,y,z),pr(x+p.w,y,z),pr(x+p.w,y,z-9),pr(x,y,z-9)],'#3a3532');
+      }
+      quad([pr(x,y,z),pr(x+p.w,y,z),pr(x+p.w,y+p.h,z),pr(x,y+p.h,z)],p.col);
     }
   }
 
-  const DUR=4200;let t0=0,t=0;
-  function tick(n){if(!t0)t0=n;t=cl((n-t0)/DUR);render(t);if(t<1)requestAnimationFrame(tick)}
-  new ResizeObserver(()=>render(t)).observe(stage);
-  if(matchMedia('(prefers-reduced-motion: reduce)').matches){t=1;render(1)}
-  else{render(0);setTimeout(()=>requestAnimationFrame(tick),350)}
-  stage.addEventListener('click',()=>{if(t>=1){t0=0;t=0;requestAnimationFrame(tick)}});
+  const DUR=4200;let t0=0,raf=0;
+  function tick(n){if(!t0)t0=n;t=cl((n-t0)/DUR);draw(t);if(t<1)raf=requestAnimationFrame(tick)}
+  function play(){cancelAnimationFrame(raf);t0=0;t=0;raf=requestAnimationFrame(tick)}
+  new ResizeObserver(fit).observe(stage);fit();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){t=1;draw(1)}
+  else new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){o.disconnect();setTimeout(play,250)}},{threshold:.3}).observe(stage);
+  stage.addEventListener('click',play);
 })();
