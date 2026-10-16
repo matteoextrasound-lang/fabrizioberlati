@@ -48,3 +48,19 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition:none!important}
   .js .pic{clip-path:none}
 }
+
+/* logo e linea sotto l'intestazione */
+header{border-bottom:1px solid rgba(42,29,20,.14)}
+header .wrap{align-items:center}
+.logo{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
+.logo .mark{width:30px;height:30px;flex:none;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.logo:hover .mark{transform:rotate(-8deg)}
+.logo .word{font:400 .82rem/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;padding-left:.7rem;border-left:1px solid rgba(42,29,20,.2)}
+.logo .word b{font-weight:500}
+nav a,.logo .word{white-space:nowrap}
+@media (max-width:600px){
+  header{padding:1.1rem 0 .9rem}
+  header .wrap{flex-wrap:wrap;row-gap:.8rem}
+  nav{width:100%;display:flex;gap:1.4rem}
+  nav a{margin-left:0;font-size:.95rem}
+}
