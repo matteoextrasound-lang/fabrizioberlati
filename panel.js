@@ -6,7 +6,7 @@
   if(!stage)return;
   const cv=document.createElement('canvas');stage.appendChild(cv);
   const ctx=cv.getContext('2d');
-  const W=960,H=270,VX=0,VY=-80,VW=960,VH=372,COLS=72,CW=W/COLS,SEC=COLS/3,MID=H*.52,F=2000;
+  const W=960,H=270,VX=-36,VY=-80,VW=1032,VH=372,COLS=72,CW=W/COLS,SEC=COLS/3,MID=H*.52,F=2000;
 
   let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
   const woods=['#c99a63','#b07a4a','#d9b688','#8f5a36','#e4c79e','#a8683f','#c48a55','#7a4b2c','#dcb98c','#9c6b43','#e9d3b0'];
