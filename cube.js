@@ -64,10 +64,14 @@
 })();
 (function(){
   const z=document.getElementById('zoom'),p=document.getElementById('ess-p'),tabs=document.querySelectorAll('#tabs .chip');
-  const M={all:['scale(1)','50% 50%','Puoi combinare le due essenze nella stessa composizione, come nella foto. Il legno resta protagonista, con struttura e spessori a vista.'],
-    pioppo:['scale(2.1)','100% 50%','Il Pioppo ha una superficie chiara e naturale, adatta ad ambienti contemporanei, minimalisti o nordici.'],
-    doussie:['scale(2.05)','0% 50%','Il Doussiè ha tonalità più calde e una presenza visiva marcata, per chi preferisce il carattere delle essenze scure.']};
-  tabs.forEach(b=>b.onclick=()=>{const m=M[b.dataset.e];z.style.transformOrigin=m[1];z.style.transform=m[0];p.textContent=m[2];tabs.forEach(t=>t.setAttribute('aria-pressed',t===b))});
+  const M={all:['images/cube-frontale.jpg','Puoi combinare le due essenze nella stessa composizione, come nella foto. Il legno resta protagonista, con struttura e spessori a vista.'],
+    pioppo:['images/cube-pioppo.jpg','Il Pioppo ha una superficie chiara e naturale, adatta ad ambienti contemporanei, minimalisti o nordici.'],
+    doussie:['images/cube-doussie.jpg','Il Doussiè ha tonalità più calde e una presenza visiva marcata, per chi preferisce il carattere delle essenze scure.']};
+  Object.values(M).forEach(m=>{const i=new Image();i.src=m[0]});
+  z.style.transition='opacity .3s ease';
+  tabs.forEach(b=>b.onclick=()=>{const m=M[b.dataset.e];tabs.forEach(t=>t.setAttribute('aria-pressed',t===b));p.textContent=m[1];
+    if(z.getAttribute('src')===m[0])return;
+    z.style.opacity=0;setTimeout(()=>{z.src=m[0];z.style.opacity=1},300)});
 })();
 (function(){
   const dots=document.querySelectorAll('#hot .dot'),cap=document.getElementById('hot-cap');
