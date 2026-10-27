@@ -52,3 +52,9 @@
 .ph.wide{aspect-ratio:4/3}
 .ph.wide img{object-fit:cover;transform:scale(1.12)}
 .cab.room svg{max-height:460px;margin:0 auto}
+.link.tel{display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap}
+.link.tel svg{color:var(--brass)}
+.pp-hero{grid-template-columns:1fr 1.35fr;gap:3rem}
+.ctas{gap:.8rem 1rem}
+.ctas .btn{padding:.8rem 1.3rem}
+@media (max-width:820px){.pp-hero{grid-template-columns:1fr}}
