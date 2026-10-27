@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=2">
-<link rel="stylesheet" href="prod.css?v=2">
+<link rel="stylesheet" href="prod.css?v=3">
 </head>
 <body>
 <header class="solid"><div class="wrap">
@@ -42,14 +42,11 @@
 
 <section class="band"><div class="wrap">
   <h2>Un piano per ogni cosa.</h2>
-  <p class="sub">Tre livelli pensati sul peso e sulle misure degli apparecchi. Tocca un livello per vederlo nel mobile.</p>
+  <p class="sub">Tre livelli pensati sul peso e sulle misure degli apparecchi.</p>
   <div class="duo" style="margin-bottom:0;align-items:center">
     <div class="cab room" id="cab">
       <svg viewBox="0 0 420 520" role="img" aria-label="Disegno del mobile Extrasound Vinyl: giradischi sul piano, amplificatore al centro, vinili sul ripiano inferiore">
         <ellipse cx="210" cy="508" rx="170" ry="5" fill="#000" fill-opacity=".07"/>
-        <g class="lvl" data-l="0"><rect class="hl" x="60" y="40" width="300" height="104"/></g>
-        <g class="lvl" data-l="1"><rect class="hl" x="72" y="150" width="276" height="140"/></g>
-        <g class="lvl" data-l="2"><rect class="hl" x="72" y="300" width="276" height="196"/></g>
         <!-- giradischi -->
         <rect x="112" y="104" width="196" height="30" rx="3" fill="#2a2018"/><rect x="112" y="104" width="196" height="4" fill="#3d2f24"/>
         <ellipse cx="185" cy="104" rx="64" ry="5" fill="#111"/><rect x="270" y="88" width="10" height="16" fill="#c99a4b"/><path d="M275 92 L215 101" stroke="#d9c3a0" stroke-width="2.5"/>
@@ -60,8 +57,8 @@
         <!-- struttura -->
         <rect class="wd" fill="#d9b07c" data-t="0" x="66" y="134" width="288" height="16"/>
         <rect class="wd" fill="#b5875a" data-t="2" x="72" y="150" width="14" height="350"/><rect class="wd" fill="#b5875a" data-t="2" x="334" y="150" width="14" height="152"/><rect x="330" y="302" width="3" height="184" fill="#a9aeb3"/><rect x="341" y="302" width="3" height="184" fill="#a9aeb3"/>
-        <rect class="wd" fill="#c69a64" data-t="1" x="86" y="290" width="248" height="12"/>
-        <rect class="wd" fill="#c69a64" data-t="1" x="86" y="486" width="248" height="14"/>
+        <rect class="wd" fill="#c69a64" data-t="1" x="86" y="290" width="262" height="12"/>
+        <rect class="wd" fill="#c69a64" data-t="1" x="86" y="486" width="262" height="14"/>
         <rect x="86" y="290" width="248" height="2.5" fill="#2b1d14" opacity=".55"/><rect x="66" y="147" width="288" height="3" fill="#2b1d14" opacity=".45"/>
         <!-- vinili -->
         <g>
@@ -72,15 +69,15 @@
           <rect x="198" y="351" width="8" height="135" fill="#2f3f52"/><rect x="207" y="355" width="7" height="131" fill="#c99a4b"/><rect x="215" y="350" width="8" height="136" fill="#2a2018"/>
           <rect x="224" y="353" width="7" height="133" fill="#6e4e28"/><rect x="232" y="352" width="8" height="134" fill="#e8dcc4"/><rect x="241" y="356" width="7" height="130" fill="#3f5d5a"/>
           <rect x="249" y="350" width="8" height="136" fill="#8a3b2e"/><rect x="258" y="354" width="7" height="132" fill="#2a2018"/>
-          <g transform="rotate(-9 270 486)"><rect x="268" y="352" width="8" height="134" fill="#b5835a"/><rect x="277" y="355" width="7" height="131" fill="#2f3f52"/><rect x="285" y="351" width="8" height="135" fill="#d9c3a0"/></g>
+          <g transform="translate(5 -3) rotate(10.5 282 489)"><rect x="282" y="355" width="8" height="134" fill="#b5835a"/><rect x="291" y="358" width="7" height="131" fill="#2f3f52"/><rect x="299" y="354" width="8" height="135" fill="#d9c3a0"/></g>
         </g>
       </svg>
     </div>
     <div>
-  <div class="levels" role="group" aria-label="Livelli del mobile">
-    <button data-l="0" aria-pressed="true"><b>Piano superiore · giradischi</b><span>Regge fino a 20 kg. È il punto più stabile del mobile, lontano dal pavimento.</span></button>
-    <button data-l="1" aria-pressed="false"><b>Ripiano centrale · amplificatore</b><span>Altezza utile <span data-v="h0">28,4 cm</span>, portata 20 kg. C'è spazio per l'aria intorno all'apparecchio.</span></button>
-    <button data-l="2" aria-pressed="false"><b>Ripiano inferiore · vinili</b><span>Altezza utile <span data-v="h1">39 cm</span>, portata 40 kg: circa 90 LP con le coste in vista.</span></button>
+  <div class="levels">
+    <div><b>Piano superiore · giradischi</b><span>Regge fino a 20 kg. È il punto più stabile del mobile, lontano dal pavimento.</span></div>
+    <div><b>Ripiano centrale · amplificatore</b><span>Altezza utile <span data-v="h0">28,4 cm</span>, portata 20 kg. C'è spazio per l'aria intorno all'apparecchio.</span></div>
+    <div><b>Ripiano inferiore · vinili</b><span>Altezza utile <span data-v="h1">39 cm</span>, portata 40 kg: circa 90 LP con le coste in vista.</span></div>
   </div>
     </div>
   </div>
@@ -120,6 +117,6 @@
 <footer><div class="wrap">© <span class="yr"></span> Fabrizio Berlati</div></footer>
 
 <script src="site.js?v=2"></script>
-<script src="prod.js?v=3"></script>
+<script src="prod.js?v=4"></script>
 </body>
 </html>

@@ -32,9 +32,4 @@ document.querySelectorAll('.gallery').forEach(g=>{
   };
   document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>set(b.dataset.e));
   set('faggio');
-  const lb=document.querySelectorAll('[data-l]');
-  const pick=i=>{lb.forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===i));cab.querySelectorAll('.lvl').forEach(g=>g.classList.toggle('on',g.dataset.l===i))};
-  lb.forEach(b=>b.onclick=()=>pick(b.dataset.l));
-  cab.querySelectorAll('.lvl').forEach(g=>g.onclick=()=>pick(g.dataset.l));
-  pick('0');
 })();
