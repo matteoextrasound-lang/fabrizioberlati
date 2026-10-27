@@ -28,6 +28,7 @@ document.querySelectorAll('.gallery').forEach(g=>{
     document.querySelectorAll('.wd').forEach(p=>p.style.fill=e.c[+p.dataset.t||0]);
     document.querySelectorAll('[data-v]').forEach(s=>{const v=s.dataset.v;s.textContent=v==='h0'?e.h[0]:v==='h1'?e.h[1]:e[v]});
     document.querySelectorAll('[data-e]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.e===k));
+    const ci=document.getElementById('cabimg');if(ci)ci.src='images/vinyl-disegno-'+k+'.jpg';
     const hi=document.querySelector('#vhero img');if(hi)hi.src=k==='noce'?'images/vinyl-noce-hifi.jpg':'images/vinyl-faggio-pro.jpg';
   };
   document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>set(b.dataset.e));

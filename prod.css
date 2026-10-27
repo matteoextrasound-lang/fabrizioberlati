@@ -58,3 +58,4 @@
 .ctas{gap:.8rem 1rem}
 .ctas .btn{padding:.8rem 1.3rem}
 @media (max-width:820px){.pp-hero{grid-template-columns:1fr}}
+.cab img{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
