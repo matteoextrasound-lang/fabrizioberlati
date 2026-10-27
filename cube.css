@@ -90,3 +90,10 @@
 
 .cube-page{padding-top:2rem}
 .back{display:inline-block;margin-top:3rem;text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:.15rem}
+
+/* spazi ridotti tra apertura, "Il Cube dal vero" e "Componi il tuo Cube" */
+.assembly{margin:1rem 0 1.5rem}
+.story{height:300vh;margin:0 0 3rem}
+.sticky{height:auto;top:5.5rem;padding:1rem 0}
+@media (max-width:820px){.sticky{top:4rem}}
+@media (prefers-reduced-motion:reduce){.sticky{position:static}}
