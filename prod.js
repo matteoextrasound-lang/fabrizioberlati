@@ -22,14 +22,14 @@ document.querySelectorAll('.gallery').forEach(g=>{
 (function(){
   const cab=document.getElementById('cab');if(!cab)return;
   const E={
-    faggio:{c:['#d9b07c','#c69a64','#b5875a'],dim:'57,6 × 82,5 × 39,6 cm',sh:'53,6 × 39,6 cm (superiore 50,1 × 39,6 cm)',h:['28,4 cm','39 cm'],w:'23 kg',bordi:'Faggio'},
-    noce:{c:['#7a5236','#6a4630','#593a27'],dim:'58,2 × 85 × 39,5 cm',sh:'53 × 39,5 cm (superiore 49,5 × 39,5 cm)',h:['27,5 cm','41,3 cm'],w:'22 kg',bordi:'Wengè'}};
+    faggio:{c:['#d9b07c','#c69a64','#b5875a'],dim:'57,6 × 82,5 × 39,6 cm',sh:'53,6 × 39,6 cm (superiore 50,1 × 39,6 cm)',h:['28,4 cm','39 cm'],w:'23 kg',bordi:'Faggio',prezzo:'599 €',prezzo2:'in Faggio · 799 € in Noce Canaletto',alt:'Extrasound Vinyl in Faggio massello tinto noce, vuoto, visto di tre quarti'},
+    noce:{c:['#7a5236','#6a4630','#593a27'],dim:'58,2 × 85 × 39,5 cm',sh:'53 × 39,5 cm (superiore 49,5 × 39,5 cm)',h:['27,5 cm','41,3 cm'],w:'22 kg',bordi:'Wengè',prezzo:'799 €',prezzo2:'in Noce Canaletto · 599 € in Faggio',alt:'Extrasound Vinyl in Noce Canaletto con bordi in wengè, con giradischi, amplificatore e vinili'}};
   const set=k=>{const e=E[k];
     document.querySelectorAll('.wd').forEach(p=>p.style.fill=e.c[+p.dataset.t||0]);
     document.querySelectorAll('[data-v]').forEach(s=>{const v=s.dataset.v;s.textContent=v==='h0'?e.h[0]:v==='h1'?e.h[1]:e[v]});
     document.querySelectorAll('[data-e]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.e===k));
     const ci=document.getElementById('cabimg');if(ci)ci.src='images/vinyl-disegno-'+k+'.jpg?v=4';
-    const hi=document.querySelector('#vhero img');if(hi)hi.src=k==='noce'?'images/vinyl-noce-hifi.jpg':'images/vinyl-faggio-pro.jpg';
+    const hi=document.querySelector('#vhero img');if(hi){hi.src=k==='noce'?'images/vinyl-noce-hifi.jpg':'images/vinyl-faggio-pro.jpg';hi.alt=e.alt}
   };
   document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>set(b.dataset.e));
   set('faggio');

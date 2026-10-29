@@ -100,3 +100,31 @@ nav a[aria-current=page]{color:var(--ink);border-bottom:1px solid var(--brass)}
 .catpage .phead h1{font:300 clamp(2rem,4.4vw,3.2rem)/1.1 var(--serif);letter-spacing:-.02em;margin:0 0 .8rem;max-width:22ch}
 .catpage .kicker{margin-bottom:.7rem}
 .catpage .kicker{font:500 .75rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+/* pagine prodotto: percorso, sottotitolo dell'h1, prezzo */
+.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .5rem;font:500 .75rem var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-bottom:.9rem}
+.crumb a{color:var(--brass);text-decoration:none;padding:.5rem 0}
+.crumb a:hover{color:var(--ink)}
+.crumb span{color:var(--muted)}
+.h1s{display:block;font:300 .44em/1.3 var(--sans);letter-spacing:0;color:var(--muted);margin-top:.5rem}
+.price-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem .7rem;margin:-.4rem 0 1.5rem;font:400 1.6rem var(--serif);color:var(--ink)}
+.price-line small{font:400 .9rem var(--sans);color:var(--muted)}
+.price-line a{font:400 .8rem var(--sans);color:var(--muted);text-decoration:none;border-bottom:1px solid rgba(168,122,47,.5);padding:.6rem 0 .1rem;margin-left:auto}
+/* smartphone: meno vuoti e tocchi più comodi */
+@media (max-width:820px){
+  .pp-hero{margin-bottom:3rem}
+  .duo,.gallery,.band{margin-bottom:3rem}
+  .craft{padding-bottom:2.5rem}
+  .back{margin-bottom:1rem}
+  footer{padding-top:1rem}
+  .price-line a{margin-left:0;flex-basis:100%}
+}
+@media (max-width:600px){
+  nav a{padding:.65rem 0}
+  .foot a{display:inline-block;padding:.55rem 0}
+  .ctas .link{padding-top:.5rem}
+}
+nav.crumb{justify-content:flex-start;width:auto;gap:.2rem .5rem}
+nav.crumb a{margin:0;font-size:inherit;color:var(--brass);padding:.5rem 0}
+@media (max-width:820px){.craft{padding-bottom:0}section.pp{padding-bottom:2rem}.price-line a{flex-basis:auto}}
+@media (max-width:600px){.dd{padding-bottom:0;margin-bottom:0}nav.crumb{display:flex;width:auto}}
+.dd-t{display:inline-block}
