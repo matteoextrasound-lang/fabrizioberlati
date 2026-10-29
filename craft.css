@@ -161,3 +161,13 @@ nav.crumb a{margin:0;font-size:inherit;color:var(--brass);padding:.5rem 0}
 @keyframes ring{0%{transform:scale(.9);opacity:.6}100%{transform:scale(2.6);opacity:0}}
 @media (prefers-reduced-motion:reduce){.room .in,.room .ray,.room .rings circle{animation:none}.room .ray{stroke-dashoffset:0;opacity:.7}}
 .labph{aspect-ratio:4/3;border-radius:2px}
+/* home: foto del laboratorio accanto a "Dal tuo impianto al mobile finito" */
+.met-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:3rem}
+.met-head .intro{margin-bottom:0}
+.met-ph{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:2px}
+.met-ph img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.met-ph:hover img{transform:scale(1.03)}
+@media (max-width:820px){.met-head{grid-template-columns:1fr;gap:1.6rem;margin-bottom:2.4rem}}
+.ctas{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:center}
+.link{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:.15rem}
+.link:hover{color:var(--brass)}
