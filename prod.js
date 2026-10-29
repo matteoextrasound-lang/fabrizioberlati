@@ -9,7 +9,7 @@ document.querySelectorAll('.gallery').forEach(g=>{
   const bs=document.querySelectorAll('button[data-r]'),note=document.getElementById('room-note');
   bs.forEach(b=>b.onclick=()=>{
     bs.forEach(x=>x.setAttribute('aria-pressed',x===b));
-    box.querySelectorAll('.pan').forEach(p=>p.classList.toggle('on',p.dataset.r===b.dataset.r));
+    box.querySelectorAll('.pan,.fx').forEach(p=>p.classList.toggle('on',p.dataset.r===b.dataset.r));
     note.textContent=b.dataset.t;
   });
   bs[0].click();
