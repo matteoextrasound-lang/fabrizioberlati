@@ -31,7 +31,10 @@
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   const st=document.querySelector('.story'),A=st.querySelector('.l-a'),B=st.querySelector('.l-b'),C=st.querySelector('.l-c'),D=st.querySelector('.l-d'),bar=st.querySelector('.bar'),steps=st.querySelectorAll('.step');
   const e=x=>x*x*(3-2*x),seg=(p,a,b)=>e(Math.min(1,Math.max(0,(p-a)/(b-a))));
+  const mq=matchMedia('(min-width:821px)');
+  mq.addEventListener('change',()=>{if(!mq.matches)[A,B,C,D].forEach(x=>x.removeAttribute('style'));upd()});
   function upd(){
+    if(!mq.matches)return;
     const r=st.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(st.offsetHeight-innerHeight)));
     const ab=seg(p,.1,.27),bc=seg(p,.36,.55),cd=seg(p,.64,.84);
     B.style.opacity=1;B.style.transform='scale('+(1+ab*.08)+')';
