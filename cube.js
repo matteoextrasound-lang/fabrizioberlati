@@ -40,17 +40,16 @@
   const st=document.querySelector('.story'),A=st.querySelector('.l-a'),B=st.querySelector('.l-b'),C=st.querySelector('.l-c'),D=st.querySelector('.l-d'),bar=st.querySelector('.bar'),steps=st.querySelectorAll('.step');
   const e=x=>x*x*(3-2*x),seg=(p,a,b)=>e(Math.min(1,Math.max(0,(p-a)/(b-a))));
   const mq=matchMedia('(min-width:821px)');
-  mq.addEventListener('change',()=>{if(!mq.matches)[A,B,C,D].forEach(x=>x.removeAttribute('style'));upd()});
+  mq.addEventListener('change',()=>{if(!mq.matches)[A,C,D].forEach(x=>x.removeAttribute('style'));upd()});
   function upd(){
     if(!mq.matches)return;
     const r=st.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(st.offsetHeight-innerHeight)));
-    const ab=seg(p,.1,.27),bc=seg(p,.36,.55),cd=seg(p,.64,.84);
-    B.style.opacity=1;B.style.transform='scale('+(1+ab*.08)+')';
-    A.style.opacity=ab;A.style.transform='scale('+(.9+ab*.1)+') rotate('+((1-ab)*-2)+'deg)';
+    const bc=seg(p,.2,.45),cd=seg(p,.56,.82);
+    A.style.opacity=1;A.style.transform='scale('+(1+bc*.06)+')';
     C.style.clipPath='circle('+(bc*75)+'% at 50% 50%)';
     D.style.clipPath='inset('+((1-cd)*100)+'% 0 0 0)';
     bar.style.width=(p*100)+'%';
-    const i=p<.2?0:p<.45?1:p<.72?2:3;steps.forEach((s,k)=>s.classList.toggle('on',k===i));
+    const i=p<.33?0:p<.69?1:2;steps.forEach((s,k)=>s.classList.toggle('on',k===i));
   }
   addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
 })();

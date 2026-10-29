@@ -1,5 +1,5 @@
 /* cube story */
-.story{height:200vh;margin:1rem 0 5rem}
+.story{height:180vh;margin:1rem 0 5rem}
 .sticky{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1.1fr 1fr;gap:3.5rem;align-items:center}
 .stage{position:relative;aspect-ratio:1/1;width:min(100%,78svh);background:#fff;overflow:hidden}
 .layer{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;will-change:transform,opacity}
@@ -93,7 +93,7 @@
 
 /* spazi ridotti tra apertura, "Il Cube dal vero" e "Componi il tuo Cube" */
 .assembly{margin:1rem 0 1.5rem}
-.story{height:200vh;margin:0 0 3rem}
+.story{height:180vh;margin:0 0 3rem}
 .sticky{height:auto;top:5.5rem;padding:1rem 0}
 @media (max-width:820px){.sticky{top:4rem}}
 @media (prefers-reduced-motion:reduce){.sticky{position:static}}
@@ -125,10 +125,10 @@
   .bar{display:none}
   .layer{position:static;display:block;width:100%;height:auto;aspect-ratio:1/1;background:#fff;opacity:1!important;transform:none!important;clip-path:none!important}
   .steps-cap h3{order:0;margin-bottom:.4rem}.steps-cap .lead2{order:1;margin-bottom:1.4rem}
-  .l-b{order:2}.l-a{order:4}.l-c{order:6}.l-d{order:8}
+  .l-a{order:2}.l-c{order:4}.l-d{order:6}
   .steps-cap .step{display:block!important;opacity:1;border-left-color:var(--brass);margin:.9rem 0 2.2rem}
   .steps-cap .step:nth-of-type(1){order:3}.steps-cap .step:nth-of-type(2){order:5}
-  .steps-cap .step:nth-of-type(3){order:7}.steps-cap .step:nth-of-type(4){order:9}
+  .steps-cap .step:nth-of-type(3){order:7}
 }
 
 /* hero: animazione oppure foto della singola essenza */
