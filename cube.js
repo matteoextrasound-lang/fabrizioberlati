@@ -1,5 +1,5 @@
 (function(){
-  const sc=document.getElementById('scene'),w=document.getElementById('world'),ph=document.getElementById('phase'),btn=document.getElementById('play'),rg=document.getElementById('scrub');
+  const sc=document.getElementById('scene'),w=document.getElementById('world'),ph=document.getElementById('phase')||{},btn=document.getElementById('play')||{},rg=document.getElementById('scrub')||{};
   const el={f:document.getElementById('pf'),b:document.getElementById('pb'),r:document.getElementById('pr'),l:document.getElementById('pl')};
   const e=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,rng=(t,a,b)=>Math.min(1,Math.max(0,(t-a)/(b-a)));
   const T=['Cinque pannelli in multistrato da 18 mm: una base e quattro lati.','Il primo lato si alza verso la base.','Il secondo si alza e gli incastri si agganciano.','Il terzo lato chiude la parte posteriore.','L\'ultimo lato completa il Cube.','Extrasound Cube montato, pronto per i tuoi vinili.'];
@@ -22,6 +22,14 @@
   function pause(){playing=false;cancelAnimationFrame(raf);btn.textContent=t>=1?'Riavvia':'Riprendi'}
   btn.onclick=()=>playing?pause():play();
   rg.oninput=()=>{pause();t=rg.value/1000;render(t);btn.textContent=t>=1?'Riavvia':'Riprendi'};
+  // Montaggio / Pioppo / Doussiè: al posto dell'animazione la foto della singola essenza
+  const cap=document.querySelector('.ccap'),views=document.querySelectorAll('.cview .chip'),photos=document.querySelectorAll('.cphoto');
+  const CAP={anim:'Cinque pannelli che si incastrano. In Pioppo chiaro e naturale, oppure in Doussiè dai toni caldi.',
+    pioppo:'Pioppo: superficie chiara e naturale, adatta ad ambienti contemporanei, minimalisti o nordici.',
+    doussie:'Doussiè: tonalità calde e una presenza più marcata, per chi preferisce il carattere delle essenze scure.'};
+  views.forEach(b=>b.onclick=()=>{const v=b.dataset.v;views.forEach(x=>x.setAttribute('aria-pressed',x===b));
+    photos.forEach(p=>p.hidden=p.dataset.e!==v);sc.hidden=v!=='anim';if(cap)cap.textContent=CAP[v];
+    if(v==='anim'){t=0;fit();play()}else pause()});
   new ResizeObserver(fit).observe(sc);
   const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduce){t=1;fit();btn.textContent='Riavvia'}else{
@@ -64,17 +72,6 @@
   }
   document.querySelectorAll('#presets .chip').forEach(b=>b.onclick=()=>{s=P[b.dataset.p].slice();draw()});
   draw();
-})();
-(function(){
-  const z=document.getElementById('zoom'),p=document.getElementById('ess-p'),tabs=document.querySelectorAll('#tabs .chip');
-  const M={all:['images/cube-frontale.jpg','Puoi combinare le due essenze nella stessa composizione, come nella foto. Il legno resta protagonista, con struttura e spessori a vista.'],
-    pioppo:['images/cube-pioppo.jpg','Il Pioppo ha una superficie chiara e naturale, adatta ad ambienti contemporanei, minimalisti o nordici.'],
-    doussie:['images/cube-doussie.jpg','Il Doussiè ha tonalità più calde e una presenza visiva marcata, per chi preferisce il carattere delle essenze scure.']};
-  Object.values(M).forEach(m=>{const i=new Image();i.src=m[0]});
-  z.style.transition='opacity .3s ease';
-  tabs.forEach(b=>b.onclick=()=>{const m=M[b.dataset.e];tabs.forEach(t=>t.setAttribute('aria-pressed',t===b));p.textContent=m[1];
-    if(z.getAttribute('src')===m[0])return;
-    z.style.opacity=0;setTimeout(()=>{z.src=m[0];z.style.opacity=1},300)});
 })();
 (function(){
   const dots=document.querySelectorAll('#hot .dot'),cap=document.getElementById('hot-cap');
