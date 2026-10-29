@@ -160,3 +160,4 @@ nav.crumb a{margin:0;font-size:inherit;color:var(--brass);padding:.5rem 0}
 @keyframes spread{0%{stroke-dashoffset:34;opacity:0}15%{opacity:.9}60%{stroke-dashoffset:0;opacity:.7}100%{stroke-dashoffset:0;opacity:0}}
 @keyframes ring{0%{transform:scale(.9);opacity:.6}100%{transform:scale(2.6);opacity:0}}
 @media (prefers-reduced-motion:reduce){.room .in,.room .ray,.room .rings circle{animation:none}.room .ray{stroke-dashoffset:0;opacity:.7}}
+.labph{aspect-ratio:4/3;border-radius:2px}
