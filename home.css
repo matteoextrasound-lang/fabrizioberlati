@@ -46,14 +46,26 @@ h1{font:300 clamp(2.4rem,5.4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.02em;m
 .cards{grid-template-rows:auto auto;row-gap:0}
 .card{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0}
 .card .txt{background:var(--pioppo-2);margin:0 calc(-1rem - 1px);padding:1.4rem calc(1rem + 1px) 1.8rem}
-.card:first-child .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 0 0 -100vmax)}
-.card:last-child .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax 0 0)}
 .card h3{font-size:1.45rem;margin:0 0 .5rem}
 .card .txt p{color:#5f4e3d}
 .woodband .card .pic{background:#fff}
 @media (max-width:980px){.cards{grid-template-columns:1fr 1fr}}
-@media (max-width:980px){.card:nth-child(2) .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax 0 0)}.card:last-child .txt{clip-path:inset(0 0 0 -100vmax)}.cards{row-gap:2rem}}
-@media (max-width:620px){.cards{grid-template-columns:1fr}.card .txt,.card:first-child .txt,.card:last-child .txt,.card:nth-child(2) .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0 -100vmax)}}
 .wavepic img{object-fit:cover;padding:0;transform:scale(1.15)}
 .wavepic:hover img{transform:scale(1.2)}
 .coverpic img{object-fit:cover;padding:0}
+
+/* fasce color legno: si allungano fino ai bordi della pagina sul primo e sull'ultimo prodotto di ogni riga */
+.card{margin-bottom:2.6rem}
+.card .txt{box-shadow:0 0 0 100vmax var(--pioppo-2);clip-path:inset(0)}
+@media (min-width:981px){
+.card:nth-child(3n+1) .txt{clip-path:inset(0 0 0 -100vmax)}
+.card:nth-child(3n) .txt,.card:last-child:nth-child(3n+2) .txt{clip-path:inset(0 -100vmax 0 0)}
+.card:last-child:nth-child(3n+1) .txt{clip-path:inset(0 -100vmax)}
+}
+@media (min-width:621px) and (max-width:980px){
+  .card:nth-child(n) .txt{clip-path:inset(0)}
+  .card:nth-child(2n+1) .txt{clip-path:inset(0 0 0 -100vmax)}
+  .card:nth-child(2n) .txt{clip-path:inset(0 -100vmax 0 0)}
+  .card:last-child:nth-child(2n+1) .txt{clip-path:inset(0 -100vmax)}
+}
+@media (max-width:620px){.cards{grid-template-columns:1fr}.card:nth-child(n) .txt{clip-path:inset(0 -100vmax)}}
