@@ -184,3 +184,5 @@ nav.crumb a{margin:0;font-size:inherit;color:var(--brass);padding:.5rem 0}
 .gtip span{color:var(--brass);white-space:nowrap;margin-left:.3rem}
 @media (max-width:440px){nav{gap:.3rem .85rem}nav a{font-size:.86rem}}
 @media (max-width:380px){nav{gap:.3rem .7rem}nav a{font-size:.82rem}}
+.logo .word{display:inline-flex;flex-direction:column;gap:.38rem}
+.logo .word .tag{font:400 .6rem/1 var(--sans);letter-spacing:.16em;color:var(--muted)}
