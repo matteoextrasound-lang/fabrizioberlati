@@ -1,0 +1,22 @@
+[
+ [
+  "sh:'53,6 × 39,6 cm (superiore 50,1 × 39,6 cm)',h:['28,4 cm','39 cm'],w:'23 kg',bordi:'Faggio',prezzo:'599 €',prezzo2:'in Faggio · 799 € in Noce Canaletto',alt:'Extrasound Vinyl in Faggio massello tinto noce, vuoto, visto di tre quarti'",
+  "sh:'53.6 × 39.6 cm (top 50.1 × 39.6 cm)',h:['28.4 cm','39 cm'],w:'23 kg',bordi:'Beech',prezzo:'€599',prezzo2:'in beech · €799 in American walnut',alt:'Extrasound Vinyl in walnut-stained solid beech, empty, three-quarter view'"
+ ],
+ [
+  "dim:'57,6 × 82,5 × 39,6 cm'",
+  "dim:'57.6 × 82.5 × 39.6 cm'"
+ ],
+ [
+  "dim:'58,2 × 85 × 39,5 cm',sh:'53 × 39,5 cm (superiore 49,5 × 39,5 cm)',h:['27,5 cm','41,3 cm'],w:'22 kg',bordi:'Wengè',prezzo:'799 €',prezzo2:'in Noce Canaletto · 599 € in Faggio',alt:'Extrasound Vinyl in Noce Canaletto con bordi in wengè, con giradischi, amplificatore e vinili'",
+  "dim:'58.2 × 85 × 39.5 cm',sh:'53 × 39.5 cm (top 49.5 × 39.5 cm)',h:['27.5 cm','41.3 cm'],w:'22 kg',bordi:'Wenge',prezzo:'€799',prezzo2:'in American walnut · €599 in beech',alt:'Extrasound Vinyl in American walnut with wenge edges, with turntable, amplifier and records'"
+ ],
+ [
+  "ci.src='images/",
+  "ci.src='../images/"
+ ],
+ [
+  "hi.src=k==='noce'?'images/vinyl-noce-hifi.jpg':'images/vinyl-faggio-pro.jpg'",
+  "hi.src=k==='noce'?'../images/vinyl-noce-hifi.jpg':'../images/vinyl-faggio-pro.jpg'"
+ ]
+]

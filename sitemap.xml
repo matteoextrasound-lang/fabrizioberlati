@@ -1,151 +1,521 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fabrizioberlati.com/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <loc>https://fabrizioberlati.com/accessori.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/accessori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/accessori.html"/>
   </url>
   <url>
-    <loc>https://fabrizioberlati.com/su-misura.html</loc>
-    <lastmod>2026-10-28</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/extrasound-vinyl.html</loc>
-    <lastmod>2026-10-28</lastmod>
+    <loc>https://fabrizioberlati.com/en/accessories.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/accessori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/accessori.html"/>
   </url>
   <url>
     <loc>https://fabrizioberlati.com/extrasound-cube.html</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/extrasound-cube.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/extrasound-cube.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/extrasound-cube.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/extrasound-cube.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/extrasound-cube.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/extrasound-cube.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/extrasound-cube.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/extrasound-vinyl.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/extrasound-vinyl.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/extrasound-vinyl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/extrasound-vinyl.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/extrasound-vinyl.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/extrasound-vinyl.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/extrasound-vinyl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/extrasound-vinyl.html"/>
   </url>
   <url>
     <loc>https://fabrizioberlati.com/extrasound-wave.html</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/extrasound-wave.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/extrasound-wave.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/extrasound-wave.html"/>
   </url>
   <url>
-    <loc>https://fabrizioberlati.com/laboratorio.html</loc>
-    <lastmod>2026-10-28</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-wood-brick.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-stile-pannello.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-tree.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobili-hi-fi.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/porta-vinili.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-per-diffusori.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/pannelli-acustici.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/accessori.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/supporto-dap.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/sollevatori-cavi-bridge.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/supporti-inclinati-diffusori.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-leaf.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-stylus.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-minimal.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-ground.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-floor.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-modern-art.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-listelli-rado.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-art-triangle.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/pannello-soundwave.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-rigatini.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/pannelli-pyramid.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/pannelli-skyline.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-style-council.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-multiblade.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-elegant.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-tangerine.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/mobile-hifi-classic.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/stand-esse2.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://fabrizioberlati.com/guide.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://fabrizioberlati.com/en/extrasound-wave.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/extrasound-wave.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/extrasound-wave.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/extrasound-wave.html"/>
   </url>
   <url>
     <loc>https://fabrizioberlati.com/guida-altezza-stand-diffusori.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/guida-altezza-stand-diffusori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-height.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/guida-altezza-stand-diffusori.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-height.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/guida-altezza-stand-diffusori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-height.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/guida-altezza-stand-diffusori.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/guide.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/guides.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/guide.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/guides.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/guides.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/guide.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/laboratorio.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/laboratorio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/workshop.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/laboratorio.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/workshop.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/laboratorio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/workshop.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/laboratorio.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-classic.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-classic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-classic.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-classic.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-classic.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-classic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-classic.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-classic.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-elegant.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-elegant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-elegant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-elegant.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-elegant.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-elegant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-elegant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-elegant.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-floor.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-floor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-floor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-floor.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-floor.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-floor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-floor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-floor.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-leaf.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-leaf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-leaf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-leaf.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-leaf.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-leaf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-leaf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-leaf.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-minimal.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-minimal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-minimal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-minimal.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-minimal.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-minimal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-minimal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-minimal.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-multiblade.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-multiblade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-multiblade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-multiblade.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-multiblade.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-multiblade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-multiblade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-multiblade.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-style-council.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-style-council.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-style-council.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-style-council.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-style-council.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-style-council.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-style-council.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-style-council.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobile-hifi-tangerine.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-tangerine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-tangerine.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-tangerine.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-rack-tangerine.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobile-hifi-tangerine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-rack-tangerine.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobile-hifi-tangerine.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/mobili-hi-fi.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobili-hi-fi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-furniture.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobili-hi-fi.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/hifi-furniture.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/mobili-hi-fi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/hifi-furniture.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/mobili-hi-fi.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/pannelli-acustici.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannelli-acustici.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panels.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannelli-acustici.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/acoustic-panels.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannelli-acustici.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panels.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannelli-acustici.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/pannelli-pyramid.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannelli-pyramid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panels-pyramid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannelli-pyramid.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/acoustic-panels-pyramid.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannelli-pyramid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panels-pyramid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannelli-pyramid.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/pannelli-skyline.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannelli-skyline.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panels-skyline.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannelli-skyline.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/acoustic-panels-skyline.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannelli-skyline.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panels-skyline.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannelli-skyline.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/pannello-soundwave.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannello-soundwave.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panel-soundwave.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannello-soundwave.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/acoustic-panel-soundwave.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/pannello-soundwave.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/acoustic-panel-soundwave.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/pannello-soundwave.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/porta-vinili.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/porta-vinili.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/vinyl-record-storage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/porta-vinili.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/vinyl-record-storage.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/porta-vinili.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/vinyl-record-storage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/porta-vinili.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/sollevatori-cavi-bridge.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/sollevatori-cavi-bridge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/cable-lifters-bridge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/sollevatori-cavi-bridge.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/cable-lifters-bridge.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/sollevatori-cavi-bridge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/cable-lifters-bridge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/sollevatori-cavi-bridge.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-art-triangle.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-art-triangle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-art-triangle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-art-triangle.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-art-triangle.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-art-triangle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-art-triangle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-art-triangle.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-esse2.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-esse2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-esse2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-esse2.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-esse2.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-esse2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-esse2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-esse2.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-ground.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-ground.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-ground.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-ground.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-ground.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-ground.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-ground.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-ground.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-listelli-rado.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-listelli-rado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-listelli-rado.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-listelli-rado.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-listelli-rado.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-listelli-rado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-listelli-rado.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-listelli-rado.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-modern-art.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-modern-art.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-modern-art.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-modern-art.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-modern-art.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-modern-art.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-modern-art.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-modern-art.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-per-diffusori.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-per-diffusori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stands.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-per-diffusori.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stands.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-per-diffusori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stands.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-per-diffusori.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-rigatini.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-rigatini.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-rigatini.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-rigatini.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-rigatini.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-rigatini.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-rigatini.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-rigatini.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-stile-pannello.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-stile-pannello.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-stile-pannello.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-stile-pannello.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-stile-pannello.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-stile-pannello.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-stile-pannello.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-stile-pannello.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-stylus.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-stylus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-stylus.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-stylus.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-stylus.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-stylus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-stylus.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-stylus.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-tree.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-tree.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-tree.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-tree.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-tree.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-tree.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-tree.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-tree.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/stand-wood-brick.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-wood-brick.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-wood-brick.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-wood-brick.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/speaker-stand-wood-brick.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/stand-wood-brick.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/speaker-stand-wood-brick.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/stand-wood-brick.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/su-misura.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/su-misura.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/made-to-measure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/su-misura.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/made-to-measure.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/su-misura.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/made-to-measure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/su-misura.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/supporti-inclinati-diffusori.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/supporti-inclinati-diffusori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/tilting-speaker-supports.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/supporti-inclinati-diffusori.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/tilting-speaker-supports.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/supporti-inclinati-diffusori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/tilting-speaker-supports.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/supporti-inclinati-diffusori.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/supporto-dap.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/supporto-dap.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/dap-stand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/supporto-dap.html"/>
+  </url>
+  <url>
+    <loc>https://fabrizioberlati.com/en/dap-stand.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fabrizioberlati.com/supporto-dap.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fabrizioberlati.com/en/dap-stand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fabrizioberlati.com/supporto-dap.html"/>
   </url>
 </urlset>

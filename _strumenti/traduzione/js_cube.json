@@ -1,0 +1,54 @@
+[
+ [
+  "const T=['Cinque pannelli in multistrato da 18 mm: una base e quattro lati.','Il primo lato si alza verso la base.','Il secondo si alza e gli incastri si agganciano.','Il terzo lato chiude la parte posteriore.','L\\'ultimo lato completa il Cube.','Extrasound Cube montato, pronto per i tuoi vinili.'];",
+  "const T=['Five 18 mm plywood panels: a base and four sides.','The first side rises towards the base.','The second rises and the joints lock together.','The third side closes the back.','The last side completes the Cube.','Extrasound Cube assembled, ready for your records.'];"
+ ],
+ [
+  "btn.textContent='Riavvia'}else raf",
+  "btn.textContent='Replay'}else raf"
+ ],
+ [
+  "btn.textContent='Pausa'",
+  "btn.textContent='Pause'"
+ ],
+ [
+  "btn.textContent=t>=1?'Riavvia':'Riprendi'}",
+  "btn.textContent=t>=1?'Replay':'Resume'}"
+ ],
+ [
+  "anim:'Cinque pannelli che si incastrano. In Pioppo chiaro e naturale, oppure in Doussiè dai toni caldi.'",
+  "anim:'Five panels that slot together. In light, natural poplar, or in warm-toned doussié.'"
+ ],
+ [
+  "pioppo:'Pioppo: superficie chiara e naturale, adatta ad ambienti contemporanei, minimalisti o nordici.'",
+  "pioppo:'Poplar: a light, natural surface that suits contemporary, minimalist or Nordic interiors.'"
+ ],
+ [
+  "doussie:'Doussiè: tonalità calde e una presenza più marcata, per chi preferisce il carattere delle essenze scure.'",
+  "doussie:'Doussié: warm tones and a stronger presence, for those who prefer the character of darker woods.'"
+ ],
+ [
+  "if(reduce){t=1;fit();btn.textContent='Riavvia'}",
+  "if(reduce){t=1;fit();btn.textContent='Replay'}"
+ ],
+ [
+  "const names=['vuoto','Pioppo','Doussiè'];",
+  "const names=['empty','Poplar','Doussié'];"
+ ],
+ [
+  "'Posizione '+(i+1)+': '",
+  "'Position '+(i+1)+': '"
+ ],
+ [
+  "n?n+(n==1?' modulo':' moduli')+': '+a+' in Pioppo, '+d+' in Doussiè.':'Nessun modulo: tocca una cella per iniziare.'",
+  "n?n+(n==1?' module':' modules')+': '+a+' in poplar, '+d+' in doussié.':'No modules yet: tap a cell to start.'"
+ ],
+ [
+  "const body='Vorrei informazioni su una composizione di '+n+' moduli Extrasound Cube: '+a+' in Pioppo e '+d+' in Doussiè.';",
+  "const body='I\\'d like some information about a composition of '+n+' Extrasound Cube modules: '+a+' in poplar and '+d+' in doussié.';"
+ ],
+ [
+  "encodeURIComponent('Composizione Extrasound Cube')",
+  "encodeURIComponent('Extrasound Cube composition')"
+ ]
+]

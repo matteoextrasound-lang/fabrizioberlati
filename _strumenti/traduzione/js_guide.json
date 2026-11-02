@@ -1,0 +1,38 @@
+[
+ [
+  "toLocaleString('it-IT')",
+  "toLocaleString('en-GB')"
+ ],
+ [
+  ">orecchie ' + fmt(E)",
+  ">ears ' + fmt(E)"
+ ],
+ [
+  "'Va bene uno stand tra ' + fmt(lo) + ' e ' + fmt(hi) + ' cm: con qualche centimetro in meno il tweeter resta poco sotto le orecchie, ed è la situazione più naturale.'",
+  "'A stand between ' + fmt(lo) + ' and ' + fmt(hi) + ' cm works well: a few centimetres lower keeps the tweeter just below ear level, which is the most natural position.'"
+ ],
+ [
+  "<span class=\"ok\">adatto</span>",
+  "<span class=\"ok\">good fit</span>"
+ ],
+ [
+  "Nessuno dei miei stand è nell\\'altezza giusta: questi sono i più vicini. Posso costruirlo su misura.",
+  "None of my stands is the right height: these are the closest. I can build one to measure."
+ ],
+ [
+  "<a href=\"stand-ground.html\"><img src=\"images/ground-card.jpg?v=6\"",
+  "<a href=\"speaker-stand-ground.html\"><img src=\"../images/ground-card.jpg?v=6\""
+ ],
+ [
+  "Stand bassi, per diffusori grandi o da pavimento",
+  "Low stands, for large or floorstanding speakers"
+ ],
+ [
+  "'Stand su misura alto ' + fmt(H) + ' cm'",
+  "'Made-to-measure stand ' + fmt(H) + ' cm high'"
+ ],
+ [
+  "'Ciao Fabrizio,\\n\\nvorrei una coppia di stand alti circa ' + fmt(H) + ' cm.\\n\\nDiffusori (marca e modello): \\nMisure della base del diffusore (larghezza x profondità): \\nPeso di ciascun diffusore: \\nEssenza preferita: \\nCittà: \\n\\nAltezza orecchie ' + fmt(E) + ' cm, tweeter a ' + fmt(T) + ' cm dalla base' + (F ? ', piedini ' + fmt(F) + ' cm' : '') + '.\\n'",
+  "'Hi Fabrizio,\\n\\nI\\'d like a pair of stands about ' + fmt(H) + ' cm high.\\n\\nSpeakers (brand and model): \\nSpeaker base size (width x depth): \\nWeight of each speaker: \\nPreferred wood: \\nCity and country: \\n\\nEar height ' + fmt(E) + ' cm, tweeter ' + fmt(T) + ' cm from the base' + (F ? ', feet ' + fmt(F) + ' cm' : '') + '.\\n'"
+ ]
+]
