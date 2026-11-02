@@ -155,7 +155,7 @@ def build(it_file):
             elif 'id="stands-data"' in open_t:
                 body = json.dumps(tr_stands(json.loads(body)), ensure_ascii=False)
             src = re.search(r'src="([^"?]+)(\?[^"]*)?"', open_t)
-            if src:
+            if src and not re.match(r'(https?:)?//', src.group(1)):
                 f = src.group(1); q = src.group(2) or ''
                 open_t = open_t.replace(src.group(0), f'src="../{JS_EN.get(f, f)}{q}"')
             out.append(open_t + body + close_t)
