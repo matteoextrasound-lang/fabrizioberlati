@@ -66,7 +66,7 @@ def tr_href(h, it_file):
             k, _, v = kv.partition('=')
             parts.append(k + '=' + up.quote(tr_query(up.unquote(v)), safe=''))
         return base + '?' + '&amp;'.join(parts)
-    if re.match(r'(https?:|#|data:|tel:)', h): return h
+    if re.match(r'(https?:|//|#|data:|tel:)', h): return h
     path, hashp = (h.split('#', 1) + [''])[:2]
     path_only, q = (path.split('?', 1) + [''])[:2]
     if path_only.endswith('.html') and path_only in SLUG:
@@ -171,6 +171,12 @@ def build(it_file):
     os.makedirs('en', exist_ok=True)
     open('en/' + SLUG[it_file], 'w').write(s)
 
+GC = '<script data-goatcounter="https://matteoberlati.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>'
+for f in PAGES:
+    # statistiche GoatCounter su ogni pagina (senza cookie)
+    s = open(f).read()
+    if GC not in s:
+        s = s.replace('</body>', GC + '\n</body>', 1); open(f, 'w').write(s)
 for f in PAGES:
     build(f)
     # pagina italiana: hreflang + selettore EN
