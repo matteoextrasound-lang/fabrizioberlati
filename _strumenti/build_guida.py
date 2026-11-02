@@ -157,7 +157,7 @@ ld = {"@context": "https://schema.org", "@graph": [
     {"@type": "ListItem", "position": 2, "name": "Guide", "item": "https://fabrizioberlati.com/guide.html"},
     {"@type": "ListItem", "position": 3, "name": "Altezza degli stand per diffusori", "item": URL}]},
   {"@type": "FurnitureStore", "@id": "https://fabrizioberlati.com/#laboratorio", "name": "Fabrizio Berlati · Mobili per l'ascolto", "alternateName": "Fabrizio Berlati", "url": "https://fabrizioberlati.com/",
-   "telephone": "+39 333 418 8754", "address": {"@type": "PostalAddress", "streetAddress": "Via Archimede 605", "postalCode": "47521", "addressLocality": "Cesena", "addressRegion": "FC", "addressCountry": "IT"}}]}
+   "telephone": "+39 333 418 8754", "parentOrganization": {"@type": "Organization", "name": "Extrasound Srl", "url": "https://www.extrasound.it/", "vatID": "IT04436860409"}, "address": {"@type": "PostalAddress", "streetAddress": "Via Archimede 605", "postalCode": "47521", "addressLocality": "Cesena", "addressRegion": "FC", "addressCountry": "IT"}}]}
 
 body = hero + '\n<div class="wrap">' + calc + art + '\n</div>'
 page('guida-altezza-stand-diffusori.html', TITLE, DESC, ld, body, js='<script src="guide.js?v=1"></script>\n')
