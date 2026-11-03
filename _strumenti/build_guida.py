@@ -23,6 +23,7 @@ def fcta(t):
             + wa_svg + '333 418 8754</a></div></div>')
 
 STANDS = [
+ dict(name='Extrasound Clessidra', url='stand-clessidra.html', img='images/clessidra-card.jpg', h=39, note='Faggio massello · 200 € la coppia'),
  dict(name='Extrasound Rigatini', url='stand-rigatini.html', img='images/rigatini-card.jpg', h=50.3, note='Faggio massello · 250 € la coppia'),
  dict(name='Stand Stile Pannello', url='stand-stile-pannello.html', img='images/pannello-card.jpg?v=2', h=54.6, note='Faggio massello · 300 € la coppia'),
  dict(name='Wood Brick', url='stand-wood-brick.html', img='images/woodbrick-card.jpg', h=55, note='Legno massello · 300 € la coppia'),
