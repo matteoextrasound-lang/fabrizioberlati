@@ -190,3 +190,4 @@ nav.crumb a{margin:0;font-size:inherit;color:var(--brass);padding:.5rem 0}
 nav a.lang{font-size:.78rem;letter-spacing:.12em;border:1px solid rgba(42,29,20,.25);border-radius:2px;padding:.15rem .45rem;align-self:center}
 @media (max-width:600px){header .wrap{position:relative}nav a.lang{position:absolute;top:.4rem;right:1.5rem;padding:.2rem .5rem}}
 .foot .legal{flex-basis:100%;font-size:.78rem;color:var(--muted);opacity:.85}
+.fitex{font-size:.95rem;color:var(--muted);margin:1.2rem 0 0;max-width:62ch}.fitex b{font-weight:500;color:var(--ink)}.fitex a{color:inherit;text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:2px}
