@@ -17,6 +17,7 @@ SLUG = {
  'pannelli-pyramid.html': 'acoustic-panels-pyramid.html', 'pannelli-skyline.html': 'acoustic-panels-skyline.html',
  'pannello-soundwave.html': 'acoustic-panel-soundwave.html', 'sollevatori-cavi-bridge.html': 'cable-lifters-bridge.html',
  'supporti-inclinati-diffusori.html': 'tilting-speaker-supports.html', 'supporto-dap.html': 'dap-stand.html',
+ 'guida-conservare-vinili.html': 'how-to-store-vinyl-records.html', 'guida-giradischi-vibrazioni.html': 'turntable-vibration-isolation.html',
 }
 for f in glob.glob('mobile-hifi-*.html'): SLUG[f] = 'hifi-rack-' + f[len('mobile-hifi-'):]
 for f in glob.glob('stand-*.html'):
@@ -196,7 +197,7 @@ for it_js, en_js in JS_EN.items():
 urls = []
 for f in PAGES:
     for u in (it_url(f), en_url(f)):
-        urls.append(f'  <url>\n    <loc>{u}</loc>\n    <lastmod>2026-11-02</lastmod>\n'
+        urls.append(f'  <url>\n    <loc>{u}</loc>\n    <lastmod>2026-11-03</lastmod>\n'
                     f'    <xhtml:link rel="alternate" hreflang="it" href="{it_url(f)}"/>\n'
                     f'    <xhtml:link rel="alternate" hreflang="en" href="{en_url(f)}"/>\n'
                     f'    <xhtml:link rel="alternate" hreflang="x-default" href="{it_url(f)}"/>\n  </url>')

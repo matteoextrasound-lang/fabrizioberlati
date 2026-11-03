@@ -16,7 +16,7 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 
 ## Ordine dei comandi
 
-1. Se cambia la guida all'altezza degli stand: `python3 _strumenti/build_guida.py`
+1. Se cambiano le guide: `python3 _strumenti/build_guida.py` (la guida all'altezza è nello script; le altre guide sono in `_strumenti/guide_nuove.json`)
 2. Sempre, alla fine: `python3 _strumenti/traduzione/build_en.py`
 
 ## Altre regole del sito
@@ -28,3 +28,4 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 - Stand: di serie appoggiano sul legno; piedini o punte su richiesta. Vanno bene anche diffusori che sporgono di 2-3 cm dal piano.
 - I supporti inclinati non vanno presentati come "per Argon": sono per qualsiasi diffusore da scaffale.
 - Piano SEO e stato degli obiettivi: documento "Piano SEO fabrizioberlati.com" (Claude Docs).
+- Pagine categoria: in fondo hanno la sezione «Come scegliere…» con domande frequenti (classe `catguide`), anche nei dati strutturati.

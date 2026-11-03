@@ -11,7 +11,7 @@ wa_svg = re.search(r'(<svg viewBox="0 0 24 24" width="15" height="15" aria-hidde
 def page(fn, title, desc, ld, body, css_extra='', js=''):
     hdr = header.replace('<a href="guide.html">Guide</a>', '<a href="guide.html" aria-current="page">Guide</a>')
     s = head_common + f'<title>{title}</title>\n<meta name="description" content="{desc}">\n' + fonts + \
-        f'\n<link rel="stylesheet" href="guide.css?v=1">\n<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
+        f'\n<link rel="stylesheet" href="guide.css?v=2">\n<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>\n</head>\n<body>\n' + hdr + \
         '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=3"></script>\n' + js + '</body>\n</html>\n'
     open(fn, 'w').write(s)
@@ -162,6 +162,31 @@ ld = {"@context": "https://schema.org", "@graph": [
 body = hero + '\n<div class="wrap">' + calc + art + '\n</div>'
 page('guida-altezza-stand-diffusori.html', TITLE, DESC, ld, body, js='<script src="guide.js?v=1"></script>\n')
 
+# guide aggiuntive (testi in guide_nuove.json)
+NUOVE = json.load(open('_strumenti/guide_nuove.json'))
+for g in NUOVE:
+    url = 'https://fabrizioberlati.com/' + g['fn']
+    faq_html = '<div class="faq" style="margin-top:1rem">\n    ' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in g['faq']) + '\n  </div>\n</div>'
+    hero_g = f"""
+<section class="g-hero"><div class="wrap">
+  <nav class="crumb" aria-label="Percorso"><a href="index.html">Home</a><span>›</span><a href="guide.html">Guide</a></nav>
+  <h1>{g['h1']} <span class="h1s">{g['h1s']}</span></h1>
+  <p class="lead">{g['lead']}</p>
+  <p class="g-meta">Di Fabrizio Berlati · Laboratorio artigiano a Cesena</p>
+</div></section>"""
+    ldg = {"@context": "https://schema.org", "@graph": [
+      {"@type": "Article", "headline": g['h1'], "description": g['desc'], "url": url, "inLanguage": "it",
+       "datePublished": "2026-11-03", "dateModified": "2026-11-03", "image": "https://fabrizioberlati.com/" + g['img'],
+       "author": {"@type": "Person", "name": "Fabrizio Berlati", "url": "https://fabrizioberlati.com/laboratorio.html"},
+       "publisher": {"@id": "https://fabrizioberlati.com/#laboratorio"}, "mainEntityOfPage": url},
+      {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in g['faq']]},
+      {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fabrizioberlati.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Guide", "item": "https://fabrizioberlati.com/guide.html"},
+        {"@type": "ListItem", "position": 3, "name": g['crumb'], "item": url}]}]}
+    fig = f'<figure class="g-fig"><img src="{g["img"]}" alt="{g["img_alt"]}" loading="lazy"></figure>'
+    page(g['fn'], g['title'] + ' · Fabrizio Berlati', g['desc'], ldg, hero_g + '\n<div class="wrap">' + fig + g['art'] + faq_html + '\n</div>')
+
 # indice delle guide
 gl = '''
 <section class="g-hero"><div class="wrap">
@@ -172,10 +197,10 @@ gl = '''
 <div class="wrap"><div class="glist">
   <a href="guida-altezza-stand-diffusori.html"><div class="ph"><img src="images/tree-1.jpg" alt="Coppia di stand per diffusori in faggio massello" loading="lazy"></div>
     <h2>A che altezza mettere le casse?</h2><p>La regola del tweeter, come prendere le misure e un calcolatore che ti dice quanto deve essere alto lo stand.</p></a>
-</div></div>'''
+''' + ''.join(f'''  <a href="{g['fn']}"><div class="ph"><img src="{g['img']}" alt="{g['img_alt']}" loading="lazy"></div>\n    <h2>{g['h1']}</h2><p>{g['card']}</p></a>\n''' for g in NUOVE) + '''</div></div>'''
 ld2 = {"@context": "https://schema.org", "@graph": [
   {"@type": "CollectionPage", "name": "Guide all'impianto hi-fi e alla stanza d'ascolto", "url": "https://fabrizioberlati.com/guide.html",
-   "hasPart": [{"@type": "Article", "headline": "A che altezza mettere le casse?", "url": URL}]},
+   "hasPart": [{"@type": "Article", "headline": "A che altezza mettere le casse?", "url": URL}] + [{"@type": "Article", "headline": g["h1"], "url": "https://fabrizioberlati.com/" + g["fn"]} for g in NUOVE]},
   {"@type": "BreadcrumbList", "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fabrizioberlati.com/"},
     {"@type": "ListItem", "position": 2, "name": "Guide", "item": "https://fabrizioberlati.com/guide.html"}]}]}
