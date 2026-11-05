@@ -29,3 +29,4 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 - I supporti inclinati non vanno presentati come "per Argon": sono per qualsiasi diffusore da scaffale.
 - Piano SEO e stato degli obiettivi: documento "Piano SEO fabrizioberlati.com" (Claude Docs).
 - Pagine categoria: in fondo hanno la sezione «Come scegliere…» con domande frequenti (classe `catguide`), anche nei dati strutturati.
+- Ogni prodotto nuovo va su fabrizioberlati.com (prima persona, accento sull'artigiano e sul su misura, scontorno solo per la scheda in categoria) e su extrasound.it in bozza (terza persona, foto originali senza scontorno, nessuna foto nel testo, link alla pagina di Fabrizio). I due testi devono essere scritti da zero: frasi in comune sotto il 5%.
