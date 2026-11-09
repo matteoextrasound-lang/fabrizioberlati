@@ -24,8 +24,6 @@ def fcta(t):
 
 STANDS = [
  dict(name='Extrasound Clessidra', url='stand-clessidra.html', img='images/clessidra-card.jpg?v=2', h=39, note='Faggio massello · 200 € la coppia'),
- dict(name='Extrasound Zeta', url='stand-zeta.html', img='images/zeta-card.jpg', h=61, note='Rovere e faggio · prezzo su richiesta'),
- dict(name='Extrasound Line', url='stand-line.html', img='images/line-card.jpg', h=54, note='Multistrato e metallo · prezzo su richiesta'),
  dict(name='Extrasound Rigatini', url='stand-rigatini.html', img='images/rigatini-card.jpg', h=50.3, note='Faggio massello · 250 € la coppia'),
  dict(name='Stand Stile Pannello', url='stand-stile-pannello.html', img='images/pannello-card.jpg?v=2', h=54.6, note='Faggio massello · 300 € la coppia'),
  dict(name='Wood Brick', url='stand-wood-brick.html', img='images/woodbrick-card.jpg', h=55, note='Legno massello · 300 € la coppia'),
