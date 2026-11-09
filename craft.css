@@ -199,3 +199,6 @@ nav a.lang{font-size:.78rem;letter-spacing:.12em;border:1px solid rgba(42,29,20,
 .cg a{color:var(--ink);text-decoration-color:var(--brass);text-underline-offset:2px}
 .cg .faq{margin-top:.4rem}
 @media (max-width:860px){.cg{grid-template-columns:1fr;gap:2rem}}
+.cards .card[hidden]{display:none}
+.cards-more{text-align:center;margin:2.6rem 0 0}
+.cards-more .btn{cursor:pointer;font:inherit;background:transparent}

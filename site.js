@@ -9,3 +9,8 @@ if(dk){const sc=dk.querySelector('.scaler'),fit=()=>sc.style.setProperty('--k',d
 document.querySelectorAll('.dd-t').forEach(t=>t.addEventListener('click',e=>{
   if(matchMedia('(hover:none)').matches){const d=t.parentElement;if(!d.classList.contains('open')){e.preventDefault();d.classList.add('open')}}}));
 document.addEventListener('click',e=>{if(!e.target.closest('.dd'))document.querySelectorAll('.dd.open').forEach(d=>d.classList.remove('open'))});
+// home: mostra i prodotti a gruppi di 6, gli altri restano nella pagina (e per Google) ma nascosti
+const hc=document.getElementById('home-cards'),hb=document.getElementById('more-cards');
+if(hc&&hb){const cs=[...hc.children],step=6;let n=step;
+  const upd=()=>{cs.forEach((c,i)=>c.hidden=i>=n);hb.hidden=n>=cs.length};
+  hb.addEventListener('click',()=>{const first=n;n+=step;upd();cs[first]&&cs[first].focus({preventScroll:true})});upd()}
