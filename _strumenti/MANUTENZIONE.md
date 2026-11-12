@@ -17,7 +17,12 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 ## Ordine dei comandi
 
 1. Se cambiano le guide: `python3 _strumenti/build_guida.py` (la guida all'altezza è nello script; le altre guide sono in `_strumenti/guide_nuove.json`)
-2. Sempre, alla fine: `python3 _strumenti/traduzione/build_en.py`
+2. Sempre: `python3 _strumenti/img_dims.py` (misure delle foto e prima foto caricata subito)
+3. Sempre, alla fine: `python3 _strumenti/traduzione/build_en.py`
+
+- I vecchi indirizzi si tengono come pagine di rimando (vedi `supporti-inclinati-argon.html`: meta refresh + canonical + noindex); `build_en.py` le salta. Non vanno nella sitemap.
+- Link alla home: sempre `./` (o `./#prodotti`), mai `index.html`.
+- Title fino a ~60 caratteri, meta description fino a 160.
 
 ## Altre regole del sito
 
