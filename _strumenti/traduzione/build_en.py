@@ -22,7 +22,8 @@ SLUG = {
 for f in glob.glob('mobile-hifi-*.html'): SLUG[f] = 'hifi-rack-' + f[len('mobile-hifi-'):]
 for f in glob.glob('stand-*.html'):
     if f != 'stand-per-diffusori.html': SLUG[f] = 'speaker-stand-' + f[len('stand-'):]
-PAGES = sorted(f for f in glob.glob('*.html') if not f.startswith('google'))
+# le pagine di rimando dei vecchi indirizzi (meta refresh) non si traducono
+PAGES = sorted(f for f in glob.glob('*.html') if not f.startswith('google') and 'http-equiv="refresh"' not in open(f).read())
 missing_slug = [f for f in PAGES if f not in SLUG]
 assert not missing_slug, missing_slug
 
@@ -70,8 +71,10 @@ def tr_href(h, it_file):
     if re.match(r'(https?:|//|#|data:|tel:)', h): return h
     path, hashp = (h.split('#', 1) + [''])[:2]
     path_only, q = (path.split('?', 1) + [''])[:2]
-    if path_only.endswith('.html') and path_only in SLUG:
-        out = SLUG[path_only]
+    if path_only == './':
+        out = './'
+    elif path_only.endswith('.html') and path_only in SLUG:
+        out = SLUG[path_only] if SLUG[path_only] != 'index.html' else './'
     elif path_only == '' and hashp:
         return h
     else:
@@ -168,7 +171,7 @@ def build(it_file):
             out.append(tr_text(p))
     s = ''.join(out)
     s = add_hreflang(s, it_file)
-    s = add_switch(s, '../' + it_file, 'IT', 'it')
+    s = add_switch(s, '../' + (it_file if it_file != 'index.html' else ''), 'IT', 'it')
     os.makedirs('en', exist_ok=True)
     open('en/' + SLUG[it_file], 'w').write(s)
 
@@ -182,7 +185,7 @@ for f in PAGES:
     build(f)
     # pagina italiana: hreflang + selettore EN
     s = open(f).read()
-    s2 = add_switch(add_hreflang(s, f), 'en/' + SLUG[f], 'EN', 'en')
+    s2 = add_switch(add_hreflang(s, f), 'en/' + (SLUG[f] if SLUG[f] != 'index.html' else ''), 'EN', 'en')
     if s2 != s: open(f, 'w').write(s2)
 
 # JS in inglese

@@ -140,7 +140,7 @@ art = f'''
 
 hero = '''
 <section class="g-hero"><div class="wrap">
-  <nav class="crumb" aria-label="Percorso"><a href="index.html">Home</a><span>›</span><a href="guide.html">Guide</a></nav>
+  <nav class="crumb" aria-label="Percorso"><a href="./">Home</a><span>›</span><a href="guide.html">Guide</a></nav>
   <h1>A che altezza mettere le casse? <span class="h1s">Come scegliere l'altezza degli stand per diffusori, con il calcolatore</span></h1>
   <p class="lead">La regola è una sola: il tweeter all'altezza delle orecchie. Qui sotto la calcoli in un attimo per il tuo divano e i tuoi diffusori; più giù trovi il perché e gli altri dettagli che fanno suonare bene uno stand.</p>
   <p class="g-meta">Di Fabrizio Berlati · Laboratorio artigiano a Cesena</p>
@@ -172,7 +172,7 @@ for g in NUOVE:
     faq_html = '<div class="faq" style="margin-top:1rem">\n    ' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in g['faq']) + '\n  </div>\n</div>'
     hero_g = f"""
 <section class="g-hero"><div class="wrap">
-  <nav class="crumb" aria-label="Percorso"><a href="index.html">Home</a><span>›</span><a href="guide.html">Guide</a></nav>
+  <nav class="crumb" aria-label="Percorso"><a href="./">Home</a><span>›</span><a href="guide.html">Guide</a></nav>
   <h1>{g['h1']} <span class="h1s">{g['h1s']}</span></h1>
   <p class="lead">{g['lead']}</p>
   <p class="g-meta">Di Fabrizio Berlati · Laboratorio artigiano a Cesena</p>
@@ -193,7 +193,7 @@ for g in NUOVE:
 # indice delle guide
 gl = '''
 <section class="g-hero"><div class="wrap">
-  <nav class="crumb" aria-label="Percorso"><a href="index.html">Home</a></nav>
+  <nav class="crumb" aria-label="Percorso"><a href="./">Home</a></nav>
   <h1>Guide <span class="h1s">Consigli pratici per sistemare l'impianto hi-fi e la stanza d'ascolto</span></h1>
   <p class="lead">Quello che ho imparato costruendo mobili, stand e pannelli per gli impianti dei miei clienti: misure, legni, posizionamento. Con qualche strumento per fare i conti in fretta.</p>
 </div></section>
