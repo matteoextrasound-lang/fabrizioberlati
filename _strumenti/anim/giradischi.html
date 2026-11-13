@@ -1,0 +1,66 @@
+<figure class="anim">
+<svg viewBox="0 0 760 360" data-still="1.2" role="img" aria-label="Animazione: il suono delle casse fa vibrare aria e pavimento, il mobile porta le vibrazioni fino al giradischi e la puntina le rimanda all'amplificatore e alle casse">
+  <defs>
+    <clipPath id="gd-clip"><rect x="138" y="0" width="622" height="340"/></clipPath>
+    <path id="gd-path" d="M105 337 L368 337 L368 196 L470 176"/>
+  </defs>
+  <line x1="10" y1="340" x2="750" y2="340" stroke="#2a1d14" stroke-opacity=".35"/>
+  <!-- onde nell'aria -->
+  <g clip-path="url(#gd-clip)" fill="none" stroke="#a87a2f" stroke-width="2">
+    <circle cx="105" cy="190" r="30"><animate attributeName="r" values="30;330" dur="2.4s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.4s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cx="105" cy="190" r="30"><animate attributeName="r" values="30;330" dur="2.4s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.4s" begin=".8s" repeatCount="indefinite"/></circle>
+    <circle cx="105" cy="190" r="30"><animate attributeName="r" values="30;330" dur="2.4s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- cavi: giradischi -> amplificatore -> cassa -->
+  <path d="M402 182 C380 190 380 236 396 244 M395 252 C330 252 330 334 260 334 L160 334 C128 334 124 300 128 262" fill="none" stroke="#6f6254" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M402 182 C380 190 380 236 396 244 M395 252 C330 252 330 334 260 334 L160 334 C128 334 124 300 128 262" fill="none" stroke="#ff9a2e" stroke-width="3" stroke-dasharray="10 22" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur=".9s" repeatCount="indefinite"/>
+  </path>
+  <!-- stand e cassa -->
+  <rect x="60" y="334" width="90" height="6" fill="#c9a774"/>
+  <rect x="98" y="240" width="14" height="94" fill="#d9bb8c"/>
+  <rect x="62" y="234" width="86" height="6" fill="#c9a774"/>
+  <rect x="60" y="94" width="90" height="140" rx="3" fill="#3b2a1e"/>
+  <circle cx="105" cy="126" r="9" fill="#e8d6b4"/>
+  <circle cx="105" cy="190" r="28" fill="#5b4636"><animate attributeName="r" values="28;30;28" dur=".3s" repeatCount="indefinite"/></circle>
+  <circle cx="105" cy="190" r="10" fill="#3b2a1e"/>
+  <!-- mobile -->
+  <rect x="368" y="306" width="10" height="34" fill="#c9a774"/><rect x="662" y="306" width="10" height="34" fill="#c9a774"/>
+  <rect x="360" y="190" width="10" height="118" fill="#c9a774"/><rect x="670" y="190" width="10" height="118" fill="#c9a774"/>
+  <rect x="360" y="190" width="320" height="10" fill="#d9bb8c"/>
+  <rect x="370" y="262" width="300" height="8" fill="#d9bb8c"/>
+  <rect x="360" y="300" width="320" height="8" fill="#d9bb8c"/>
+  <!-- amplificatore -->
+  <rect x="395" y="228" width="160" height="34" rx="2" fill="#2d2621"/>
+  <rect x="410" y="240" width="40" height="8" rx="1" fill="#6b4f2a"/>
+  <circle cx="528" cy="245" r="8" fill="#a87a2f"/>
+  <!-- vinili sotto -->
+  <g fill="#3b2a1e"><rect x="590" y="272" width="5" height="28"/><rect x="597" y="272" width="5" height="28"/><rect x="604" y="272" width="5" height="28"/><rect x="611" y="272" width="5" height="28"/><rect x="618" y="272" width="5" height="28"/></g>
+  <!-- giradischi -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.2;0 .8;0 0" dur=".24s" repeatCount="indefinite"/>
+    <rect x="400" y="166" width="240" height="24" rx="3" fill="#4a3a2e"/>
+    <rect x="430" y="157" width="150" height="9" fill="#2b2420"/>
+    <rect x="436" y="153" width="138" height="4" fill="#111"/>
+    <circle cx="612" cy="152" r="7" fill="#8b7a66"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 612 148;1.6 612 148;-1.2 612 148;1 612 148;-.7 612 148;0 612 148" dur=".5s" repeatCount="indefinite"/>
+      <path d="M612 148 L540 146 L522 151" fill="none" stroke="#cfc3b2" stroke-width="3" stroke-linecap="round"/>
+      <rect x="514" y="148" width="12" height="6" fill="#cfc3b2"/>
+    </g>
+  </g>
+  <!-- vibrazioni che viaggiano nel pavimento e nel mobile -->
+  <g fill="#d9822b">
+    <circle r="6" opacity="0"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite"><mpath href="#gd-path"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="2.4s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle r="6" opacity="0"><animateMotion dur="2.4s" begin=".8s" repeatCount="indefinite"><mpath href="#gd-path"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="2.4s" begin=".8s" repeatCount="indefinite"/></circle>
+    <circle r="6" opacity="0"><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite"><mpath href="#gd-path"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- numeri -->
+  <g font-size="20" font-weight="600" text-anchor="middle">
+    <circle cx="230" cy="70" r="17" fill="#a87a2f"/><text x="230" y="77" fill="#fff">1</text>
+    <circle cx="335" cy="300" r="17" fill="#d9822b"/><text x="335" y="307" fill="#fff">2</text>
+    <circle cx="300" cy="236" r="17" fill="#ff9a2e"/><text x="300" y="243" fill="#fff">3</text>
+  </g>
+</svg>
+<figcaption><span><b>1</b> Le casse fanno vibrare l'aria e il pavimento. <b>2</b> Il mobile porta le vibrazioni fino al giradischi. <b>3</b> La puntina le legge e l'amplificatore le rimanda alle casse: il rimbombo cresce.</span><button type="button" class="anim-replay">Rivedi</button></figcaption>
+</figure>

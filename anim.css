@@ -1,0 +1,9 @@
+/* Animazioni delle guide (SVG con SMIL, avviate da anim.js quando entrano nello schermo) */
+.anim{margin:0 0 2.4rem;max-width:760px;background:#fff;padding:1.2rem 1.2rem .9rem}
+.art .anim{margin:1.6rem 0 2rem}
+.anim svg{display:block;width:100%;height:auto;max-height:440px}
+.anim figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-size:.9rem;color:var(--muted);margin-top:.7rem;line-height:1.45}
+.anim-replay{font:inherit;font-size:.85rem;background:none;border:0;border-bottom:1px solid var(--brass);color:var(--brass);padding:0 0 1px;cursor:pointer;white-space:nowrap}
+.anim-replay:hover{color:var(--ink);border-color:var(--ink)}
+.anim text{font-family:'Instrument Sans',system-ui,sans-serif}
+@media (max-width:640px){.anim{padding:.8rem .6rem .7rem;margin-left:-.4rem;margin-right:-.4rem}}
