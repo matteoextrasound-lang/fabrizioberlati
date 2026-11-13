@@ -189,7 +189,7 @@ for g in NUOVE:
     anim = lambda n: open(f'_strumenti/anim/{n}.html').read().strip()
     fig = anim(g['hero_anim']) if g.get('hero_anim') else f'<figure class="g-fig"><img src="{g["img"]}" alt="{g["img_alt"]}" loading="lazy"></figure>'
     art = re.sub(r'<!--ANIM:([a-z-]+)-->', lambda m: anim(m.group(1)), g['art'])
-    page(g['fn'], g['title'] + ' · Fabrizio Berlati', g['desc'], ldg, hero_g + '\n<div class="wrap">' + fig + art + faq_html + '\n</div>')
+    page(g['fn'], g['title'], g['desc'], ldg, hero_g + '\n<div class="wrap">' + fig + art + faq_html + '\n</div>')
 
 # indice delle guide
 gl = '''
