@@ -11,7 +11,7 @@ wa_svg = re.search(r'(<svg viewBox="0 0 24 24" width="15" height="15" aria-hidde
 def page(fn, title, desc, ld, body, css_extra='', js=''):
     hdr = header.replace('<a href="guide.html">Guide</a>', '<a href="guide.html" aria-current="page">Guide</a>')
     s = head_common + f'<title>{title}</title>\n<meta name="description" content="{desc}">\n' + fonts + \
-        f'\n<link rel="stylesheet" href="guide.css?v=2">\n' + ('<link rel="stylesheet" href="anim.css?v=1">\n' if 'class="anim"' in body else '') + f'<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
+        f'\n<link rel="stylesheet" href="guide.css?v=3">\n' + ('<link rel="stylesheet" href="anim.css?v=1">\n' if 'class="anim"' in body else '') + f'<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>\n</head>\n<body>\n' + hdr + \
         '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=4"></script>\n' + js + ('<script src="anim.js?v=1"></script>\n' if 'class="anim"' in body else '') + '</body>\n</html>\n'
     open(fn, 'w').write(s)
@@ -21,6 +21,14 @@ def fcta(t):
             '<a class="btn" href="mailto:info@fabrizioberlati.com?subject=Domanda%20dalle%20guide">Chiedi informazioni</a>'
             '<a class="link tel" href="https://wa.me/393334188754?text=Ciao%20Fabrizio%2C%20ho%20una%20domanda." target="_blank" rel="noopener" aria-label="Scrivi a Fabrizio su WhatsApp al 333 418 8754">'
             + wa_svg + '333 418 8754</a></div></div>')
+
+
+# riquadro "compra su Extrasound" in fondo a ogni guida (testi in guide_negozio.json)
+SHOP = json.load(open('_strumenti/guide_negozio.json'))
+def shop_box(key):
+    t, txt, links = SHOP[key]
+    bt = ''.join(f'<a class="{"btn" if i == 0 else "link"}" href="{u}" target="_blank" rel="noopener">{l}</a>' for i, (l, u) in enumerate(links))
+    return f'\n  <div class="shopbox"><p><b>{t}</b>{txt}</p><div class="ctas">{bt}</div></div>\n'
 
 STANDS = [
  dict(name='Extrasound Clessidra', url='stand-clessidra.html', img='images/clessidra-card.jpg?v=2', h=39, note='Faggio massello · 200 € la coppia'),
@@ -130,7 +138,7 @@ art = f'''
   <p>Questi sono gli stand che costruisco nel laboratorio di Cesena, in ordine di altezza. Se nessuno è quello giusto per te, lo costruisco su misura: altezza, piano e essenza sui tuoi diffusori.</p>
   <table class="htable"><thead><tr><th>Modello</th><th>Legno</th><th>Altezza</th></tr></thead><tbody>{rows}</tbody></table>
 
-  <h2>Domande frequenti.</h2>
+''' + shop_box('altezza') + f'''  <h2>Domande frequenti.</h2>
   <div class="faq" style="margin-top:1rem">
     {''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in FAQ)}
   </div>
@@ -189,6 +197,7 @@ for g in NUOVE:
     anim = lambda n: open(f'_strumenti/anim/{n}.html').read().strip()
     fig = anim(g['hero_anim']) if g.get('hero_anim') else f'<figure class="g-fig"><img src="{g["img"]}" alt="{g["img_alt"]}" loading="lazy"></figure>'
     art = re.sub(r'<!--ANIM:([a-z-]+)-->', lambda m: anim(m.group(1)), g['art'])
+    art = art.replace('  <h2>Domande frequenti.</h2>', shop_box(g['fn']) + '  <h2>Domande frequenti.</h2>')
     page(g['fn'], g['title'], g['desc'], ldg, hero_g + '\n<div class="wrap">' + fig + art + faq_html + '\n</div>')
 
 # indice delle guide
