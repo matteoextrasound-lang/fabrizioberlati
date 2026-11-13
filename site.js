@@ -14,3 +14,9 @@ const hc=document.getElementById('home-cards'),hb=document.getElementById('more-
 if(hc&&hb){const cs=[...hc.children],step=6;let n=step;
   const upd=()=>{cs.forEach((c,i)=>c.hidden=i>=n);hb.hidden=n>=cs.length};
   hb.addEventListener('click',()=>{const first=n;n+=step;upd();cs[first]&&cs[first].focus({preventScroll:true})});upd()}
+// telefono: barra "Acquista" fissa in basso quando il pulsante principale è uscito dallo schermo
+const bb=document.querySelector('.buybar'),buy=document.querySelector('.ctas .btn-buy');
+if(bb&&buy){document.body.classList.add('has-buybar');
+  new IntersectionObserver(es=>{const e=es[0];bb.classList.toggle('on',!e.isIntersecting&&e.boundingClientRect.top<0)}).observe(buy)}
+// categorie: la riga dei filtri scorre fino al filtro attivo
+const ac=document.querySelector('.catchips a[aria-current=page]');if(ac)ac.parentElement.scrollLeft=ac.offsetLeft-24;

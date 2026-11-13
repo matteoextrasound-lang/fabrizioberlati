@@ -101,7 +101,7 @@ nav a[aria-current=page]{color:var(--ink);border-bottom:1px solid var(--brass)}
 .catpage .kicker{margin-bottom:.7rem}
 .catpage .kicker{font:500 .75rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
 /* pagine prodotto: percorso, sottotitolo dell'h1, prezzo */
-.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .5rem;font:500 .75rem var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-bottom:.9rem}
+.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .5rem;font:500 .8rem var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-bottom:.9rem}
 .crumb a{color:var(--brass);text-decoration:none;padding:.5rem 0}
 .crumb a:hover{color:var(--ink)}
 .crumb span{color:var(--muted)}
@@ -185,10 +185,10 @@ nav.crumb a{margin:0;font-size:inherit;color:var(--brass);padding:.5rem 0}
 @media (max-width:440px){nav{gap:.3rem .85rem}nav a{font-size:.86rem}}
 @media (max-width:380px){nav{gap:.3rem .7rem}nav a{font-size:.82rem}}
 .logo .word{display:inline-flex;flex-direction:column;gap:.38rem}
-.logo .word .tag{font:400 .6rem/1 var(--sans);letter-spacing:.16em;color:var(--muted)}
+.logo .word .tag{font:400 .7rem/1 var(--sans);letter-spacing:.16em;color:var(--muted)}
 /* selettore lingua */
 nav a.lang{font-size:.78rem;letter-spacing:.12em;border:1px solid rgba(42,29,20,.25);border-radius:2px;padding:.15rem .45rem;align-self:center}
-@media (max-width:600px){header .wrap{position:relative}nav a.lang{position:absolute;top:.4rem;right:1.5rem;padding:.2rem .5rem}}
+@media (max-width:600px){header .wrap{position:relative}nav a.lang{position:absolute;top:.1rem;right:1.2rem;padding:.2rem .5rem;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}}
 .foot .legal{flex-basis:100%;font-size:.78rem;color:var(--muted);opacity:.85}
 .fitex{font-size:.95rem;color:var(--muted);margin:1.2rem 0 0;max-width:62ch}.fitex b{font-weight:500;color:var(--ink)}.fitex a{color:inherit;text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:2px}
 .catguide{padding:1rem 0 3.5rem}
@@ -202,3 +202,20 @@ nav a.lang{font-size:.78rem;letter-spacing:.12em;border:1px solid rgba(42,29,20,
 .cards .card[hidden]{display:none}
 .cards-more{text-align:center;margin:2.6rem 0 0}
 .cards-more .btn{cursor:pointer;font:inherit;background:transparent}
+
+/* acquisto su Extrasound: pulsante principale e barra fissa sul telefono */
+.btn.btn-buy{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.btn-buy:hover{background:var(--brass);border-color:var(--brass);color:#fff}
+.buybar{display:none}
+@media (max-width:700px){
+  .buybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 1.25rem calc(.7rem + env(safe-area-inset-bottom));background:#fff;border-top:1px solid rgba(42,29,20,.14);box-shadow:0 -6px 18px rgba(42,29,20,.08);transform:translateY(115%);transition:transform .25s}
+  .buybar.on{transform:none}
+  .buybar p{margin:0;font:400 1.3rem/1.1 var(--serif);color:var(--ink)}
+  .buybar small{font:400 .82rem var(--sans);color:var(--muted)}
+  .buybar .btn{padding:.75rem 1.5rem}
+  body.has-buybar .foot{padding-bottom:5.5rem}
+  .catchips{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-right:-1.5rem;padding-right:1.5rem}
+  .catchips::-webkit-scrollbar{display:none}
+  .catchips a{white-space:nowrap;flex:none}
+}
+.htable td a{display:inline-block;padding:.7rem 0}

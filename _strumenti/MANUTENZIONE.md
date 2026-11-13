@@ -35,3 +35,8 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 - Piano SEO e stato degli obiettivi: documento "Piano SEO fabrizioberlati.com" (Claude Docs).
 - Pagine categoria: in fondo hanno la sezione «Come scegliere…» con domande frequenti (classe `catguide`), anche nei dati strutturati.
 - Ogni prodotto nuovo va su fabrizioberlati.com (prima persona, accento sull'artigiano e sul su misura, scontorno solo per la scheda in categoria) e su extrasound.it in bozza (terza persona, foto originali senza scontorno, nessuna foto nel testo, link alla pagina di Fabrizio). I due testi devono essere scritti da zero: frasi in comune sotto il 5%.
+
+## Schede prodotto da telefono (13/11)
+- Il pulsante principale è «Acquista su Extrasound» (`class="btn btn-buy"`, nuova scheda); «Chiedi informazioni» è un link.
+- Ogni scheda con prezzo ha prima di `</main>` la barra `<div class="buybar">` (prezzo + «Acquista»), che compare sul telefono quando il pulsante principale esce dallo schermo (site.js).
+- Versioni attuali: craft.css?v=24, site.js?v=5, guide.css?v=3, anim.css?v=1.
