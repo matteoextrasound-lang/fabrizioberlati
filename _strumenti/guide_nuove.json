@@ -183,5 +183,42 @@
     "Meglio di no: vicino al muro i bassi si gonfiano, soprattutto se la cassa ha il condotto reflex dietro. Portale in avanti e lontano dagli angoli."
    ]
   ]
+ },
+ {
+  "fn": "guida-amplificatore-calore.html",
+  "img": "images/guida-amplificatore-3.jpg",
+  "img_alt": "Illustrazione: un amplificatore su un ripiano con il calore che sale",
+  "date": "2026-11-13",
+  "h1": "Dove mettere l'amplificatore",
+  "h1s": "Calore, ventilazione e spazio sul mobile: perché l'amplificatore vuole aria intorno",
+  "lead": "L'amplificatore è il pezzo dell'impianto che scalda di più. Sul mobile ha bisogno di aria, e la regola che do a tutti è una sola: mai niente sopra.",
+  "title": "Dove mettere l'amplificatore: calore e ventilazione",
+  "desc": "Dove mettere l'amplificatore sul mobile hi-fi: quanto spazio lasciare sopra e intorno, perché non appoggiarci niente e cosa dicono i manuali dei costruttori.",
+  "card": "Perché l'amplificatore scalda, quanto spazio lasciargli sopra e intorno, e perché non appoggiarci mai niente.",
+  "crumb": "Dove mettere l'amplificatore",
+  "art": "<div class=\"art\">\n  <h2>Perché scalda.</h2>\n  <p>Un amplificatore prende la corrente di casa e la trasforma nell'energia che muove gli altoparlanti. Una parte di quell'energia diventa calore. Per smaltirlo ci sono i dissipatori, le alette di metallo che spesso si intravedono dalle griglie, e le fessure sul coperchio da cui esce l'aria calda. In alcuni modelli è tutto il telaio a fare da dissipatore, e per questo il coperchio diventa caldo al tatto.</p>\n  <p>Quanto scalda dipende da com'è fatto. Gli amplificatori in classe A sono i più caldi, perché consumano molto anche quando suonano piano; quelli in classe D, i più efficienti, scaldano molto meno. Ma tutti hanno bisogno di far uscire il calore.</p>\n\n  <h2>Mai niente sopra.</h2>\n  <p>È la regola che do a tutti. Un oggetto appoggiato sull'amplificatore, che sia un libro, un altro apparecchio o il giradischi, chiude le fessure da cui esce l'aria calda. Il calore resta dentro e l'apparecchio lavora più caldo di come è stato progettato.</p>\n  <p>Non è un'abitudine da falegname: lo scrivono i costruttori nei loro manuali. Rega consiglia di non impilare altri apparecchi direttamente sopra l'amplificatore. Arcam e JBL chiedono di non appoggiarci sopra oggetti o altre elettroniche. Rotel chiede di non ostruire le fessure di ventilazione.</p>\n  <p>Il giradischi sopra l'amplificatore è doppiamente sbagliato: oltre a chiudere l'aria, il trasformatore dell'amplificatore può far ronzare la testina. Rega, nel manuale del Brio, consiglia di tenere l'amplificatore lontano dalla testina quanto lo permette il cavo del braccio.</p>\n\n  <h2>Quanto spazio lasciare.</h2>\n  <p>I manuali danno numeri simili: Rega e Rotel indicano almeno 10 centimetri liberi intorno all'apparecchio, Audio Analogue almeno 5 centimetri intorno e sopra. Se il manuale del tuo amplificatore indica una misura, segui quella; se non la trovi, 10 centimetri liberi sopra sono un buon riferimento.</p>\n  <p>Sul mobile vuol dire scegliere un ripiano più alto dell'amplificatore di almeno quei centimetri, e lasciare spazio anche dietro, dove escono cavi e spine.</p>\n  <p class=\"note\"><b>I miei mobili.</b> Nel <a href=\"extrasound-vinyl.html\">Vinyl</a> il ripiano dell'amplificatore ha un'altezza utile di 28,4 centimetri nella versione in Faggio, più di quanto serve alla maggior parte degli amplificatori: sopra resta aria. Negli altri <a href=\"mobili-hi-fi.html\">mobili hi-fi</a> ogni apparecchio ha il suo ripiano.</p>\n\n  <h2>Né sopra né sotto un'altra elettronica.</h2>\n  <p>Il consiglio vale anche al contrario: meglio non mettere l'amplificatore sopra un altro apparecchio. Il calore di quello sotto sale e scalda l'amplificatore, e due apparecchi vicini possono disturbarsi a vicenda: Rotel, per esempio, sconsiglia di posizionare l'amplificatore sopra altri apparecchi proprio per evitare interferenze. L'ideale è un ripiano per ogni apparecchio.</p>\n\n  <h2>Mobili chiusi e superfici morbide.</h2>\n  <p>Un amplificatore chiuso in un vano senza ricambio d'aria scalda l'aria intorno a sé e continua a scaldare sempre quella. Se il mobile ha le ante o il retro chiuso, lascia spazio intorno all'apparecchio e un'apertura sul retro. Rotel lo scrive chiaramente: se l'apparecchio sta in una libreria o in un mobile, intorno deve esserci abbastanza spazio per la ventilazione.</p>\n  <p>Non appoggiarlo su tappeti, divani o tessuti, che chiudono le aperture sul fondo, e tienilo lontano da termosifoni e stufe.</p>\n\n  <h2>Perché conviene.</h2>\n  <p>Il calore è il nemico principale dell'elettronica. I condensatori elettrolitici, tra i componenti che invecchiano per primi, secondo i loro produttori durano circa il doppio a ogni 10 gradi in meno. Un amplificatore che respira lavora più fresco e dura di più.</p>\n  <p>Molti amplificatori hanno anche una protezione che li spegne quando si surriscaldano. Se il tuo si spegne da solo dopo un po' che suona forte, la prima cosa da controllare è l'aria intorno.</p>\n\n  <h2>Domande frequenti.</h2>",
+  "faq": [
+   [
+    "Si può mettere qualcosa sopra l'amplificatore?",
+    "No: chiuderesti le fessure da cui esce l'aria calda. Lo sconsigliano anche i costruttori nei loro manuali."
+   ],
+   [
+    "Quanto spazio serve sopra l'amplificatore?",
+    "Segui il manuale del tuo modello. Molti costruttori indicano almeno 10 cm liberi intorno all'apparecchio."
+   ],
+   [
+    "Si può mettere il giradischi sopra l'amplificatore?",
+    "No: chiude l'aria e il trasformatore dell'amplificatore può far ronzare la testina. Meglio due ripiani diversi."
+   ],
+   [
+    "L'amplificatore può stare in un mobile chiuso?",
+    "Solo se intorno c'è spazio e l'aria può circolare, per esempio con il retro aperto. In un vano chiuso il calore si accumula."
+   ],
+   [
+    "È normale che l'amplificatore scaldi?",
+    "Sì: alcuni usano tutto il telaio come dissipatore e diventano caldi al tatto. Se però si spegne da solo, ha bisogno di più aria."
+   ]
+  ],
+  "hero_anim": "amplificatore"
  }
 ]

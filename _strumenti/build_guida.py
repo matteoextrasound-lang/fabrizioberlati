@@ -13,7 +13,7 @@ def page(fn, title, desc, ld, body, css_extra='', js=''):
     s = head_common + f'<title>{title}</title>\n<meta name="description" content="{desc}">\n' + fonts + \
         f'\n<link rel="stylesheet" href="guide.css?v=3">\n' + ('<link rel="stylesheet" href="anim.css?v=1">\n' if 'class="anim"' in body else '') + f'<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>\n</head>\n<body>\n' + hdr + \
-        '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=4"></script>\n' + js + ('<script src="anim.js?v=1"></script>\n' if 'class="anim"' in body else '') + '</body>\n</html>\n'
+        '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=5"></script>\n' + js + ('<script src="anim.js?v=1"></script>\n' if 'class="anim"' in body else '') + '</body>\n</html>\n'
     open(fn, 'w').write(s)
 
 def fcta(t):

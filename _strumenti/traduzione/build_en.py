@@ -20,6 +20,7 @@ SLUG = {
  'guida-conservare-vinili.html': 'how-to-store-vinyl-records.html', 'guida-giradischi-vibrazioni.html': 'turntable-vibration-isolation.html',
  'guida-pannelli-acustici.html': 'acoustic-panels-absorb-or-diffuse.html', 'guida-posizionare-diffusori.html': 'how-to-position-speakers.html',
  'guida-diffusori-scrivania.html': 'desktop-speaker-placement.html',
+ 'guida-amplificatore-calore.html': 'amplifier-heat-ventilation.html',
 }
 for f in glob.glob('mobile-hifi-*.html'): SLUG[f] = 'hifi-rack-' + f[len('mobile-hifi-'):]
 for f in glob.glob('stand-*.html'):
