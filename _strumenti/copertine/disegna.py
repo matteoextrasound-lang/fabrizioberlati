@@ -81,5 +81,14 @@ for x,sg in ((170,1),(680,-1)):
     b+=speaker(x+4,288,102,160)
 b+=arcs(225,290,70,40,-120,-60,w=6)+arcs(735,290,70,40,-120,-60,w=6)
 C['scrivania']=svg(b)
+# 7. amplificatore: visto di fronte su un ripiano, con il calore che sale libero
+b=SH.format(cx=480,cy=560,rx=300)
+b+=f'<rect x="170" y="520" width="620" height="18" rx="3" fill="{WOOD}"/>'
+b+=f'<rect x="250" y="400" width="460" height="120" rx="8" fill="#2d2621"/>'
+b+=''.join(f'<line x1="{x}" y1="412" x2="{x}" y2="430" stroke="#6b5a4a" stroke-width="5"/>' for x in range(290,690,30))
+b+=f'<circle cx="640" cy="470" r="26" fill="{BRASS}"/><circle cx="300" cy="470" r="11" fill="{BRASS}"/><rect x="350" y="460" width="110" height="18" rx="3" fill="#6b4f2a"/>'
+for x in (400,560):
+    b+=arcs(x,400,55,38,-115,-65,w=6,col=ORANGE)
+C['amplificatore']=svg(b)
 for k,v in C.items(): open(f'{k}.svg','w').write(v)
 print(list(C))
