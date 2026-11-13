@@ -1,8 +1,8 @@
 [
  {
   "fn": "guida-conservare-vinili.html",
-  "img": "images/guida-vinili.jpg",
-  "img_alt": "Illustrazione: busta esterna, busta interna e disco in vinile",
+  "img": "images/guida-vinili-3.jpg",
+  "img_alt": "Illustrazione: un disco in vinile",
   "h1": "Come conservare i vinili",
   "h1s": "Dischi dritti, puliti e al sicuro: le regole per una collezione che dura",
   "lead": "I dischi in vinile durano decenni, se li conservi bene. Bastano poche regole: tenerli in piedi, lontano dal caldo, nelle buste giuste e su un mobile che ne regga il peso.",
@@ -38,8 +38,8 @@
  },
  {
   "fn": "guida-giradischi-vibrazioni.html",
-  "img": "images/guida-giradischi.jpg",
-  "img_alt": "Illustrazione: le vibrazioni delle casse arrivano al giradischi attraverso pavimento e mobile",
+  "img": "images/guida-giradischi-3.jpg",
+  "img_alt": "Illustrazione: un giradischi visto dall'alto che vibra",
   "h1": "Come isolare il giradischi dalle vibrazioni",
   "h1s": "Mobile, casse, pavimento e bolla: cosa fare perché la puntina legga solo il disco",
   "lead": "Rimbombi, bassi confusi, la puntina che salta quando qualcuno cammina: quasi sempre è colpa delle vibrazioni. Ecco da dove arrivano e come fermarle, partendo dalle soluzioni più semplici.",
@@ -75,8 +75,8 @@
  },
  {
   "fn": "guida-pannelli-acustici.html",
-  "img": "images/guida-pannelli.jpg",
-  "img_alt": "Illustrazione: pianta di una stanza con i pannelli che sparpagliano le riflessioni",
+  "img": "images/guida-pannelli-3.jpg",
+  "img_alt": "Illustrazione: un pannello in legno che sparpaglia le onde sonore",
   "hero_anim": "pannelli",
   "date": "2026-11-13",
   "h1": "Pannelli acustici in legno",
@@ -112,8 +112,8 @@
  },
  {
   "fn": "guida-posizionare-diffusori.html",
-  "img": "images/guida-posizionamento.jpg",
-  "img_alt": "Illustrazione: il triangolo d'ascolto tra i due diffusori e il divano",
+  "img": "images/guida-posizionamento-3.jpg",
+  "img_alt": "Illustrazione: due diffusori su stand e il triangolo d'ascolto",
   "hero_anim": "posizionamento",
   "date": "2026-11-13",
   "h1": "Come posizionare i diffusori",
@@ -149,8 +149,8 @@
  },
  {
   "fn": "guida-diffusori-scrivania.html",
-  "img": "images/guida-scrivania.jpg",
-  "img_alt": "Illustrazione: cassa inclinata sulla scrivania che punta alle orecchie",
+  "img": "images/guida-scrivania-3.jpg",
+  "img_alt": "Illustrazione: due casse su una scrivania ai lati del monitor",
   "hero_anim": "scrivania",
   "date": "2026-11-13",
   "h1": "Diffusori sulla scrivania",
