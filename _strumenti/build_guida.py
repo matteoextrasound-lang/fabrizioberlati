@@ -151,7 +151,7 @@ TITLE = "Altezza stand per diffusori: calcolatore e guida"
 DESC = "A che altezza mettere le casse? Calcola l'altezza giusta degli stand per i tuoi diffusori e il tuo divano, e scopri come scegliere uno stand che suona bene."
 ld = {"@context": "https://schema.org", "@graph": [
   {"@type": "Article", "headline": "A che altezza mettere le casse? Come scegliere l'altezza degli stand per diffusori", "description": DESC, "url": URL,
-   "inLanguage": "it", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "image": "https://fabrizioberlati.com/images/tree-1.jpg",
+   "inLanguage": "it", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "image": "https://fabrizioberlati.com/images/guida-altezza.jpg",
    "author": {"@type": "Person", "name": "Fabrizio Berlati", "url": "https://fabrizioberlati.com/laboratorio.html"},
    "publisher": {"@id": "https://fabrizioberlati.com/#laboratorio"}, "mainEntityOfPage": URL},
   {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]},
@@ -201,7 +201,7 @@ gl = '''
   <p class="lead">Quello che ho imparato costruendo mobili, stand e pannelli per gli impianti dei miei clienti: misure, legni, posizionamento. Con qualche strumento per fare i conti in fretta.</p>
 </div></section>
 <div class="wrap"><div class="glist">
-  <a href="guida-altezza-stand-diffusori.html"><div class="ph"><img src="images/tree-1.jpg" alt="Coppia di stand per diffusori in faggio massello" loading="lazy"></div>
+  <a href="guida-altezza-stand-diffusori.html"><div class="ph"><img src="images/guida-altezza.jpg" alt="Illustrazione: diffusore sullo stand con il tweeter all'altezza delle orecchie di chi ascolta" loading="lazy"></div>
     <h2>A che altezza mettere le casse?</h2><p>La regola del tweeter, come prendere le misure e un calcolatore che ti dice quanto deve essere alto lo stand.</p></a>
 ''' + ''.join(f'''  <a href="{g['fn']}"><div class="ph"><img src="{g['img']}" alt="{g['img_alt']}" loading="lazy"></div>\n    <h2>{g['h1']}</h2><p>{g['card']}</p></a>\n''' for g in NUOVE) + '''</div></div>'''
 ld2 = {"@context": "https://schema.org", "@graph": [
