@@ -1,8 +1,8 @@
 [
  {
   "fn": "guida-conservare-vinili.html",
-  "img": "images/cube-vinili.jpg",
-  "img_alt": "Extrasound Cube in pioppo pieno di vinili, visto dall'alto",
+  "img": "images/guida-vinili.jpg",
+  "img_alt": "Illustrazione: busta esterna, busta interna e disco in vinile",
   "h1": "Come conservare i vinili",
   "h1s": "Dischi dritti, puliti e al sicuro: le regole per una collezione che dura",
   "lead": "I dischi in vinile durano decenni, se li conservi bene. Bastano poche regole: tenerli in piedi, lontano dal caldo, nelle buste giuste e su un mobile che ne regga il peso.",
@@ -32,20 +32,22 @@
     "Le buste interne di carta vanno bene?",
     "Fanno il loro lavoro, ma con il tempo possono rigare il disco e lasciare polvere. Le buste interne antistatiche sono un piccolo investimento che protegge molto."
    ]
-  ]
+  ],
+  "hero_anim": "vinili",
+  "mod": "2026-11-13"
  },
  {
   "fn": "guida-giradischi-vibrazioni.html",
-  "img": "images/vinyl-noce-hifi.jpg",
-  "img_alt": "Extrasound Vinyl in noce canaletto con giradischi, amplificatore e vinili",
+  "img": "images/guida-giradischi.jpg",
+  "img_alt": "Illustrazione: le vibrazioni delle casse arrivano al giradischi attraverso pavimento e mobile",
   "h1": "Come isolare il giradischi dalle vibrazioni",
   "h1s": "Mobile, casse, pavimento e bolla: cosa fare perché la puntina legga solo il disco",
   "lead": "Rimbombi, bassi confusi, la puntina che salta quando qualcuno cammina: quasi sempre è colpa delle vibrazioni. Ecco da dove arrivano e come fermarle, partendo dalle soluzioni più semplici.",
-  "title": "Come isolare il giradischi dalle vibrazioni: guida pratica",
-  "desc": "Giradischi che rimbomba o salta? Come isolarlo dalle vibrazioni: mobile rigido, casse lontane, giradischi in bolla e pavimento. Con una prova semplice da fare a casa.",
+  "title": "Come isolare il giradischi dalle vibrazioni",
+  "desc": "Giradischi che rimbomba o salta? Come isolarlo dalle vibrazioni: mobile rigido, casse lontane, giradischi in bolla. Con una prova semplice da fare a casa.",
   "card": "Da dove arrivano le vibrazioni che rovinano l'ascolto del vinile e come fermarle, dal mobile alla bolla.",
   "crumb": "Isolare il giradischi",
-  "art": "<div class=\"art\">\n  <h2>Perché il giradischi è così sensibile.</h2>\n  <p>La puntina legge movimenti di pochi millesimi di millimetro incisi nel solco. Non sa distinguere tra il solco e tutto il resto: se il mobile vibra, se il pavimento si muove sotto i passi, se i bassi delle casse fanno tremare il piano, la puntina legge anche quello e lo manda all'amplificatore.</p>\n  <p>Il risultato può essere un rimbombo nei bassi, un suono confuso, la puntina che salta quando qualcuno cammina. Nei casi peggiori nasce un innesco: il suono delle casse fa vibrare il giradischi, la puntina lo raccoglie, l'amplificatore lo rimanda alle casse e il rimbombo cresce.</p>\n\n  <h2>Un mobile rigido e pesante.</h2>\n  <p>La prima difesa è il mobile. Deve essere stabile, non traballare quando lo tocchi e non flettere sotto il peso. Un mobile leggero o con ripiani sottili fa da cassa di risonanza; un mobile in legno massello, con ripiani spessi e ben incastrati, smorza le vibrazioni invece di amplificarle.</p>\n  <p>Il giradischi sta meglio sul piano superiore, che è il punto più stabile e più lontano dal pavimento. È così che ho progettato il <a href=\"extrasound-vinyl.html\">Vinyl</a>: giradischi in alto, amplificatore al centro e i dischi in basso, dove il loro peso tiene il mobile ancora più fermo.</p>\n\n  <h2>Lontano dalle casse.</h2>\n  <p>Mettere le casse sullo stesso mobile del giradischi è l'errore più comune. I diffusori vibrano mentre suonano e trasmettono le vibrazioni al piano su cui appoggiano. Tieni le casse su <a href=\"stand-per-diffusori.html\">stand per diffusori</a>, separate dal mobile del giradischi, e se possibile non puntarle direttamente verso il giradischi.</p>\n\n  <h2>In bolla.</h2>\n  <p>Il giradischi deve essere perfettamente orizzontale. Se è inclinato, la puntina lavora storta nel solco, consuma il disco in modo irregolare e il suono perde precisione. Appoggia una piccola livella sul piatto, in due direzioni, e regola i piedini del giradischi o del mobile finché la bolla è al centro.</p>\n\n  <h2>Il pavimento.</h2>\n  <p>I pavimenti in legno, e soprattutto il parquet flottante, trasmettono i passi. Su un pavimento in piastrelle sopra un massetto il problema è molto minore. Se la puntina salta quando qualcuno cammina, aiutano un mobile più pesante, l'appoggio vicino a una parete portante o, nei casi difficili, una mensola fissata al muro.</p>\n\n  <h2>Piedini e basi antivibranti.</h2>\n  <p>Piedini disaccoppianti, basi isolanti e piattaforme sotto il giradischi possono aiutare, ma vengono dopo. Prima sistema il mobile, la bolla e la distanza dalle casse: spesso basta questo. Se il problema resta, prova un accessorio alla volta, così capisci cosa funziona davvero.</p>\n\n  <h2>Una prova semplice.</h2>\n  <p>Con il volume basso, appoggia la puntina su un disco fermo. Batti piano con un dito sul mobile, poi cammina vicino al giradischi. Se dai diffusori senti i colpi o i passi, le vibrazioni arrivano alla puntina e vale la pena intervenire. Ripeti la prova dopo ogni modifica.</p>\n\n  <h2>Domande frequenti.</h2>\n",
+  "art": "<div class=\"art\">\n  <h2>Perché il giradischi è così sensibile.</h2>\n  <p>La puntina legge movimenti di pochi millesimi di millimetro incisi nel solco. Non sa distinguere tra il solco e tutto il resto: se il mobile vibra, se il pavimento si muove sotto i passi, se i bassi delle casse fanno tremare il piano, la puntina legge anche quello e lo manda all'amplificatore.</p>\n  <p>Il risultato può essere un rimbombo nei bassi, un suono confuso, la puntina che salta quando qualcuno cammina. Nei casi peggiori nasce un innesco: il suono delle casse fa vibrare il giradischi, la puntina lo raccoglie, l'amplificatore lo rimanda alle casse e il rimbombo cresce.</p>\n\n  <h2>Un mobile rigido e pesante.</h2>\n  <p>La prima difesa è il mobile. Deve essere stabile, non traballare quando lo tocchi e non flettere sotto il peso. Un mobile leggero o con ripiani sottili fa da cassa di risonanza; un mobile in legno massello, con ripiani spessi e ben incastrati, smorza le vibrazioni invece di amplificarle.</p>\n  <p>Il giradischi sta meglio sul piano superiore, che è il punto più stabile e più lontano dal pavimento. È così che ho progettato il <a href=\"extrasound-vinyl.html\">Vinyl</a>: giradischi in alto, amplificatore al centro e i dischi in basso, dove il loro peso tiene il mobile ancora più fermo.</p>\n\n  <h2>Lontano dalle casse.</h2>\n  <p>Mettere le casse sullo stesso mobile del giradischi è l'errore più comune. I diffusori vibrano mentre suonano e trasmettono le vibrazioni al piano su cui appoggiano. Tieni le casse su <a href=\"stand-per-diffusori.html\">stand per diffusori</a>, separate dal mobile del giradischi, e se possibile non puntarle direttamente verso il giradischi.</p>\n\n  <h2>In bolla.</h2>\n  <p>Il giradischi deve essere perfettamente orizzontale. Se è inclinato, la puntina lavora storta nel solco, consuma il disco in modo irregolare e il suono perde precisione. Appoggia una piccola livella sul piatto, in due direzioni, e regola i piedini del giradischi o del mobile finché la bolla è al centro.</p>\n\n  <h2>Il pavimento.</h2>\n  <p>I pavimenti in legno, e soprattutto il parquet flottante, trasmettono i passi. Su un pavimento in piastrelle sopra un massetto il problema è molto minore. Se la puntina salta quando qualcuno cammina, aiutano un mobile più pesante, l'appoggio vicino a una parete portante o, nei casi difficili, una mensola fissata al muro.</p>\n\n  <h2>Piedini e basi antivibranti.</h2>\n  <p>Un piedino disaccoppiante è fatto di un materiale elastico che si deforma sotto il peso: quando il ripiano vibra, il piedino si schiaccia e si allunga e smorza le vibrazioni prima che arrivino al giradischi. Un appoggio rigido, invece, le passa tutte.</p>\n<!--ANIM:piedini-->\n  <p>Piedini disaccoppianti, basi isolanti e piattaforme sotto il giradischi possono aiutare, ma vengono dopo. Prima sistema il mobile, la bolla e la distanza dalle casse: spesso basta questo. Se il problema resta, prova un accessorio alla volta, così capisci cosa funziona davvero.</p>\n\n  <h2>Una prova semplice.</h2>\n  <p>Con il volume basso, appoggia la puntina su un disco fermo. Batti piano con un dito sul mobile, poi cammina vicino al giradischi. Se dai diffusori senti i colpi o i passi, le vibrazioni arrivano alla puntina e vale la pena intervenire. Ripeti la prova dopo ogni modifica.</p>\n\n  <h2>Domande frequenti.</h2>\n",
   "faq": [
    [
     "Il giradischi può stare sullo stesso mobile delle casse?",
@@ -66,6 +68,119 @@
    [
     "Servono piedini antivibranti?",
     "Possono aiutare, ma vengono dopo: prima un mobile rigido, in bolla e lontano dalle casse. Se il problema resta, piedini o basi disaccoppianti sotto il giradischi sono il passo successivo."
+   ]
+  ],
+  "hero_anim": "giradischi",
+  "mod": "2026-11-13"
+ },
+ {
+  "fn": "guida-pannelli-acustici.html",
+  "img": "images/guida-pannelli.jpg",
+  "img_alt": "Illustrazione: pianta di una stanza con i pannelli che sparpagliano le riflessioni",
+  "hero_anim": "pannelli",
+  "date": "2026-11-13",
+  "h1": "Pannelli acustici in legno",
+  "h1s": "Assorbire o diffondere il suono, dove metterli e quanti ne servono",
+  "lead": "In una stanza non senti solo i diffusori: senti anche le pareti. I pannelli acustici servono a tenere a bada il suono che ci rimbalza sopra. Ecco come funzionano, dove si mettono e quando bastano.",
+  "title": "Pannelli acustici: assorbire o diffondere?",
+  "desc": "Come funzionano i pannelli acustici in legno: la differenza tra assorbire e diffondere il suono, dove metterli con il trucco dello specchio e quanti ne servono.",
+  "card": "Assorbire o diffondere, dove metterli con il trucco dello specchio e quanti ne servono: l'acustica della stanza spiegata semplice.",
+  "crumb": "Pannelli acustici",
+  "art": "<div class=\"art\">\n  <h2>Il suono rimbalza.</h2>\n  <p>Quando un diffusore suona, il suono non arriva solo dritto alle tue orecchie. Una parte colpisce le pareti laterali, il soffitto, il pavimento e la parete alle tue spalle, e torna indietro con un piccolo ritardo. Sono le riflessioni.</p>\n  <p>Le prime riflessioni, quelle delle pareti più vicine, arrivano pochi millesimi di secondo dopo il suono diretto. L'orecchio non le sente come un'eco: le mescola al suono. Le voci perdono contorno, gli strumenti non stanno fermi al loro posto e gli acuti diventano duri. Nelle stanze con pareti spoglie, vetrate e pavimenti lisci il problema è più evidente.</p>\n\n  <h2>Assorbire o diffondere.</h2>\n  <p>Un pannello assorbente è fatto di un materiale morbido e poroso, come la lana di roccia o la fibra di poliestere. Trattiene una parte dell'energia del suono e la riflessione torna indietro più debole.</p>\n  <p>Un pannello che diffonde ha invece una superficie irregolare, con blocchetti o listarelle a profondità diverse. Non toglie energia alla stanza: la rimanda in tante direzioni e un po' sfasata nel tempo, invece che tutta insieme verso di te. La riflessione c'è ancora, ma arriva sparpagliata e non disturba.</p>\n  <p>Le due cose non sono in gara. L'assorbimento serve quando la stanza rimbomba ed è piena di eco; la diffusione mette ordine nelle riflessioni senza spegnere la stanza. Se assorbi troppo, la stanza diventa sorda e la musica perde aria: è l'errore più comune.</p>\n  <p class=\"note\"><b>I miei pannelli.</b> <a href=\"pannelli-skyline.html\">Skyline</a>, <a href=\"pannelli-pyramid.html\">Pyramid</a>, <a href=\"pannello-soundwave.html\">SoundWave</a> e <a href=\"extrasound-wave.html\">Wave</a> sono pannelli che diffondono il suono: blocchetti e listarelle di legno a profondità diverse. Correggono la stanza e allo stesso tempo arredano la parete.</p>\n\n  <h2>Dove metterli: il trucco dello specchio.</h2>\n  <p>Il punto da cui partire sono le prime riflessioni sulle pareti laterali. Per trovarle bastano uno specchio e un aiutante:</p>\n  <ol>\n    <li>Siediti al tuo posto d'ascolto.</li>\n    <li>Chiedi a qualcuno di far scorrere uno specchio lungo la parete laterale, all'altezza delle tue orecchie, tra te e il diffusore.</li>\n    <li>Quando nello specchio vedi il diffusore, quello è il punto di prima riflessione: segnalo con un pezzo di nastro adesivo.</li>\n    <li>Ripeti con l'altro diffusore e sull'altra parete.</li>\n  </ol>\n  <p>Lo stesso trucco funziona sul soffitto e sul piano di una scrivania. Il primo pannello va lì.</p>\n\n  <h2>Le altre pareti.</h2>\n  <p><b>Dietro i diffusori.</b> La parete alle spalle delle casse riceve il suono che esce dai lati e dal retro dei diffusori. Un pannello che diffonde, qui, allarga la scena e fa da sfondo all'impianto.</p>\n  <p><b>Dietro di te.</b> La parete di fondo rimanda il suono alle orecchie da dietro. In una stanza piccola, con il divano vicino al muro, è il punto in cui la diffusione si sente di più.</p>\n  <p><b>Gli angoli e i bassi.</b> I bassi si accumulano negli angoli e fanno rimbombare la stanza. Nessun pannello sottile li ferma: per quelli servono trappole per bassi spesse, negli angoli, oppure spostare un po' le casse e il divano. Ne parlo nella guida su <a href=\"guida-posizionare-diffusori.html\">come posizionare i diffusori</a>.</p>\n\n  <h2>Quanti ne servono.</h2>\n  <p>Meno di quanto pensi. Parti dai punti di prima riflessione, ascolta per qualche giorno e poi aggiungi la parete dietro le casse o quella alle tue spalle. Non serve coprire le pareti: pochi pannelli nei punti giusti contano più di tanti pannelli messi a caso.</p>\n  <p>Una prova semplice: batti forte le mani al centro della stanza. Se senti un'eco metallica che ronza tra due pareti parallele, quelle pareti hanno bisogno di un pannello. Ripeti la prova dopo averlo montato.</p>\n\n  <h2>Gli errori da evitare.</h2>\n  <ul>\n    <li><b>Spegnere tutto.</b> Troppi pannelli assorbenti rendono il suono piatto e senza vita.</li>\n    <li><b>Sedersi attaccati a un pannello che diffonde.</b> Ha bisogno di un po' di spazio per lavorare: come regola, stai ad almeno sei volte la sua profondità.</li>\n    <li><b>Aspettarsi che sistemi i bassi.</b> Per quelli contano gli angoli e la posizione di casse e divano.</li>\n    <li><b>Trattare un lato solo.</b> La stanza deve restare simmetrica: quello che metti a sinistra va anche a destra.</li>\n  </ul>\n  <p>Ogni pannello lo costruisco anche <a href=\"su-misura.html\">su misura</a>, nell'essenza e nella misura che servono alla tua parete.</p>\n\n  <h2>Domande frequenti.</h2>",
+  "faq": [
+   [
+    "Che differenza c'è tra pannelli fonoassorbenti e pannelli che diffondono il suono?",
+    "I fonoassorbenti trattengono una parte del suono e la riflessione torna più debole. Quelli che diffondono lo rimandano in tante direzioni: la riflessione resta, ma sparpagliata. I primi servono contro l'eco, i secondi mettono ordine senza spegnere la stanza."
+   ],
+   [
+    "Dove si mettono i pannelli acustici in soggiorno?",
+    "Prima sui punti di prima riflessione delle pareti laterali, che trovi con uno specchio dal posto d'ascolto. Poi sulla parete dietro i diffusori o su quella dietro il divano."
+   ],
+   [
+    "I pannelli in legno servono anche per i bassi?",
+    "No. I pannelli in legno lavorano sui medi e sugli acuti. I bassi si correggono con trappole spesse negli angoli e spostando casse e divano."
+   ],
+   [
+    "Quanti pannelli acustici servono?",
+    "Pochi, nei punti giusti. Parti dalle prime riflessioni laterali e aggiungi solo se serve: troppi pannelli assorbenti rendono la stanza sorda."
+   ],
+   [
+    "I pannelli acustici isolano dai vicini?",
+    "No. Correggono il suono dentro la stanza. Per non disturbare i vicini serve l'isolamento acustico, che è un lavoro sulle pareti stesse."
+   ]
+  ]
+ },
+ {
+  "fn": "guida-posizionare-diffusori.html",
+  "img": "images/guida-posizionamento.jpg",
+  "img_alt": "Illustrazione: il triangolo d'ascolto tra i due diffusori e il divano",
+  "hero_anim": "posizionamento",
+  "date": "2026-11-13",
+  "h1": "Come posizionare i diffusori",
+  "h1s": "Triangolo d'ascolto, distanza dal muro e orientamento: le regole per sentire bene in soggiorno",
+  "lead": "Spostare le casse di qualche centimetro non costa niente e cambia il suono più di quanto immagini. Ecco le regole da cui partire, e una prova per capire se ci sei.",
+  "title": "Come posizionare i diffusori in soggiorno",
+  "desc": "Come posizionare i diffusori in soggiorno: il triangolo d'ascolto, la distanza dal muro, l'altezza e l'orientamento delle casse, con una prova da fare a casa.",
+  "card": "Triangolo d'ascolto, distanza dal muro e orientamento delle casse: le regole per sentire bene in soggiorno.",
+  "crumb": "Posizionare i diffusori",
+  "art": "<div class=\"art\">\n  <h2>Il triangolo d'ascolto.</h2>\n  <p>È la regola di partenza. I due diffusori e la tua testa sono i tre vertici di un triangolo con i lati uguali: la distanza tra le casse è la stessa che c'è tra ogni cassa e te. Visto dal divano, tra le due casse ci sono 60 gradi.</p>\n  <p>In un soggiorno non sempre ci si riesce, e va bene anche un triangolo un po' più largo o più stretto. Quello che conta è che le due casse siano alla stessa distanza da te. Se una è più vicina, il suono arriva sbilanciato: tutta la scena si sposta da quella parte.</p>\n\n  <h2>Girate verso di te.</h2>\n  <p>Gira leggermente i diffusori verso il punto d'ascolto. Si parte con le casse che puntano alla tua testa e poi si regola a orecchio: più girate, la voce al centro è più a fuoco; meno girate, la scena si allarga. Non esagerare: oltre un certo punto il suono si chiude.</p>\n  <p>Per controllare, siediti al tuo posto e guarda le casse: se vedi ancora molto dei loro fianchi interni, girale un po' di più.</p>\n\n  <h2>All'altezza delle orecchie.</h2>\n  <p>Il tweeter, l'altoparlante piccolo degli acuti, deve stare all'altezza delle tue orecchie quando sei seduto, o poco sotto. Gli acuti sono molto direzionali: se il tweeter punta al petto o sopra la testa, il suono perde dettaglio. Con il <a href=\"guida-altezza-stand-diffusori.html\">calcolatore dell'altezza degli stand</a> trovi la misura giusta per il tuo divano e i tuoi diffusori.</p>\n\n  <h2>Lontano dal muro e dagli angoli.</h2>\n  <p>Più una cassa è vicina al muro che ha dietro, più i bassi aumentano, ma diventano gonfi e confusi. Negli angoli l'effetto è ancora più forte. Con il condotto reflex sul retro, la distanza dal muro conta ancora di più.</p>\n  <p>Non c'è una distanza giusta per tutti. Parti da quella indicata nel manuale dei tuoi diffusori, poi spostali avanti o indietro di 10 centimetri alla volta e ascolta un brano con un basso che conosci bene: i bassi cambiano più di quanto ti aspetti.</p>\n  <p>Tieni le due casse anche alla stessa distanza dalle pareti laterali. Se una è vicino a un muro e l'altra vicino a una porta aperta, suoneranno in modo diverso.</p>\n\n  <h2>Il posto d'ascolto.</h2>\n  <p>Anche il divano conta. Attaccato alla parete di fondo i bassi rimbombano; al centro esatto della stanza spesso spariscono. Un buon punto di partenza è sedersi a circa il 38% della lunghezza della stanza, misurato da una delle due pareti corte: in una stanza lunga 5 metri, a circa 1,9 metri dal muro. Da lì sposta il divano, o le casse, di poco alla volta e ascolta.</p>\n\n  <h2>Su stand, non sui mobili.</h2>\n  <p>I diffusori da scaffale suonano meglio su stand rigidi che dentro una libreria o sullo stesso mobile del giradischi. Dentro uno scaffale le pareti intorno gonfiano i bassi; sul mobile del giradischi le vibrazioni arrivano alla puntina. Ne parlo nella guida su <a href=\"guida-giradischi-vibrazioni.html\">come isolare il giradischi dalle vibrazioni</a>.</p>\n  <p class=\"note\"><b>I miei stand.</b> Gli <a href=\"stand-per-diffusori.html\">stand per diffusori</a> che costruisco sono in legno massello e multistrato, in altezze diverse, e su richiesta li faccio su misura per i tuoi diffusori e il tuo divano.</p>\n\n  <h2>Una prova semplice.</h2>\n  <p>Metti un brano con una voce sola, registrata bene. Chiudi gli occhi: la voce deve stare ferma, al centro tra le casse, come se il cantante fosse lì. Se scivola da un lato, controlla le distanze; se è sfocata, gira un po' di più le casse verso di te. Ripeti la prova dopo ogni spostamento.</p>\n  <p>Quando la posizione è giusta, se la stanza è ancora dura o rimbomba, il passo successivo sono i <a href=\"guida-pannelli-acustici.html\">pannelli acustici</a>.</p>\n\n  <h2>Domande frequenti.</h2>",
+  "faq": [
+   [
+    "Quanto devono essere distanti i diffusori tra loro?",
+    "Più o meno quanto è distante ognuno di loro da te: è il triangolo d'ascolto. In un soggiorno di solito si sta tra 1,5 e 3 metri."
+   ],
+   [
+    "I diffusori vanno girati verso il divano?",
+    "In genere sì, leggermente, verso la testa di chi ascolta. Poi si regola a orecchio: più girati per una voce più a fuoco, meno girati per una scena più larga."
+   ],
+   [
+    "Quanto devono stare lontani dal muro?",
+    "Dipende dai diffusori: parti dalla distanza indicata nel manuale e prova spostandoli di 10 cm alla volta. Vicino al muro e negli angoli i bassi aumentano ma diventano confusi."
+   ],
+   [
+    "A che altezza vanno messi i diffusori?",
+    "Con il tweeter all'altezza delle orecchie da seduto, o poco sotto. Con il calcolatore della guida all'altezza degli stand trovi la misura giusta."
+   ],
+   [
+    "Si possono mettere le casse in una libreria?",
+    "Si può, ma suonano meglio su stand: dentro uno scaffale i bassi si gonfiano. Se devono stare lì, portale sul bordo del ripiano."
+   ]
+  ]
+ },
+ {
+  "fn": "guida-diffusori-scrivania.html",
+  "img": "images/guida-scrivania.jpg",
+  "img_alt": "Illustrazione: cassa inclinata sulla scrivania che punta alle orecchie",
+  "hero_anim": "scrivania",
+  "date": "2026-11-13",
+  "h1": "Diffusori sulla scrivania",
+  "h1s": "Perché inclinarli verso le orecchie, a che distanza metterli e come staccarli dal piano",
+  "lead": "Sulla scrivania i diffusori sono vicinissimi a te, e proprio per questo bastano pochi centimetri per cambiare il suono. Le regole sono quelle del soggiorno, in piccolo.",
+  "title": "Casse sulla scrivania: come posizionarle",
+  "desc": "Come posizionare le casse sulla scrivania: inclinarle verso le orecchie, il triangolo d'ascolto da vicino, le riflessioni del piano e come staccarle dal tavolo.",
+  "card": "Perché inclinare le casse verso le orecchie, a che distanza metterle e come staccarle dal piano.",
+  "crumb": "Diffusori sulla scrivania",
+  "art": "<div class=\"art\">\n  <h2>Il problema: le casse puntano al petto.</h2>\n  <p>Appoggiati sul piano, quasi tutti i diffusori da scrivania hanno il tweeter più in basso delle tue orecchie. Gli acuti sono il suono più direzionale: escono dal tweeter come un fascio, e se il fascio punta al petto arrivano alle orecchie più deboli. Le voci si spengono e i dettagli si perdono.</p>\n\n  <h2>Inclinarli verso le orecchie.</h2>\n  <p>La soluzione più semplice è inclinare le casse verso l'alto, in modo che il tweeter guardi le tue orecchie. Bastano pochi gradi: a 70 centimetri di distanza, per alzare il fascio di 12 centimetri basta un'inclinazione di circa 10 gradi.</p>\n  <p>In alternativa puoi alzare le casse su piccoli stand, fino a portare il tweeter all'altezza delle orecchie. Spesso la soluzione migliore è un po' tutte e due le cose: un supporto che alza e inclina.</p>\n  <p class=\"note\"><b>I miei supporti inclinati.</b> I <a href=\"supporti-inclinati-diffusori.html\">supporti inclinati</a> sono due appoggi in legno che inclinano le casse verso l'alto, o verso il basso se stanno su una mensola. Vanno bene per qualsiasi diffusore da scaffale.</p>\n\n  <h2>Il triangolo, da vicino.</h2>\n  <p>Anche sulla scrivania vale il triangolo d'ascolto: la distanza tra le due casse è più o meno quella tra ogni cassa e la tua testa. Di solito vuol dire una cassa per lato del monitor. Girale verso di te, in modo da vedere poco o niente dei loro fianchi interni.</p>\n  <p>Mettile alla stessa distanza da te e, se puoi, alla stessa distanza dal muro: da così vicino, una differenza di pochi centimetri si sente subito.</p>\n\n  <h2>Il piano della scrivania riflette.</h2>\n  <p>Il piano è una superficie dura proprio davanti alle casse: una parte del suono ci rimbalza sopra e arriva alle orecchie un attimo dopo quella diretta, confondendo il suono.</p>\n  <p>Per ridurre il problema non arretrare troppo le casse rispetto al bordo della scrivania e inclinale verso l'alto: meno suono colpisce il piano. Un trucco: appoggia uno specchietto sul piano tra la cassa e le tue orecchie. Se da seduto vedi il tweeter nello specchio, lì il suono rimbalza verso di te.</p>\n\n  <h2>Staccarle dal piano.</h2>\n  <p>Molte scrivanie sono leggere o cave: le casse le fanno vibrare e il piano aggiunge un rimbombo nei bassi. Prova ad appoggiare una mano sulla scrivania mentre suona la musica: se la senti vibrare, la scrivania sta suonando insieme alle casse. Un supporto rigido o dei piedini disaccoppianti le staccano dal piano.</p>\n\n  <h2>Lontano dal muro.</h2>\n  <p>Se la scrivania è contro la parete, le casse stanno a pochi centimetri dal muro e i bassi si gonfiano, soprattutto con il condotto reflex sul retro. Portale in avanti quanto puoi e tienile lontane dagli angoli.</p>\n  <p>Se ascolti da un lettore portatile, il <a href=\"supporto-dap.html\">supporto per DAP</a> lo tiene in piedi accanto alle casse, con i cavi in ordine. Per le casse in soggiorno trovi le regole nella guida su <a href=\"guida-posizionare-diffusori.html\">come posizionare i diffusori</a>.</p>\n\n  <h2>Domande frequenti.</h2>",
+  "faq": [
+   [
+    "Le casse sulla scrivania vanno inclinate?",
+    "Quasi sempre sì: appoggiate sul piano puntano al petto. Inclinate di pochi gradi verso l'alto, il tweeter guarda le orecchie e voci e dettagli arrivano più chiari."
+   ],
+   [
+    "Di quanti gradi inclinare le casse da scrivania?",
+    "Quanto basta perché il tweeter punti alle orecchie. Da vicino di solito bastano pochi gradi, tra 5 e 15: da seduto, il tweeter deve guardarti."
+   ],
+   [
+    "Quanto distanti devono essere le casse sulla scrivania?",
+    "Più o meno quanto la distanza tra ogni cassa e la tua testa, una per lato del monitor."
+   ],
+   [
+    "Servono i piedini sotto le casse da scrivania?",
+    "Se la scrivania vibra, sì: un supporto rigido o dei piedini disaccoppianti staccano le casse dal piano e tolgono il rimbombo. Prova con una mano sul piano mentre suona la musica."
+   ],
+   [
+    "Le casse da scrivania possono stare contro il muro?",
+    "Meglio di no: vicino al muro i bassi si gonfiano, soprattutto se la cassa ha il condotto reflex dietro. Portale in avanti e lontano dagli angoli."
    ]
   ]
  }

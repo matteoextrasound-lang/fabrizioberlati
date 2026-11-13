@@ -18,6 +18,8 @@ SLUG = {
  'pannello-soundwave.html': 'acoustic-panel-soundwave.html', 'sollevatori-cavi-bridge.html': 'cable-lifters-bridge.html',
  'supporti-inclinati-diffusori.html': 'tilting-speaker-supports.html', 'supporto-dap.html': 'dap-stand.html',
  'guida-conservare-vinili.html': 'how-to-store-vinyl-records.html', 'guida-giradischi-vibrazioni.html': 'turntable-vibration-isolation.html',
+ 'guida-pannelli-acustici.html': 'acoustic-panels-absorb-or-diffuse.html', 'guida-posizionare-diffusori.html': 'how-to-position-speakers.html',
+ 'guida-diffusori-scrivania.html': 'desktop-speaker-placement.html',
 }
 for f in glob.glob('mobile-hifi-*.html'): SLUG[f] = 'hifi-rack-' + f[len('mobile-hifi-'):]
 for f in glob.glob('stand-*.html'):
@@ -206,5 +208,6 @@ for f in PAGES:
                     f'    <xhtml:link rel="alternate" hreflang="x-default" href="{it_url(f)}"/>\n  </url>')
 open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + '\n'.join(urls) + '\n</urlset>\n')
 json.dump(SLUG, open(os.path.join(HERE, 'pagine_abbinate.json'), 'w'), indent=1, ensure_ascii=False)
+if os.environ.get('MISSING_DUMP'): json.dump(sorted(MISSING), open(os.environ['MISSING_DUMP'], 'w'), ensure_ascii=False, indent=1)
 print('pagine', len(PAGES), '| testi non tradotti', len(MISSING))
 for m in sorted(MISSING): print('  -', m[:140])

@@ -1,0 +1,51 @@
+<figure class="anim">
+<svg viewBox="0 120 760 200" data-still=".1" role="img" aria-label="Animazione: a sinistra il giradischi appoggiato in modo rigido vibra con il mobile; a destra i piedini disaccoppianti si deformano e assorbono le vibrazioni, e il giradischi resta fermo">
+  <line x1="380" y1="20" x2="380" y2="300" stroke="#2a1d14" stroke-opacity=".12"/>
+  <!-- SINISTRA: appoggio rigido -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 3;0 -2;0 2;0 0" dur=".36s" repeatCount="indefinite"/>
+    <rect x="40" y="226" width="300" height="16" fill="#d9bb8c"/>
+    <!-- giradischi che vibra con il ripiano -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 190 200;.6 190 200;-.6 190 200;0 190 200" dur=".36s" repeatCount="indefinite"/>
+      <rect x="84" y="208" width="14" height="18" fill="#6f6254"/><rect x="282" y="208" width="14" height="18" fill="#6f6254"/>
+      <rect x="74" y="174" width="232" height="34" rx="3" fill="#4a3a2e"/>
+      <rect x="104" y="162" width="140" height="12" fill="#2b2420"/>
+      <rect x="110" y="157" width="128" height="5" fill="#111"/>
+      <circle cx="282" cy="160" r="8" fill="#8b7a66"/>
+      <path d="M282 156 L214 152 L198 158" fill="none" stroke="#cfc3b2" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+  <!-- vibrazioni che salgono fino alla puntina -->
+  <g fill="none" stroke="#d9822b" stroke-width="3" stroke-linecap="round">
+    <path d="M150 262 q10 -8 20 0 q10 8 20 0 q10 -8 20 0"><animateTransform attributeName="transform" type="translate" values="0 0;0 -130" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M150 262 q10 -8 20 0 q10 8 20 0 q10 -8 20 0" opacity="0"><animateTransform attributeName="transform" type="translate" values="0 0;0 -130" dur="1.2s" begin=".6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="1.2s" begin=".6s" repeatCount="indefinite"/></path>
+  </g>
+  <!-- DESTRA: piedini disaccoppianti -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 3;0 -2;0 2;0 0" dur=".36s" repeatCount="indefinite"/>
+    <rect x="420" y="226" width="300" height="16" fill="#d9bb8c"/>
+  </g>
+  <!-- piedini che si schiacciano e si allungano -->
+  <g fill="#a87a2f">
+    <rect x="460" y="206" width="22" height="20" rx="8"><animate attributeName="height" values="20;17;23;18;22;20" dur=".36s" repeatCount="indefinite"/><animate attributeName="y" values="206;206;206;206;206;206" dur=".36s" repeatCount="indefinite"/></rect>
+    <rect x="658" y="206" width="22" height="20" rx="8"><animate attributeName="height" values="20;17;23;18;22;20" dur=".36s" repeatCount="indefinite"/></rect>
+  </g>
+  <!-- il giradischi resta fermo -->
+  <rect x="454" y="172" width="232" height="34" rx="3" fill="#4a3a2e"/>
+  <rect x="484" y="160" width="140" height="12" fill="#2b2420"/>
+  <rect x="490" y="155" width="128" height="5" fill="#111"/>
+  <circle cx="662" cy="158" r="8" fill="#8b7a66"/>
+  <path d="M662 154 L594 150 L578 156" fill="none" stroke="#cfc3b2" stroke-width="3" stroke-linecap="round"/>
+  <!-- vibrazioni che si fermano nei piedini -->
+  <g fill="none" stroke="#d9822b" stroke-width="3" stroke-linecap="round">
+    <path d="M461 262 q5 -8 10 0 q5 8 10 0"><animateTransform attributeName="transform" type="translate" values="0 0;0 -44" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" keyTimes="0;.2;1" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M659 262 q5 -8 10 0 q5 8 10 0"><animateTransform attributeName="transform" type="translate" values="0 0;0 -44" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" keyTimes="0;.2;1" dur="1.2s" repeatCount="indefinite"/></path>
+  </g>
+  <g font-size="22" fill="#6f6254" text-anchor="middle">
+    <text x="190" y="300">Appoggio rigido</text>
+    <text x="570" y="300">Piedini disaccoppianti</text>
+  </g>
+</svg>
+<figcaption><span>Il materiale elastico del piedino si deforma e smorza le vibrazioni prima che arrivino al giradischi.</span><button type="button" class="anim-replay">Rivedi</button></figcaption>
+</figure>

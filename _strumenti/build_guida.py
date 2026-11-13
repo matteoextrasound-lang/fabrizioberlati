@@ -11,9 +11,9 @@ wa_svg = re.search(r'(<svg viewBox="0 0 24 24" width="15" height="15" aria-hidde
 def page(fn, title, desc, ld, body, css_extra='', js=''):
     hdr = header.replace('<a href="guide.html">Guide</a>', '<a href="guide.html" aria-current="page">Guide</a>')
     s = head_common + f'<title>{title}</title>\n<meta name="description" content="{desc}">\n' + fonts + \
-        f'\n<link rel="stylesheet" href="guide.css?v=2">\n<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
+        f'\n<link rel="stylesheet" href="guide.css?v=2">\n' + ('<link rel="stylesheet" href="anim.css?v=1">\n' if 'class="anim"' in body else '') + f'<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>\n</head>\n<body>\n' + hdr + \
-        '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=4"></script>\n' + js + '</body>\n</html>\n'
+        '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=4"></script>\n' + js + ('<script src="anim.js?v=1"></script>\n' if 'class="anim"' in body else '') + '</body>\n</html>\n'
     open(fn, 'w').write(s)
 
 def fcta(t):
@@ -24,8 +24,6 @@ def fcta(t):
 
 STANDS = [
  dict(name='Extrasound Clessidra', url='stand-clessidra.html', img='images/clessidra-card.jpg?v=2', h=39, note='Faggio massello · 200 € la coppia'),
- dict(name='Extrasound Zeta', url='stand-zeta.html', img='images/zeta-card.jpg', h=61, note='Rovere e faggio · prezzo su richiesta'),
- dict(name='Extrasound Line', url='stand-line.html', img='images/line-card.jpg', h=54, note='Multistrato e metallo · prezzo su richiesta'),
  dict(name='Extrasound Rigatini', url='stand-rigatini.html', img='images/rigatini-card.jpg', h=50.3, note='Faggio massello · 250 € la coppia'),
  dict(name='Stand Stile Pannello', url='stand-stile-pannello.html', img='images/pannello-card.jpg?v=2', h=54.6, note='Faggio massello · 300 € la coppia'),
  dict(name='Wood Brick', url='stand-wood-brick.html', img='images/woodbrick-card.jpg', h=55, note='Legno massello · 300 € la coppia'),
@@ -151,7 +149,7 @@ TITLE = "Altezza stand per diffusori: calcolatore e guida"
 DESC = "A che altezza mettere le casse? Calcola l'altezza giusta degli stand per i tuoi diffusori e il tuo divano, e scopri come scegliere uno stand che suona bene."
 ld = {"@context": "https://schema.org", "@graph": [
   {"@type": "Article", "headline": "A che altezza mettere le casse? Come scegliere l'altezza degli stand per diffusori", "description": DESC, "url": URL,
-   "inLanguage": "it", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "image": "https://fabrizioberlati.com/images/tree-1.jpg",
+   "inLanguage": "it", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "image": "https://fabrizioberlati.com/images/guida-altezza.jpg",
    "author": {"@type": "Person", "name": "Fabrizio Berlati", "url": "https://fabrizioberlati.com/laboratorio.html"},
    "publisher": {"@id": "https://fabrizioberlati.com/#laboratorio"}, "mainEntityOfPage": URL},
   {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]},
@@ -179,7 +177,7 @@ for g in NUOVE:
 </div></section>"""
     ldg = {"@context": "https://schema.org", "@graph": [
       {"@type": "Article", "headline": g['h1'], "description": g['desc'], "url": url, "inLanguage": "it",
-       "datePublished": "2026-11-03", "dateModified": "2026-11-03", "image": "https://fabrizioberlati.com/" + g['img'],
+       "datePublished": g.get('date', '2026-11-03'), "dateModified": g.get('mod', g.get('date', '2026-11-03')), "image": "https://fabrizioberlati.com/" + g['img'],
        "author": {"@type": "Person", "name": "Fabrizio Berlati", "url": "https://fabrizioberlati.com/laboratorio.html"},
        "publisher": {"@id": "https://fabrizioberlati.com/#laboratorio"}, "mainEntityOfPage": url},
       {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in g['faq']]},
@@ -187,8 +185,11 @@ for g in NUOVE:
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fabrizioberlati.com/"},
         {"@type": "ListItem", "position": 2, "name": "Guide", "item": "https://fabrizioberlati.com/guide.html"},
         {"@type": "ListItem", "position": 3, "name": g['crumb'], "item": url}]}]}
-    fig = f'<figure class="g-fig"><img src="{g["img"]}" alt="{g["img_alt"]}" loading="lazy"></figure>'
-    page(g['fn'], g['title'] + ' · Fabrizio Berlati', g['desc'], ldg, hero_g + '\n<div class="wrap">' + fig + g['art'] + faq_html + '\n</div>')
+    # animazioni: _strumenti/anim/<nome>.html, in alto (hero_anim) o nel testo con <!--ANIM:nome-->
+    anim = lambda n: open(f'_strumenti/anim/{n}.html').read().strip()
+    fig = anim(g['hero_anim']) if g.get('hero_anim') else f'<figure class="g-fig"><img src="{g["img"]}" alt="{g["img_alt"]}" loading="lazy"></figure>'
+    art = re.sub(r'<!--ANIM:([a-z-]+)-->', lambda m: anim(m.group(1)), g['art'])
+    page(g['fn'], g['title'] + ' · Fabrizio Berlati', g['desc'], ldg, hero_g + '\n<div class="wrap">' + fig + art + faq_html + '\n</div>')
 
 # indice delle guide
 gl = '''
@@ -198,7 +199,7 @@ gl = '''
   <p class="lead">Quello che ho imparato costruendo mobili, stand e pannelli per gli impianti dei miei clienti: misure, legni, posizionamento. Con qualche strumento per fare i conti in fretta.</p>
 </div></section>
 <div class="wrap"><div class="glist">
-  <a href="guida-altezza-stand-diffusori.html"><div class="ph"><img src="images/tree-1.jpg" alt="Coppia di stand per diffusori in faggio massello" loading="lazy"></div>
+  <a href="guida-altezza-stand-diffusori.html"><div class="ph"><img src="images/guida-altezza.jpg" alt="Illustrazione: diffusore sullo stand con il tweeter all'altezza delle orecchie di chi ascolta" loading="lazy"></div>
     <h2>A che altezza mettere le casse?</h2><p>La regola del tweeter, come prendere le misure e un calcolatore che ti dice quanto deve essere alto lo stand.</p></a>
 ''' + ''.join(f'''  <a href="{g['fn']}"><div class="ph"><img src="{g['img']}" alt="{g['img_alt']}" loading="lazy"></div>\n    <h2>{g['h1']}</h2><p>{g['card']}</p></a>\n''' for g in NUOVE) + '''</div></div>'''
 ld2 = {"@context": "https://schema.org", "@graph": [
