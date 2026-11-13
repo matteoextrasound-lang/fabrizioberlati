@@ -69,3 +69,11 @@
   .htable{font-size:.9rem}
 }
 .g-fig{margin:0 0 2.2rem;max-width:760px;background:#fff}.g-fig img{width:100%;height:auto;display:block;max-height:420px;object-fit:contain}
+
+/* riquadro negozio in fondo alle guide */
+.shopbox{background:var(--ash);padding:1.4rem 1.5rem;margin:2.6rem 0 0;border-left:3px solid var(--brass)}
+.shopbox p{margin-bottom:1rem}
+.shopbox b{display:block;font:400 1.3rem/1.25 var(--serif);margin-bottom:.35rem}
+.shopbox .ctas{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center}
+.shopbox .btn{color:var(--ink)}.shopbox .btn:hover{color:#fff}
+.shopbox .link{color:var(--brass)}
