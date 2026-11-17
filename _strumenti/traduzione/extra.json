@@ -760,7 +760,6 @@
  "Piano e senza bassi.": "Quiet and thin.",
  "Prima di tutto: un disco o tutti?": "First: one record or all of them?",
  "Prova con un altro cavo: anche un cavo difettoso può ronzare.": "Try another cable: a faulty cable can hum too.",
- "Prova con un altro disco: se salta sempre nello stesso punto di uno solo, il problema è quel disco. Polvere e sporco nel solco bastano a far saltare la puntina.": "Try another record: if one record always skips at the same spot, the problem is that record. Dust and dirt in the groove are enough to make the stylus jump.",
  "Puntina che salta, fruscii e tic, ronzio: le cause più comuni e cosa controllare, in ordine.": "Skipping stylus, hiss and ticks, hum: the most common causes and what to check, in order.",
  "Quasi sempre la causa è semplice e si trova in pochi minuti. Il trucco è partire dal sintomo e controllare le cose nell'ordine giusto, dalla più probabile alla meno probabile.": "The cause is almost always simple and can be found in a few minutes. The trick is to start from the symptom and check things in the right order, from most to least likely.",
  "Quasi sempre è il preamplificatore phono: ce ne vuole uno solo. Controlla il selettore PHONO/LINE del giradischi e l'ingresso dell'amplificatore che stai usando.": "It's almost always the phono preamp: you need exactly one. Check the turntable's PHONO/LINE switch and the amplifier input you're using.",
@@ -781,5 +780,6 @@
  "Vedi le testine": "See cartridges",
  "dove mettere l'amplificatore": "where to put your amplifier",
  "lavaggio dei dischi con la macchina Pro-Ject": "record cleaning service with a Pro-Ject machine",
- "tic!": "tick!"
+ "tic!": "tick!",
+ "Se a saltare è un disco solo, e sempre nello stesso punto, il problema è quel disco e non il giradischi: di solito c'è sporco nel solco, a volte un graffio. Puliscilo e riprova.": "If only one record skips, and always at the same spot, the problem is that record, not the turntable: usually there's dirt in the groove, sometimes a scratch. Clean it and try again."
 }
