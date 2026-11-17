@@ -20,3 +20,13 @@ if(bb&&buy){document.body.classList.add('has-buybar');
   new IntersectionObserver(es=>{const e=es[0];bb.classList.toggle('on',!e.isIntersecting&&e.boundingClientRect.top<0)}).observe(buy)}
 // categorie: la riga dei filtri scorre fino al filtro attivo
 const ac=document.querySelector('.catchips a[aria-current=page]');if(ac)ac.parentElement.scrollLeft=ac.offsetLeft-24;
+// GoatCounter: conta i clic che portano fuori dal sito (Extrasound, WhatsApp, email) come eventi.
+// Nome evento = destinazione, provenienza = pagina da cui è partito il clic.
+const gcOut=a=>{try{const h=a.href;let p;
+  if(/^https?:\/\/(www\.)?extrasound\.it/i.test(h)){const u=new URL(h);p='extrasound'+(u.pathname==='/'&&u.search?'/?'+u.searchParams.get('s'):u.pathname.replace(/\/$/,'')||'/')}
+  else if(/^https:\/\/wa\.me\//.test(h))p='contatto/whatsapp';
+  else if(/^mailto:/i.test(h))p='contatto/email';
+  else if(/^tel:/i.test(h))p='contatto/telefono';
+  if(!p||!window.goatcounter||!goatcounter.count)return;
+  goatcounter.count({path:p,title:(a.textContent||'').trim().slice(0,80),referrer:location.pathname,event:true})}catch(_){}};
+['click','auxclick'].forEach(t=>document.addEventListener(t,e=>{const a=e.target.closest&&e.target.closest('a[href]');if(a)gcOut(a)},true));

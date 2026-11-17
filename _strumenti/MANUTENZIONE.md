@@ -39,4 +39,7 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 ## Schede prodotto da telefono (13/11)
 - Il pulsante principale è «Acquista su Extrasound» (`class="btn btn-buy"`, nuova scheda); «Chiedi informazioni» è un link.
 - Ogni scheda con prezzo ha prima di `</main>` la barra `<div class="buybar">` (prezzo + «Acquista»), che compare sul telefono quando il pulsante principale esce dallo schermo (site.js).
-- Versioni attuali: craft.css?v=24, site.js?v=5, guide.css?v=3, anim.css?v=1.
+- Versioni attuali: craft.css?v=24, site.js?v=6, guide.css?v=3, anim.css?v=1.
+
+## Conteggio dei clic in uscita (GoatCounter)
+`site.js` registra come evento GoatCounter ogni clic verso extrasound.it (nome `extrasound/<percorso>`, oppure `extrasound/?<ricerca>`), WhatsApp (`contatto/whatsapp`), email (`contatto/email`) e telefono (`contatto/telefono`). Come provenienza registra la pagina da cui parte il clic. Vale anche per i link aggiunti in futuro, senza fare niente. I clic dal browser escluso (skipgc) non vengono contati.
