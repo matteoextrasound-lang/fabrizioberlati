@@ -220,5 +220,42 @@
    ]
   ],
   "hero_anim": "amplificatore"
+ },
+ {
+  "fn": "guida-vinile-salta-gracchia.html",
+  "img": "images/guida-salta-3.jpg",
+  "img_alt": "Illustrazione: un disco con il braccio del giradischi e i segni di un tic",
+  "hero_anim": "solco",
+  "date": "2026-11-17",
+  "h1": "Il vinile salta, gracchia o ronza",
+  "h1s": "Cosa controllare, e in che ordine, quando il disco salta, fa rumore o il giradischi ronza",
+  "lead": "Quasi sempre la causa è semplice e si trova in pochi minuti. Il trucco è partire dal sintomo e controllare le cose nell'ordine giusto, dalla più probabile alla meno probabile.",
+  "title": "Il vinile salta, gracchia o ronza: cause e rimedi",
+  "desc": "Il disco salta, gracchia o il giradischi ronza? Le cause più comuni e come risolverle: peso della puntina, antiskating, polvere, statica, filo di massa.",
+  "card": "Puntina che salta, fruscii e tic, ronzio: le cause più comuni e cosa controllare, in ordine.",
+  "crumb": "Il vinile salta o ronza",
+  "art": "<div class=\"art\">\n  <h2>Prima di tutto: un disco o tutti?</h2>\n  <p>La prima domanda è semplice. Se il problema c'è su un disco solo, la causa è quasi sicuramente quel disco: sporco, rigato o imbarcato. Se c'è su tutti i dischi, la causa è nel giradischi o nell'impianto.</p>\n  <p>Per il ronzio c'è una prova in più: ascolta un'altra sorgente, per esempio il telefono o il lettore CD, sullo stesso amplificatore. Se ronza anche quella, il problema non è il giradischi ma l'amplificatore o le casse.</p>\n\n  <h2>Il disco salta.</h2>\n  <p>Le cause più frequenti sono due regolazioni del braccio. Le controlli in pochi minuti.</p>\n  <ul>\n    <li><b>Il peso della puntina.</b> Ogni testina ha un valore indicato dal produttore, in grammi. Se la puntina è troppo leggera esce dal solco; se è troppo pesante consuma disco e puntina. Il valore si regola con il contrappeso del braccio e si controlla con una bilancina per testine.</li>\n    <li><b>L'antiskating.</b> Mentre il disco gira, il braccio viene tirato verso il centro. L'antiskating lo compensa con una piccola spinta verso l'esterno, e di solito va regolato sullo stesso valore del peso della puntina.</li>\n    <li><b>Il disco.</b> Prova con un altro disco: se salta sempre nello stesso punto di uno solo, il problema è quel disco. Polvere e sporco nel solco bastano a far saltare la puntina.</li>\n    <li><b>La puntina sporca.</b> Un batuffolo di polvere sulla puntina la fa scivolare fuori dal solco. Più sotto trovi come pulirla.</li>\n    <li><b>Il cappuccio di protezione.</b> Se il giradischi è nuovo, controlla di aver tolto il cappuccio di plastica che protegge la puntina.</li>\n  </ul>\n  <p>Se il disco salta quando cammini vicino al mobile o quando alzi il volume, la causa sono le vibrazioni: trovi tutto nella guida su <a href=\"guida-giradischi-vibrazioni.html\">come isolare il giradischi dalle vibrazioni</a>.</p>\n\n  <h2>Gracchia, fa tic e fruscii.</h2>\n  <p>Quasi sempre è polvere nel solco, tenuta lì dall'elettricità statica. Il disco si carica quando lo sfili dalla busta o lo pulisci, e la carica attira la polvere dall'aria. Succede anche con i dischi nuovi: anche loro vanno spazzolati.</p>\n  <ul>\n    <li><b>Una spazzola in fibra di carbonio prima di ogni ascolto.</b> Appoggiala sul disco che gira per un paio di giri, poi spostala piano verso il bordo.</li>\n    <li><b>Buste interne antistatiche.</b> Il disco si carica meno quando lo sfili. Ne parlo nella guida su <a href=\"guida-conservare-vinili.html\">come conservare i vinili</a>.</li>\n    <li><b>Un lavaggio vero per i dischi molto sporchi.</b> Liquido apposito e una macchina che aspira lo sporco dal solco. Su Extrasound c'è anche il servizio di <a href=\"https://www.extrasound.it/lavaggio-dischi-vinili-33-45-78-con-pro-ject-vc-s\" target=\"_blank\" rel=\"noopener\">lavaggio dei dischi con la macchina Pro-Ject</a>.</li>\n    <li><b>Niente prodotti per la casa.</b> Detersivi per piatti o per vetri e carta da cucina possono rovinare il vinile: usa solo prodotti fatti per i dischi.</li>\n  </ul>\n  <p>Una parte del rumore viene dai micrograffi, piccolissimi segni che il disco prende quando lo sfili dalla busta o lo pulisci male. Non si tolgono, ma si possono evitare maneggiando i dischi con attenzione.</p>\n\n  <h2>La puntina: pulita e non consumata.</h2>\n  <p>Anche la puntina raccoglie polvere. Puliscila con il suo spazzolino, sempre da dietro in avanti, cioè nella direzione in cui scorre il disco, mai di lato.</p>\n  <p>Le puntine si consumano. Se il rumore resta anche su dischi puliti e il suono è diventato impastato o distorto, falla controllare e, se serve, sostituiscila: una puntina consumata rovina anche i dischi.</p>\n\n  <h2>Ronza.</h2>\n  <p>Un ronzio basso e continuo, che si sente anche senza disco, è quasi sempre un problema di massa.</p>\n<!--ANIM:massa-->\n  <ul>\n    <li><b>Il filo di massa.</b> Dal giradischi esce, insieme ai cavi del segnale, un filo sottile con una forcella in fondo. Va avvitato al morsetto GND dell'amplificatore o del preamplificatore phono. In rari casi il ronzio diminuisce staccandolo: se collegato non migliora, prova anche così.</li>\n    <li><b>I fili della testina.</b> I quattro fili sottili che collegano la testina al braccio devono essere ben inseriti, e la testina ben fissata al braccio.</li>\n    <li><b>Lontano dall'amplificatore.</b> Il trasformatore dell'amplificatore e gli alimentatori vicini possono far ronzare la testina. Non mettere mai il giradischi sopra l'amplificatore: ne parlo nella guida su <a href=\"guida-amplificatore-calore.html\">dove mettere l'amplificatore</a>.</li>\n    <li><b>Il cavo.</b> Prova con un altro cavo: anche un cavo difettoso può ronzare.</li>\n  </ul>\n  <p>Un leggero ronzio che si sente solo a volume altissimo e senza disco è normale.</p>\n\n  <h2>Suona distorto, oppure piano e senza bassi.</h2>\n  <p>Il segnale della testina è debolissimo: prima di arrivare all'amplificatore va amplificato e corretto da un preamplificatore phono. Può essere dentro l'amplificatore (l'ingresso PHONO), dentro il giradischi o in una scatoletta separata. La regola è che ce ne vuole uno solo.</p>\n  <ul>\n    <li><b>Distorto.</b> Il giradischi ha il preamplificatore acceso ed è collegato all'ingresso PHONO: il segnale viene amplificato due volte. Metti il selettore del giradischi su PHONO, oppure collegalo a un ingresso normale.</li>\n    <li><b>Piano e senza bassi.</b> Il giradischi non ha il preamplificatore, o è spento, ed è collegato a un ingresso normale (LINE, AUX) o a casse attive. Accendi il preamplificatore del giradischi, mettendo il selettore su LINE, oppure usa l'ingresso PHONO o un preamplificatore esterno.</li>\n  </ul>\n\n  <h2>Domande frequenti.</h2>",
+  "faq": [
+   [
+    "Perché il vinile salta?",
+    "Il più delle volte per il peso della puntina o l'antiskating regolati male, oppure per un disco sporco o rigato. Se salta quando cammini vicino al mobile, la causa sono le vibrazioni."
+   ],
+   [
+    "Perché un vinile nuovo gracchia?",
+    "Anche i dischi nuovi si caricano di elettricità statica e attirano polvere. Una passata di spazzola in fibra di carbonio prima dell'ascolto di solito basta."
+   ],
+   [
+    "Come si elimina il ronzio del giradischi?",
+    "Collega il filo di massa del giradischi al morsetto GND dell'amplificatore o del preamplificatore e tieni il giradischi lontano dall'amplificatore e dagli alimentatori."
+   ],
+   [
+    "Come capisco se la puntina è consumata?",
+    "Se il rumore resta anche su dischi puliti e il suono è diventato impastato o distorto, falla controllare: le puntine si consumano e vanno sostituite."
+   ],
+   [
+    "Perché il giradischi suona distorto o troppo piano?",
+    "Quasi sempre è il preamplificatore phono: ce ne vuole uno solo. Controlla il selettore PHONO/LINE del giradischi e l'ingresso dell'amplificatore che stai usando."
+   ]
+  ]
  }
 ]

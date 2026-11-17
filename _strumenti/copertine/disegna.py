@@ -90,5 +90,15 @@ b+=f'<circle cx="640" cy="470" r="26" fill="{BRASS}"/><circle cx="300" cy="470" 
 for x in (400,560):
     b+=arcs(x,400,55,38,-115,-65,w=6,col=ORANGE)
 C['amplificatore']=svg(b)
+# 8. vinile che salta: disco con braccio e puntina, e i segni del "tic"
+b=SH.format(cx=420,cy=650,rx=280)
+b+=record(400,360,270)
+b+='<circle cx="400" cy="360" r="270" fill="url(#shine)"/>'
+b+=f'<circle cx="790" cy="150" r="40" fill="#8b7a66"/><circle cx="790" cy="150" r="22" fill="#cfc3b2"/>'
+b+=f'<path d="M790 150 L700 330 L610 372" fill="none" stroke="#e3dccf" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>'
+b+='<rect x="566" y="350" width="60" height="38" rx="6" transform="rotate(-24 596 369)" fill="#d9d2c6"/>'
+for (x1,y1,x2,y2) in ((560,318,532,286),(586,306,580,268),(612,314,636,282),(540,350,500,346)):
+    b+=f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{ORANGE}" stroke-width="7" stroke-linecap="round"/>'
+C['salta']=svg(b)
 for k,v in C.items(): open(f'{k}.svg','w').write(v)
 print(list(C))
