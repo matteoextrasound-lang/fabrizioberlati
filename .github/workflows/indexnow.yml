@@ -1,0 +1,45 @@
+# Dopo ogni pubblicazione del sito avvisa Bing (e gli altri motori IndexNow)
+# delle pagine aggiunte, modificate o tolte nel commit pubblicato.
+name: IndexNow
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch: # avvio a mano: invia tutte le pagine della sitemap
+jobs:
+  ping:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || 'main' }}
+          fetch-depth: 2
+      - name: Invia a IndexNow le pagine cambiate
+        env:
+          KEY: 297ad8a6ffd21d440f2e547aeae304d5
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, urllib.request
+          files = subprocess.run(['git','diff','--name-only','HEAD~1','HEAD'],capture_output=True,text=True).stdout.split()
+          urls = []
+          for f in files:
+              if not f.endswith('.html') or f.startswith(('_','.')) or f.startswith('google'):
+                  continue
+              if os.path.exists(f) and 'http-equiv="refresh"' in open(f, encoding='utf-8').read():
+                  continue
+              p = '' if f == 'index.html' else f
+              if p.endswith('/index.html'): p = p[:-10]
+              urls.append('https://fabrizioberlati.com/' + p)
+          if os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch':
+              urls = re.findall(r'<loc>([^<]+)</loc>', open('sitemap.xml', encoding='utf-8').read())
+          print('\n'.join(urls) or 'nessuna pagina cambiata')
+          if not urls: raise SystemExit(0)
+          key = os.environ['KEY']
+          body = json.dumps({'host':'fabrizioberlati.com','key':key,
+                  'keyLocation':f'https://fabrizioberlati.com/{key}.txt','urlList':urls[:10000]}).encode()
+          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body,
+                  headers={'Content-Type':'application/json; charset=utf-8'})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              print('IndexNow risposta', r.status)
+          PY
