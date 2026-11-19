@@ -77,3 +77,5 @@
 .shopbox .ctas{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center}
 .shopbox .btn{color:var(--ink)}.shopbox .btn:hover{color:#fff}
 .shopbox .link{color:var(--brass)}
+.shopbox .sm{margin:1.1rem 0 0;padding-top:1rem;border-top:1px solid rgba(0,0,0,.08);font-size:.97rem}
+.shopbox .sm a{color:var(--brass);text-decoration:underline;text-underline-offset:3px}

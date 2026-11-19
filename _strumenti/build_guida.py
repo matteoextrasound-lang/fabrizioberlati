@@ -11,7 +11,7 @@ wa_svg = re.search(r'(<svg viewBox="0 0 24 24" width="15" height="15" aria-hidde
 def page(fn, title, desc, ld, body, css_extra='', js=''):
     hdr = header.replace('<a href="guide.html">Guide</a>', '<a href="guide.html" aria-current="page">Guide</a>')
     s = head_common + f'<title>{title}</title>\n<meta name="description" content="{desc}">\n' + fonts + \
-        f'\n<link rel="stylesheet" href="guide.css?v=3">\n' + ('<link rel="stylesheet" href="anim.css?v=1">\n' if 'class="anim"' in body else '') + f'<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
+        f'\n<link rel="stylesheet" href="guide.css?v=4">\n' + ('<link rel="stylesheet" href="anim.css?v=1">\n' if 'class="anim"' in body else '') + f'<link rel="canonical" href="https://fabrizioberlati.com/{fn}">\n' + \
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>\n</head>\n<body>\n' + hdr + \
         '\n\n<main>\n' + body + '\n</main>\n\n<footer>' + fcta(title) + '\n' + foot_bottom + '\n\n<script src="site.js?v=6"></script>\n' + js + ('<script src="anim.js?v=1"></script>\n' if 'class="anim"' in body else '') + '</body>\n</html>\n'
     open(fn, 'w').write(s)
@@ -28,7 +28,20 @@ SHOP = json.load(open('_strumenti/guide_negozio.json'))
 def shop_box(key):
     t, txt, links = SHOP[key]
     bt = ''.join(f'<a class="{"btn" if i == 0 else "link"}" href="{u}" target="_blank" rel="noopener">{l}</a>' for i, (l, u) in enumerate(links))
-    return f'\n  <div class="shopbox"><p><b>{t}</b>{txt}</p><div class="ctas">{bt}</div></div>\n'
+    sm = SUMISURA.get(key)
+    sm = f'<p class="sm">{sm} <a href="su-misura.html">Lavori su misura</a></p>' if sm else ''
+    return f'\n  <div class="shopbox"><p><b>{t}</b>{txt}</p><div class="ctas">{bt}</div>{sm}</div>\n'
+
+# frase "su misura" in fondo al riquadro negozio di ogni guida (la guida sul vinile che salta non ce l'ha: non c'entra)
+SUMISURA = {
+ 'altezza': "Ti serve un'altezza diversa? Costruisco gli stand su misura, sul tuo diffusore e sulla tua stanza.",
+ 'guida-conservare-vinili.html': "Ti serve un porta vinili per la tua parete? Lo costruisco su misura, dimensionato sulla tua collezione.",
+ 'guida-giradischi-vibrazioni.html': "Ti serve un mobile per il giradischi? Lo costruisco su misura, sui tuoi apparecchi e sul tuo spazio.",
+ 'guida-pannelli-acustici.html': "Ti servono pannelli per la tua parete? Li costruisco su misura, nelle misure che servono.",
+ 'guida-posizionare-diffusori.html': "Ti servono stand o supporti per le tue casse? Li costruisco su misura, sul tuo diffusore e sulla tua stanza.",
+ 'guida-diffusori-scrivania.html': "Ti servono supporti per le casse della scrivania? Li costruisco su misura, anche inclinati verso di te.",
+ 'guida-amplificatore-calore.html': "Ti serve un mobile per i tuoi apparecchi? Lo costruisco su misura, sulle misure di quello che hai.",
+}
 
 STANDS = [
  dict(name='Extrasound Clessidra', url='stand-clessidra.html', img='images/clessidra-card.jpg?v=2', h=39, note='Faggio massello · 200 € la coppia'),

@@ -219,3 +219,6 @@ nav a.lang{font-size:.78rem;letter-spacing:.12em;border:1px solid rgba(42,29,20,
   .catchips a{white-space:nowrap;flex:none}
 }
 .htable td a{display:inline-block;padding:.7rem 0}
+/* riga "su misura" sotto i pulsanti delle schede prodotto */
+.sumisura{margin:.9rem 0 0;font-size:.95rem;color:var(--muted,#6f6254)}
+.sumisura a{color:var(--brass);text-decoration:underline;text-underline-offset:3px}

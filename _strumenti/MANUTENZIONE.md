@@ -39,10 +39,14 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 ## Schede prodotto da telefono (13/11)
 - Il pulsante principale è «Acquista su Extrasound» (`class="btn btn-buy"`, nuova scheda); «Chiedi informazioni» è un link.
 - Ogni scheda con prezzo ha prima di `</main>` la barra `<div class="buybar">` (prezzo + «Acquista»), che compare sul telefono quando il pulsante principale esce dallo schermo (site.js).
-- Versioni attuali: craft.css?v=24, site.js?v=6, guide.css?v=3, anim.css?v=1.
+- Versioni attuali: craft.css?v=25, site.js?v=6, guide.css?v=4, anim.css?v=1.
 
 ## Conteggio dei clic in uscita (GoatCounter)
 `site.js` registra come evento GoatCounter ogni clic verso extrasound.it (nome `extrasound/<percorso>`, oppure `extrasound/?<ricerca>`), WhatsApp (`contatto/whatsapp`), email (`contatto/email`) e telefono (`contatto/telefono`). Come provenienza registra la pagina da cui parte il clic. Vale anche per i link aggiunti in futuro, senza fare niente. I clic dal browser escluso (skipgc) non vengono contati.
 
 ## IndexNow (Bing)
 Il file `297ad8a6ffd21d440f2e547aeae304d5.txt` nella root è la chiave IndexNow: non va tolto né rinominato. Dopo ogni pubblicazione su `main`, il workflow `.github/workflows/indexnow.yml` parte da solo, aspetta 2 minuti che GitHub Pages pubblichi e invia a IndexNow le pagine .html cambiate in quel commit (escluse le pagine di rimando). Il risultato si vede nella scheda Actions del repository. Su Google la richiesta di indicizzazione resta manuale dalla Search Console.
+
+## Inviti al lavoro su misura
+- Schede prodotto: sotto i pulsanti c'è `<p class="sumisura">` con il link a su-misura.html. Va messo anche nelle schede nuove.
+- Guide: la frase su misura sta nel riquadro negozio, dal dizionario `SUMISURA` in `build_guida.py` (chiave = nome file della guida, o 'altezza'). Le guide che non c'entrano con i mobili non la hanno.
