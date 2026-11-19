@@ -46,7 +46,7 @@ SUMISURA = {
 STANDS = [
  dict(name='Extrasound Clessidra', url='stand-clessidra.html', img='images/clessidra-card.jpg?v=2', h=39, note='Faggio massello · 200 € la coppia'),
  dict(name='Extrasound Rigatini', url='stand-rigatini.html', img='images/rigatini-card.jpg', h=50.3, note='Faggio massello · 250 € la coppia'),
- dict(name='Stand Stile Pannello', url='stand-stile-pannello.html', img='images/pannello-card.jpg?v=2', h=54.6, note='Faggio massello · 300 € la coppia'),
+ dict(name='Stand Stile Pannello', url='stand-stile-pannello.html', img='images/stile-pannello-card.jpg?v=2', h=59.4, note='Faggio massello · 300 € la coppia'),
  dict(name='Wood Brick', url='stand-wood-brick.html', img='images/woodbrick-card.jpg', h=55, note='Legno massello · 300 € la coppia'),
  dict(name='Art Triangle', url='stand-art-triangle.html', img='images/art-triangle-card.jpg?v=4', h=60.3, note='Faggio massello · 300 € la coppia'),
  dict(name='Extrasound Stylus', url='stand-stylus.html', img='images/stylus-card.jpg', h=61, note='Doussiè massello · da 280 € la coppia'),
