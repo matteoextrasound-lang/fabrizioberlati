@@ -50,3 +50,6 @@ Il file `297ad8a6ffd21d440f2e547aeae304d5.txt` nella root è la chiave IndexNow:
 ## Inviti al lavoro su misura
 - Schede prodotto: sotto i pulsanti c'è `<p class="sumisura">` con il link a su-misura.html. Va messo anche nelle schede nuove.
 - Guide: la frase su misura sta nel riquadro negozio, dal dizionario `SUMISURA` in `build_guida.py` (chiave = nome file della guida, o 'altezza'). Le guide che non c'entrano con i mobili non la hanno.
+
+## Link da Extrasound (20/11/2026)
+In fondo alla descrizione di 27 schede Extrasound dei prodotti di Fabrizio c'è un paragrafo marcato `<!-- link-fabrizioberlati -->` con il link alla scheda corrispondente su questo sito (nuova scheda). Il testo originale di ogni scheda è salvato nel campo personalizzato `_backup_descrizione_20261120` del prodotto. Se una pagina di questo sito cambia nome, va aggiornato anche il link su Extrasound. Zeta e Line (bozze 57734 e 57735) non hanno il link.
