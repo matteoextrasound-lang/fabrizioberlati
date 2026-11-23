@@ -39,7 +39,7 @@ Questa cartella non viene pubblicata (GitHub Pages ignora le cartelle che inizia
 ## Schede prodotto da telefono (13/11)
 - Il pulsante principale è «Acquista su Extrasound» (`class="btn btn-buy"`, nuova scheda); «Chiedi informazioni» è un link.
 - Ogni scheda con prezzo ha prima di `</main>` la barra `<div class="buybar">` (prezzo + «Acquista»), che compare sul telefono quando il pulsante principale esce dallo schermo (site.js).
-- Versioni attuali: craft.css?v=25, site.js?v=6, guide.css?v=4, anim.css?v=1.
+- Versioni attuali: craft.css?v=26, site.js?v=7, guide.css?v=4, anim.css?v=1.
 
 ## Conteggio dei clic in uscita (GoatCounter)
 `site.js` registra come evento GoatCounter ogni clic verso extrasound.it (nome `extrasound/<percorso>`, oppure `extrasound/?<ricerca>`), WhatsApp (`contatto/whatsapp`), email (`contatto/email`) e telefono (`contatto/telefono`). Come provenienza registra la pagina da cui parte il clic. Vale anche per i link aggiunti in futuro, senza fare niente. I clic dal browser escluso (skipgc) non vengono contati.
@@ -53,3 +53,6 @@ Il file `297ad8a6ffd21d440f2e547aeae304d5.txt` nella root è la chiave IndexNow:
 
 ## Link da Extrasound (20/11/2026)
 In fondo alla descrizione di 27 schede Extrasound dei prodotti di Fabrizio c'è un paragrafo marcato `<!-- link-fabrizioberlati -->` con il link alla scheda corrispondente su questo sito (nuova scheda). Il testo originale di ogni scheda è salvato nel campo personalizzato `_backup_descrizione_20261120` del prodotto. Se una pagina di questo sito cambia nome, va aggiornato anche il link su Extrasound. Zeta e Line (bozze 57734 e 57735) non hanno il link.
+
+## Galleria a schermo intero
+In `site.js` (v7) ogni scheda prodotto con `.pp-hero` apre una galleria a schermo intero al clic su una foto: frecce, tasti ← → ed Esc, scorrimento col dito, scorrimento verso il basso per chiudere. Prende da sola le foto di `.pp-hero .ph img` e `.gallery .ph img`, nell'ordine della pagina: sulle schede nuove non serve fare niente. Stili in `craft.css` (v26), sezione "galleria a schermo intero".
