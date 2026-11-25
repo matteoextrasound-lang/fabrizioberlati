@@ -100,5 +100,15 @@ b+='<rect x="566" y="350" width="60" height="38" rx="6" transform="rotate(-24 59
 for (x1,y1,x2,y2) in ((560,318,532,286),(586,306,580,268),(612,314,636,282),(540,350,500,346)):
     b+=f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{ORANGE}" stroke-width="7" stroke-linecap="round"/>'
 C['salta']=svg(b)
+# 9. scegliere lo stand: cassa sullo stand, quota orizzontale sul piano, punte sotto la base
+b=SH.format(cx=480,cy=628,rx=200)
+b+=f'<rect x="370" y="600" width="220" height="20" rx="4" fill="{WOOD2}"/>'
+b+=f'<rect x="452" y="330" width="56" height="272" fill="{WOOD}"/>'
+b+=f'<rect x="384" y="314" width="192" height="20" rx="4" fill="{WOOD2}"/>'
+b+=speaker(390,96,180,218)
+b+=f'<g stroke="{BRASS}" stroke-width="4" fill="none"><line x1="384" y1="366" x2="576" y2="366"/><line x1="384" y1="352" x2="384" y2="380"/><line x1="576" y1="352" x2="576" y2="380"/></g>'
+for x in (386,574):
+    b+=f'<path d="M{x-10} 620 L{x} 646 L{x+10} 620 Z" fill="{ORANGE}"/>'
+C['stand']=svg(b)
 for k,v in C.items(): open(f'{k}.svg','w').write(v)
 print(list(C))

@@ -1,0 +1,39 @@
+<figure class="anim">
+<svg viewBox="0 -40 760 400" data-still="0.5" role="img" aria-label="Animazione: due casse sugli stand ricevono la stessa piccola spinta. Quella appoggiata su un piano troppo piccolo dondola avanti e indietro; quella su un piano della misura giusta resta ferma.">
+  <!-- pavimento -->
+  <rect x="20" y="300" width="720" height="4" rx="2" fill="#d9ccb5"/>
+  <!-- STAND SINISTRO: piano troppo piccolo -->
+  <ellipse cx="210" cy="300" rx="90" ry="7" fill="#2a1d14" opacity=".08"/>
+  <rect x="140" y="286" width="140" height="14" rx="3" fill="#c9a774"/>
+  <rect x="196" y="150" width="28" height="138" fill="#d9bb8c"/>
+  <rect x="180" y="140" width="60" height="12" rx="2" fill="#c9a774"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 210 140;0 210 140;-6 210 140;5 210 140;-3.5 210 140;2.2 210 140;-1 210 140;0 210 140;0 210 140" keyTimes="0;.2;.27;.36;.45;.54;.62;.7;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.3 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1;0 0 1 1"/>
+    <rect x="135" y="-20" width="150" height="160" rx="6" fill="#3b2a1e"/>
+    <circle cx="210" cy="20" r="14" fill="#e8d6b4"/>
+    <circle cx="210" cy="88" r="36" fill="#5b4636"/><circle cx="210" cy="88" r="13" fill="#3b2a1e"/>
+  </g>
+  <!-- STAND DESTRO: piano della misura giusta -->
+  <ellipse cx="550" cy="300" rx="90" ry="7" fill="#2a1d14" opacity=".08"/>
+  <rect x="480" y="286" width="140" height="14" rx="3" fill="#c9a774"/>
+  <rect x="536" y="150" width="28" height="138" fill="#d9bb8c"/>
+  <rect x="478" y="140" width="144" height="12" rx="2" fill="#c9a774"/>
+  <rect x="475" y="-20" width="150" height="160" rx="6" fill="#3b2a1e"/>
+  <circle cx="550" cy="20" r="14" fill="#e8d6b4"/>
+  <circle cx="550" cy="88" r="36" fill="#5b4636"/><circle cx="550" cy="88" r="13" fill="#3b2a1e"/>
+  <!-- la stessa spinta su tutte e due -->
+  <g fill="#ff9a2e" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.08;.13;.22;.27;1" dur="6s" repeatCount="indefinite"/>
+    <path d="M92 40 h26 v-9 l18 15 l-18 15 v-9 h-26 z"/>
+    <path d="M432 40 h26 v-9 l18 15 l-18 15 v-9 h-26 z"/>
+    <text x="70" y="80" font-size="26" font-weight="600" fill="#a87a2f">spinta</text>
+    <text x="410" y="80" font-size="26" font-weight="600" fill="#a87a2f">spinta</text>
+  </g>
+  <!-- didascalie fisse -->
+  <g font-size="27" font-weight="600" text-anchor="middle">
+    <text x="200" y="344" fill="#c8553d">Piano piccolo: dondola</text>
+    <text x="565" y="344" fill="#2f5d50">Piano giusto: sta ferma</text>
+  </g>
+</svg>
+<figcaption><span>Stessa cassa, stessa spinta. Sul piano troppo piccolo la cassa ha poco su cui appoggiare e dondola; sul piano della sua misura resta ferma.</span><button type="button" class="anim-replay">Rivedi</button></figcaption>
+</figure>

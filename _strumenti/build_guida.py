@@ -40,6 +40,7 @@ SUMISURA = {
  'guida-pannelli-acustici.html': "Ti servono pannelli per la tua parete? Li costruisco su misura, nelle misure che servono.",
  'guida-posizionare-diffusori.html': "Ti servono stand o supporti per le tue casse? Li costruisco su misura, sul tuo diffusore e sulla tua stanza.",
  'guida-diffusori-scrivania.html': "Ti servono supporti per le casse della scrivania? Li costruisco su misura, anche inclinati verso di te.",
+ 'guida-scegliere-stand-diffusori.html': "Ti serve un'altezza o un piano che non trovi? Costruisco gli stand su misura per le tue casse.",
  'guida-amplificatore-calore.html': "Ti serve un mobile per i tuoi apparecchi? Lo costruisco su misura, sulle misure di quello che hai.",
 }
 
