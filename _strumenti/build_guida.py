@@ -41,6 +41,7 @@ SUMISURA = {
  'guida-posizionare-diffusori.html': "Ti servono stand o supporti per le tue casse? Li costruisco su misura, sul tuo diffusore e sulla tua stanza.",
  'guida-diffusori-scrivania.html': "Ti servono supporti per le casse della scrivania? Li costruisco su misura, anche inclinati verso di te.",
  'guida-scegliere-stand-diffusori.html': "Ti serve un'altezza o un piano che non trovi? Costruisco gli stand su misura per le tue casse.",
+ 'guida-scegliere-mobile-hifi.html': "I tuoi apparecchi non entrano in nessun mobile? Lo costruisco su misura, sulle loro misure.",
  'guida-amplificatore-calore.html': "Ti serve un mobile per i tuoi apparecchi? Lo costruisco su misura, sulle misure di quello che hai.",
 }
 

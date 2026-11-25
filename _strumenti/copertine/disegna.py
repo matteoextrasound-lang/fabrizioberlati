@@ -110,5 +110,16 @@ b+=f'<g stroke="{BRASS}" stroke-width="4" fill="none"><line x1="384" y1="366" x2
 for x in (386,574):
     b+=f'<path d="M{x-10} 620 L{x} 646 L{x+10} 620 Z" fill="{ORANGE}"/>'
 C['stand']=svg(b)
+# 10. scegliere il mobile hi-fi: mobile a tre ripiani, giradischi in alto, elettroniche sotto, quota in altezza
+b=SH.format(cx=480,cy=628,rx=260)
+for y in (250,400,550):
+    b+=f'<rect x="260" y="{y}" width="440" height="22" rx="4" fill="{WOOD2}"/>'
+b+=f'<rect x="268" y="272" width="26" height="356" fill="{WOOD}"/><rect x="666" y="272" width="26" height="356" fill="{WOOD}"/>'
+b+=f'<rect x="300" y="204" width="320" height="46" rx="6" fill="#c99a63"/>'+f'<ellipse cx="420" cy="200" rx="96" ry="10" fill="#1f1915"/><rect x="324" y="196" width="192" height="8" fill="#2b2420"/>'+f'<circle cx="572" cy="196" r="12" fill="#8b7a66"/><path d="M572 194 L500 186" stroke="#e3dccf" stroke-width="6" stroke-linecap="round"/>'
+b+=f'<rect x="300" y="322" width="320" height="78" rx="6" fill="#2d2621"/><circle cx="574" cy="361" r="20" fill="{BRASS}"/><rect x="330" y="352" width="90" height="16" rx="3" fill="#6b4f2a"/>'
+b+=f'<rect x="300" y="490" width="320" height="60" rx="6" fill="#3b3029"/><rect x="330" y="512" width="140" height="12" rx="3" fill="#6b5a4a"/>'
+b+=f'<g stroke="{BRASS}" stroke-width="4" fill="none"><line x1="730" y1="272" x2="730" y2="400"/><line x1="716" y1="272" x2="744" y2="272"/><line x1="716" y1="400" x2="744" y2="400"/></g>'
+b+=arcs(460,322,24,22,-120,-60,w=5,col=ORANGE)
+C['mobile']=svg(b)
 for k,v in C.items(): open(f'{k}.svg','w').write(v)
 print(list(C))

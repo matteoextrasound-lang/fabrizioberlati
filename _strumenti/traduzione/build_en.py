@@ -23,6 +23,7 @@ SLUG = {
  'guida-amplificatore-calore.html': 'amplifier-heat-ventilation.html',
  'guida-vinile-salta-gracchia.html': 'record-skipping-crackling-hum.html',
     'guida-scegliere-stand-diffusori.html': 'how-to-choose-speaker-stands.html',
+    'guida-scegliere-mobile-hifi.html': 'how-to-choose-a-hifi-rack.html',
 }
 for f in glob.glob('mobile-hifi-*.html'): SLUG[f] = 'hifi-rack-' + f[len('mobile-hifi-'):]
 for f in glob.glob('stand-*.html'):
